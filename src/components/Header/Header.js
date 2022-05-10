@@ -5,8 +5,10 @@ function Header() {
   return (
     <div className="header">
       <h1>
-        Aqui estara mi Portafolio!!
+        Andres Montoya
       </h1>
+      <span class="material-icons-round">engineering</span>
+      <span class="material-icons-round">engineering</span>
       <span class="material-icons-round">engineering</span>
     </div>
   );

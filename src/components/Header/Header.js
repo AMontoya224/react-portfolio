@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
+import { animateScroll as scroll } from "react-scroll";
 import './Header.css';
 
 
@@ -17,31 +18,36 @@ function Header( props ) {
     };
 
     const onHome = () => {
-        onSelectLeft( 'home' );
+        onSelectLeft( '#1' );
+        scroll.scrollMore(0);
         props.history.push( '/' );
     };
 
     const onBtnHome = () => {
         onBtnEsc();
-        onSelectLeft( 'home' );
+        onSelectLeft( '#1' );
+        scroll.scrollMore(0);
         props.history.push( '/' );
     };
 
     const onBtnWorks = () => {
         onBtnEsc();
-        onSelectLeft( 'works' );
+        onSelectLeft( '#1' );
+        scroll.scrollMore(0);
         props.history.push( '/works' );
     };
 
     const onBtnAboutMe = () => {
         onBtnEsc();
-        onSelectLeft( 'aboutMe' );
+        onSelectLeft( '#1' );
+        scroll.scrollMore(0);
         props.history.push( '/aboutme' );
     };
 
     const onBtnContact = () => {
         onBtnEsc();
-        onSelectLeft( 'contact' );
+        onSelectLeft( '#1' );
+        scroll.scrollMore(0);
         props.history.push( '/contact' );
     };
 
@@ -51,22 +57,34 @@ function Header( props ) {
                 Monty<b>Ang</b>
             </p>
             <b></b>
-            <span className="material-icons-round">engineering</span>
-            <a class="whatsapp_A" href="https://wa.me/51954222771/?text=Hola%20quiero%20hacer%20un%20pedido" target="_blank">
-                <ion-icon name="logo-whatsapp" size="large"></ion-icon>
-             </a>
-            <span className="material-icons-round">engineering</span>
-            <button className='H-btn' onClick={onBtnEsc}><div className={btnEsc ? 's1 active' : 's1'}></div><div className={btnEsc ? 's2 active' : 's2'}></div></button>
+            <div className='H-row'>
+                <a href="mailto:jmontoyaan@unsa.edu.pe">
+                    <ion-icon name="mail-outline" size="large"></ion-icon>
+                </a>
+                <a  className='wpp' href="https://wa.me/51954222771/?text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" rel="noreferrer">
+                    <ion-icon name="logo-whatsapp" size="large"></ion-icon>
+                </a>
+                <a href="https://amontoya224.com/" target="_blank" rel="noreferrer">
+                    AMontoya224
+                </a>
+                <button className='H-btn' onClick={onBtnEsc}><div className={btnEsc ? 's1 active' : 's1'}></div><div className={btnEsc ? 's2 active' : 's2'}></div></button>
+            </div>
             <div className={btnEsc ? 'menu menu-fw' : 'menu menu-bk'}>
                 <button className={btnEsc ? 'menu-p' : 'menu-np'} onClick={onBtnHome}>HOME</button>
                 <button className={btnEsc ? 'menu-p' : 'menu-np'} onClick={onBtnWorks}>WORKS</button>
                 <button className={btnEsc ? 'menu-p' : 'menu-np'} onClick={onBtnAboutMe}>ABOUT ME</button>
                 <button className={btnEsc ? 'menu-p' : 'menu-np'} onClick={onBtnContact}>CONTACT</button>
-                <span className={btnEsc ? 'material-icons-round menu-p' : 'material-icons-round menu-np'}>engineering</span>
-                <a href="https://wa.me/51954222771/?text=Hola%20quiero%20hacer%20un%20pedido" target="_blank">
-                    <ion-icon name="logo-whatsapp" size="large"></ion-icon>
-                </a>
-                <span className={btnEsc ? 'material-icons-round menu-p' : 'material-icons-round menu-np'}>engineering</span>
+                <div>
+                    <a className={btnEsc ? 'menu-a' : 'menu-na'} href="mailto:jmontoyaan@unsa.edu.pe">
+                        <ion-icon name="mail-outline" size="large"></ion-icon>
+                    </a>
+                    <a  className={btnEsc ? 'menu-a' : 'menu-na'} href="https://wa.me/51954222771/?text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" rel="noreferrer">
+                        <ion-icon name="logo-whatsapp" size="large"></ion-icon>
+                    </a>
+                    <a className={btnEsc ? 'menu-a' : 'menu-na'} href="https://amontoya224.com/" target="_blank" rel="noreferrer">
+                        AMontoya224
+                    </a>
+                </div>
             </div>
         </div>
     );

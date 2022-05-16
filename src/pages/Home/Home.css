@@ -1,7 +1,5 @@
 .Home{
     margin: 0 3.5rem 0 21.5rem;
-    width: 100vh;
-    scroll-behavior: smooth;
     text-align: left;
 }
 
@@ -88,15 +86,15 @@
 #H-wolf{
     border-radius: 50%;
     background: rgba(200, 200, 200, .1);
-    width: 110rem;
-    height: 110rem;
+    width: 140rem;
+    height: 140rem;
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: -17.4rem;
-    right: -24.7rem;
-    z-index: -1;
+    top: -31rem;
+    left: 35rem;
+    z-index: -2;
     -webkit-animation: slide-left 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-left 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
@@ -104,8 +102,8 @@
 #H-wolf > div{
     border-radius: 50%;
     background: rgba(180, 180, 180, .1);
-    width: 100rem;
-    height: 100rem;
+    width: 125rem;
+    height: 125rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,8 +112,8 @@
 #H-wolf > div > div{
     border-radius: 50%;
     background: rgba(160, 160, 160, .1);
-    width: 90rem;
-    height: 90rem;
+    width: 110rem;
+    height: 110rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,8 +122,8 @@
 #H-wolf > div > div > div{
     border-radius: 50%;
     background: rgba(140, 140, 140, .2);
-    width: 80rem;
-    height: 80rem;
+    width: 95rem;
+    height: 95rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,8 +132,8 @@
 #H-wolf > div > div > div > div{
     border-radius: 50%;
     background: rgba(120, 120, 120, .3);
-    width: 70rem;
-    height: 70rem;
+    width: 80rem;
+    height: 80rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,19 +142,21 @@
 #H-wolf > div > div > div > div > div{
     border-radius: 50%;
     background: rgba(50, 50, 50, .3);
-    width: 60rem;
-    height: 60rem;
+    width: 65rem;
+    height: 65rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .H-img{
-    position:fixed;
-    border-radius: 50%;
+    position: absolute;
+    top: 13rem;
+    left: 81rem;
     width: 50rem;
     height: 50rem;
-    margin: auto;
+    border-radius: 50%;
+    z-index: -1;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
@@ -176,41 +176,48 @@
 
 .section-4{
     height: 100vh;
-    padding-top: 12rem;
+}
+
+.section-4 > .Contact{
+    margin: 0 3.5rem 0 0rem;
+}
+
+.Contact > .Contact-L > .H-title{
+    width: 100rem;
 }
 
 @-webkit-keyframes slide-right {
     0% {
-        -webkit-transform: translateX(-15rem);
-        transform: translateX(-15rem);
-        opacity: 0;
+        -webkit-transform: translateX(-10rem);
+        transform: translateX(-10rem);
+        
     }
     40% {
-        -webkit-transform: translateX(-15rem);
-        transform: translateX(-15rem);
-        opacity: 0;
+        -webkit-transform: translateX(-10rem);
+        transform: translateX(-10rem);
+        
     }
     100% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
-        opacity: 1;
+
     }
 }
 @keyframes slide-right {
     0% {
-        -webkit-transform: translateX(-15rem);
-        transform: translateX(-15rem);
-        opacity: 0;
+        -webkit-transform: translateX(-10rem);
+        transform: translateX(-10rem);
+     
     }
     60% {
-        -webkit-transform: translateX(-15rem);
-        transform: translateX(-15rem);
-        opacity: 0;
+        -webkit-transform: translateX(-10rem);
+        transform: translateX(-10rem);
+       
     }
     100% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
-        opacity: 1;
+      ;
     }
 }
 

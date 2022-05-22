@@ -63,6 +63,9 @@ function Contact( props ) {
                     <ion-icon name="logo-youtube" size="large"></ion-icon>
                 </a>
             </div>
+            <footer>
+                <p>Developed by <span>Andres Montoya Angulo</span></p>
+            </footer>
         </div>
     );
 }

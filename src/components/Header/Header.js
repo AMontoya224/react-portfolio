@@ -5,7 +5,7 @@ import './Header.css';
 
 
 function Header( props ) {
-    const {onSelectLeft} = props;
+    const {onSelectLeft, testRef1} = props;
     const [btnEsc, setBtnEsc] = useState( false );
 
     const onBtnEsc = () => {
@@ -19,15 +19,15 @@ function Header( props ) {
 
     const onHome = () => {
         onSelectLeft( '#1' );
-        scroll.scrollMore(0);
         props.history.push( '/' );
+        testRef1.current.scrollIntoView( {block: "start", behavior: "smooth"} )
     };
 
     const onBtnHome = () => {
         onBtnEsc();
         onSelectLeft( '#1' );
-        scroll.scrollMore(0);
         props.history.push( '/' );
+        testRef1.current.scrollIntoView( {block: "start", behavior: "smooth"} )
     };
 
     const onBtnWorks = () => {

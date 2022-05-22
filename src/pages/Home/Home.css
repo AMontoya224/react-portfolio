@@ -10,7 +10,7 @@
 
 .H-title{
     font-size: 11rem;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1.8rem;
     -webkit-animation: slide-right 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-right 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -164,14 +164,68 @@
     -ms-user-select: none;
 }
 
+.number{
+    color: var(--color-white);
+    font-size: 18rem;
+    font-weight: 600;
+    position: absolute;
+    right: 3.5rem;
+    -webkit-animation: slide-left 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-left 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
 .section-2{
     height: 100vh;
-    padding-top: 12rem;
+    padding-top: 7rem;
+}
+
+.section-2 > .H-sub > .s1, .section-2 > .H-sub > .s2{
+    width: 20rem;
+}
+
+.section-2 > .number{
+    top: 160vh;
+}
+
+.section-2 > div{
+    display: flex;
+}
+
+.section-2 > img{
+    position: absolute;
+    right: 3.5rem;
+    top: 125vh;
+    width: 36rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    opacity: 0.5;
+    transition: all 500ms ease;
+}
+.section-2 > img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.section-2 > div > img{
+    width: 15rem;
+    margin: 5rem 4rem 0 0;
+    cursor: pointer;
+    border-radius: 1rem;
+    opacity: 0.5;
+    transition: all 500ms ease;
+}
+.section-2 > div > img:hover{
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 .section-3{
     height: 100vh;
-    padding-top: 12rem;
+    padding-top: 7rem;
+}
+
+.section-3 > .number{
+    top: 260vh;
 }
 
 .section-4{
@@ -179,11 +233,31 @@
 }
 
 .section-4 > .Contact{
-    margin: 0 3.5rem 0 0rem;
+    margin: 0;
+    padding-top: 7rem;
 }
 
 .Contact > .Contact-L > .H-title{
     width: 100rem;
+}
+
+.Contact > .number{
+    top: 360vh;
+}
+
+.section-4 > .Contact > div{
+    margin-bottom: 11.8rem;
+}
+
+footer{
+    text-align: right;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+}
+
+footer > p > span{
+    color: var(--color-danger);
+    font-weight: 600;
 }
 
 @-webkit-keyframes slide-right {

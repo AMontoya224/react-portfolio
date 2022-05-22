@@ -5,12 +5,13 @@ import wolf from './../../images/wolf.png';
 import Left2 from '../../components/Left/Left2';
 import cv from './../../images/cv.png';
 import concytec from './../../images/concytec.png';
+import developer from './../../images/developer.jpg';
+import electronic from './../../images/electronic.jpg';
 
 
 function Home( props ) {
-  const { selectLeft, onSelectLeft } = props;
+  const { selectLeft, onSelectLeft, testRef1 } = props;
   const [btnSub, setBtnSub] = useState( false );
-  const testRef1 = useRef( null );
   const testRef2 = useRef( null );
   const testRef3 = useRef( null );
   const testRef4 = useRef( null );
@@ -38,6 +39,16 @@ function Home( props ) {
   const onBtnWorks = () => {
     onSelectLeft( '#1' );
     props.history.push( '/works' );
+  };
+
+  const onBtnWorksD = () => {
+    onSelectLeft( '#2' );
+    props.history.push( '/works/developer' );
+  };
+
+  const onBtnWorksE = () => {
+      onSelectLeft( '#3' );
+      props.history.push( '/works/electronic' );
   };
 
   const onBtnAboutMe = () => {
@@ -73,22 +84,33 @@ function Home( props ) {
       </div>
       <img id='H-img' className='H-img' src={wolf} alt='wolf'/>
 
-      <div className='section-2' id='section2'  ref={testRef2}>
-        <p className='H-title'>EVERTASK</p>
-          <p className='H-title'>web</p>
-          <button onClick={onBtnWorks}>go about me</button>
-          <button className={btnSub ? 'H-sub active' : 'H-sub'} onClick={onBtnSub}>
-            <div className={btnSub ? 's1 active' : 's1'}></div>
-            {btnSub ? 'PORTFOLIO' : 'CLICK'}
-            <div className={btnSub ? 's2 active' : 's2'}></div>
-          </button>
-          <p className='H-main'>Full stack developer /</p>
-          <p className='H-main'>Electronic engineer /</p>
+      <div className='section-2' id='section2' ref={testRef2}>
+        <p className='H-title'>Projects</p>
+        <button onClick={onBtnWorks} className='H-sub'>
+          <div className='s1'></div>
+            Show me more
+          <div className='s2'></div>
+        </button>
+        <p className='number'>02</p>
+        <p className='H-main'>Passion for creating amazing products.</p>
+        <img onClick={onBtnWorks} src={electronic} alt='electronic'/>
+        <div>
+          <img onClick={onBtnWorksD} src={wolf} alt='electronic'/>
+          <img onClick={onBtnWorksE} src={developer} alt='electronic'/>
+          <img onClick={onBtnWorksD} src={electronic} alt='electronic'/>
+          <img onClick={onBtnWorksE} src={wolf} alt='electronic'/>
         </div>
+      </div>
 
       <div className='section-3' id='section3'  ref={testRef3}>
-        <h1>About Me</h1>
-        <button onClick={onBtnAboutMe}>go about me</button>
+      <p className='H-title'>About Me</p>
+        <button onClick={onBtnAboutMe} className='H-sub'>
+          <div className='s1'></div>
+            Show me more
+          <div className='s2'></div>
+        </button>
+        <p className='number'>03</p>
+        <p className='H-main'>I love Design, Technology, and Story.</p>
       </div>
 
       <div className='section-4' id='section4'  ref={testRef4}>
@@ -99,6 +121,7 @@ function Home( props ) {
               {btnSub ? 'THANK!' : 'CLICK'}
               <div className={btnSub ? 's2 active' : 's2'}></div>
           </button>
+          <p className='number'>04</p>
           <a href="mailto:jmontoyaan@unsa.edu.pe">
               jmontoyaan@unsa.edu.pe
           </a>
@@ -128,6 +151,9 @@ function Home( props ) {
                 <ion-icon name="logo-youtube" size="large"></ion-icon>
             </a>
           </div>
+          <footer>
+            <p>Developed by <span>Andres Montoya Angulo</span></p>
+          </footer>
         </div>
       </div>
     </div>

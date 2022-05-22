@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Switch, BrowserRouter, Route} from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
@@ -12,6 +12,7 @@ import WorksE from './pages/Works/WorksE';
 
 function App() {
   const [selectLeft, setSelectLeft] = useState( '#1' );
+  const testRef1 = useRef( null );
 
   const onSelectLeft = newSelect => {
     setSelectLeft( newSelect );
@@ -23,9 +24,9 @@ function App() {
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"></link>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"></link>
       <BrowserRouter>
-        <Header onSelectLeft={onSelectLeft}/>
+        <Header onSelectLeft={onSelectLeft} testRef1={testRef1}/>
         <Switch>
-          <Route exact path="/" render={ routeProps => <Home selectLeft={selectLeft} onSelectLeft={onSelectLeft} {...routeProps} />}/>
+          <Route exact path="/" render={ routeProps => <Home selectLeft={selectLeft} onSelectLeft={onSelectLeft} testRef1={testRef1} {...routeProps} />}/>
           <Route exact path="/works" render={ routeProps => <Works selectLeft={selectLeft} onSelectLeft={onSelectLeft} {...routeProps} />}/>
           <Route exact path="/works/developer" render={ routeProps => <WorksD selectLeft={selectLeft} onSelectLeft={onSelectLeft} {...routeProps} />}/>
           <Route exact path="/works/electronic" render={ routeProps => <WorksE selectLeft={selectLeft} onSelectLeft={onSelectLeft} {...routeProps} />}/>

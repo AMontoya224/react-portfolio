@@ -22,11 +22,14 @@ function AboutMe( props ) {
         <div className="AboutMe">
             <button onClick={scrollToBack} className='B-return'><span className="material-icons-round return">keyboard_backspace</span> BACK</button>
             <Left2 onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} />
-            <h1>About Me</h1>
+            <p className='H-title'>About Me</p>
             <div className='section1'ref={testRef1}></div>
             <div className='section2'ref={testRef2}></div>
             <div className='section3'ref={testRef3}></div>
             <div className='section4'ref={testRef4}></div>
+            <footer>
+                <p>Developed by <span>Andres Montoya Angulo</span></p>
+            </footer>
         </div>
     );
 }

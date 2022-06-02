@@ -13,25 +13,43 @@ import WorksE from './pages/Works/WorksE';
 function App() {
   const [selectLeft, setSelectLeft] = useState( '#1' );
   const testRef1 = useRef( null );
+  const testRef2 = useRef( null );
+  const testRef3 = useRef( null );
+  const testRef4 = useRef( null );
 
   const onSelectLeft = newSelect => {
     setSelectLeft( newSelect );
   };
 
+  const handleScroll = event => {
+    if( event.currentTarget.scrollTop < 600 ){
+      setSelectLeft( '#1' );
+    }
+    else if( event.currentTarget.scrollTop > 600 && event.currentTarget.scrollTop < 1200 ){
+      setSelectLeft( '#2' );
+    }
+    else if( event.currentTarget.scrollTop > 1200 && event.currentTarget.scrollTop < 1800 ){
+      setSelectLeft( '#3' );
+    }
+    else if( event.currentTarget.scrollTop > 1800 ){
+      setSelectLeft( '#4' );
+    }
+  };
+
   return (
-    <div className="App">
+    <div className="App" onScroll={handleScroll}>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"></link>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"></link>
       <BrowserRouter>
         <Header onSelectLeft={onSelectLeft} testRef1={testRef1}/>
         <Switch>
-          <Route exact path="/" render={ routeProps => <Home selectLeft={selectLeft} onSelectLeft={onSelectLeft} testRef1={testRef1} {...routeProps} />}/>
-          <Route exact path="/works" render={ routeProps => <Works selectLeft={selectLeft} onSelectLeft={onSelectLeft} {...routeProps} />}/>
-          <Route exact path="/works/developer" render={ routeProps => <WorksD selectLeft={selectLeft} onSelectLeft={onSelectLeft} {...routeProps} />}/>
-          <Route exact path="/works/electronic" render={ routeProps => <WorksE selectLeft={selectLeft} onSelectLeft={onSelectLeft} {...routeProps} />}/>
-          <Route exact path="/aboutme" render={ routeProps => <AboutMe selectLeft={selectLeft} onSelectLeft={onSelectLeft} {...routeProps} />}/>
-          <Route exact path="/contact" render={ routeProps => <Contact onSelectLeft={onSelectLeft} {...routeProps} />}/>
+          <Route exact path="/" render={ routeProps => <Home onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} {...routeProps} />}/>
+          <Route exact path="/works" render={ routeProps => <Works onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} {...routeProps} />}/>
+          <Route exact path="/works/developer" render={ routeProps => <WorksD onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} {...routeProps} />}/>
+          <Route exact path="/works/electronic" render={ routeProps => <WorksE onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} {...routeProps} />}/>
+          <Route exact path="/aboutme" render={ routeProps => <AboutMe onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} {...routeProps} />}/>
+          <Route exact path="/contact" render={ routeProps => <Contact onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} {...routeProps} />}/>
         </Switch>
       </BrowserRouter>
     </div>

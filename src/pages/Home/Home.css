@@ -1,6 +1,7 @@
 .Home{
     margin: 0 3.5rem 0 21.5rem;
     text-align: left;
+    overflow: 'scroll'
 }
 
 .section-1{
@@ -9,6 +10,7 @@
 }
 
 .H-title{
+    color: var(--color-white);
     font-size: 11rem;
     font-weight: 400;
     letter-spacing: 1.8rem;
@@ -168,8 +170,8 @@
     color: var(--color-white);
     font-size: 18rem;
     font-weight: 600;
-    position: absolute;
-    right: 3.5rem;
+    position: relative;
+    left: 88.5rem;
     -webkit-animation: slide-left 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-left 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
@@ -184,7 +186,7 @@
 }
 
 .section-2 > .number{
-    top: 160vh;
+    bottom: 18rem;
 }
 
 .section-2 > div{
@@ -192,13 +194,13 @@
 }
 
 .section-2 > img{
-    position: absolute;
-    right: 3.5rem;
-    top: 125vh;
+    position: relative;
+    left: 73.5rem;
+    bottom: 71rem;
     width: 36rem;
     cursor: pointer;
     border-radius: 1rem;
-    opacity: 0.5;
+    opacity: 0.7;
     transition: all 500ms ease;
 }
 .section-2 > img:hover{
@@ -211,7 +213,7 @@
     margin: 5rem 4rem 0 0;
     cursor: pointer;
     border-radius: 1rem;
-    opacity: 0.5;
+    opacity: 0.7;
     transition: all 500ms ease;
 }
 .section-2 > div > img:hover{
@@ -224,8 +226,21 @@
     padding-top: 7rem;
 }
 
+.section-3 > .H-main{
+    padding-top: 2rem;
+}
+
 .section-3 > .number{
-    top: 260vh;
+    top: 2rem;
+}
+
+.section-2 > .H-title, .section-3 > .H-title, .section-4 > .Contact > .H-title{
+    opacity: 1;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+.section-2 > .H-title:hover, .section-3 > .H-title:hover, .section-4 > .Contact > .H-title:hover{
+    opacity: 0.7;
 }
 
 .section-4{
@@ -237,12 +252,12 @@
     padding-top: 7rem;
 }
 
-.Contact > .Contact-L > .H-title{
-    width: 100rem;
+.section-4 > .Contact > .H-title{
+    margin-top: 0rem;
 }
 
 .Contact > .number{
-    top: 360vh;
+    bottom: 24.5rem;
 }
 
 .section-4 > .Contact > div{
@@ -255,6 +270,10 @@ footer{
     letter-spacing: 0.2rem;
 }
 
+.section-4 > .Contact > footer{
+    padding-top: 2.5rem;
+}
+
 footer > p > span{
     color: var(--color-danger);
     font-weight: 600;
@@ -264,34 +283,28 @@ footer > p > span{
     0% {
         -webkit-transform: translateX(-10rem);
         transform: translateX(-10rem);
-        
     }
     40% {
         -webkit-transform: translateX(-10rem);
         transform: translateX(-10rem);
-        
     }
     100% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
-
     }
 }
 @keyframes slide-right {
     0% {
         -webkit-transform: translateX(-10rem);
         transform: translateX(-10rem);
-     
     }
     60% {
         -webkit-transform: translateX(-10rem);
         transform: translateX(-10rem);
-       
     }
     100% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
-      ;
     }
 }
 

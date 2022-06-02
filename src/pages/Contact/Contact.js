@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
-import { animateScroll as scroll } from "react-scroll";
 import './Contact.css';
 import cv from './../../images/cv.png';
 import concytec from './../../images/concytec.png';
 
 
 function Contact( props ) {
-    const { onSelectLeft } = props;
+    const { onSelectLeft, testRef1, testRef2, testRef3, testRef4 } = props;;
     const [btnSub, setBtnSub] = useState( false );
 
     const onBtnSub = () => {
@@ -22,19 +21,19 @@ function Contact( props ) {
     const scrollToBack = () => {
         onSelectLeft( '#4' );
         props.history.push("/");
-        scroll.scrollMore(2000);
+        testRef4.current.scrollIntoView( {block: "start"} );
     };
 
     return (
-        <div className="Contact">
-            <button onClick={scrollToBack} className='B-return'><span className="material-icons-round return">keyboard_backspace</span> BACK</button>
+        <div className="Contact" ref={testRef1}>
+            <button onClick={scrollToBack} className='B-return'><span className="material-icons-round return">keyboard_backspace</span><p>BACK</p></button>
             <p className='H-title'>Get In Touch</p>
             <button className={btnSub ? 'H-sub active' : 'H-sub'} onClick={onBtnSub}>
                 <div className={btnSub ? 's1 active' : 's1'}></div>
                 {btnSub ? 'THANK!' : 'CLICK'}
                 <div className={btnSub ? 's2 active' : 's2'}></div>
             </button>
-            <a href="mailto:jmontoyaan@unsa.edu.pe">
+            <a href="mailto:jmontoyaan@unsa.edu.pe?subject=Quiero contactar contigo Andres!">
                 jmontoyaan@unsa.edu.pe
             </a>
             <a className="whatsapp" href="https://wa.me/51954222771/?text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" rel="noreferrer">
@@ -66,6 +65,9 @@ function Contact( props ) {
             <footer>
                 <p>Developed by <span>Andres Montoya Angulo</span></p>
             </footer>
+            <div className='section2' ref={testRef2}></div>
+            <div className='section3' ref={testRef3}></div>
+            <div className='section4' ref={testRef4}></div>
         </div>
     );
 }

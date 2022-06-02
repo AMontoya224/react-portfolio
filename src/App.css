@@ -36,7 +36,6 @@
     appearance: none;
     border: 0;
     text-decoration: none;
-    list-style: none;
     box-sizing: border-box;
 }
 
@@ -61,8 +60,9 @@ body{
 }
 
 .App {
-  text-align: center;
-  height: 100%;
+    text-align: center;
+    height: 100vh;
+    overflow: scroll;
 }
 
 ion-icon {

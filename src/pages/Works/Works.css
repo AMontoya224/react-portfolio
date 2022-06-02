@@ -28,3 +28,13 @@
     height: 100%;
     border-radius: 1rem;
 }
+
+.WorksD, .WorksE{
+    margin: 0 3.5rem 0 21.5rem;
+    text-align: left;
+}
+
+.WorksD > .section1, .WorksD > .section2, .WorksD > .section3, .WorksD > .section4, .WorksE > .section1, .WorksE > .section2, .WorksE > .section3, .WorksE > .section4{
+    padding-top: 12rem;
+    height: 100vh;
+}

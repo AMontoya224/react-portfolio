@@ -1,5 +1,5 @@
-import React, { useState, useRef } from 'react';
-import {Link, withRouter} from 'react-router-dom';
+import React, { useState } from 'react';
+import {withRouter} from 'react-router-dom';
 import './Home.css';
 import wolf from './../../images/wolf.png';
 import Left2 from '../../components/Left/Left2';
@@ -10,11 +10,8 @@ import electronic from './../../images/electronic.jpg';
 
 
 function Home( props ) {
-  const { selectLeft, onSelectLeft, testRef1 } = props;
+  const { selectLeft, onSelectLeft, testRef1, testRef2, testRef3, testRef4 } = props;
   const [btnSub, setBtnSub] = useState( false );
-  const testRef2 = useRef( null );
-  const testRef3 = useRef( null );
-  const testRef4 = useRef( null );
 
   const onBtnSub = () => {
     if(!btnSub){
@@ -39,26 +36,35 @@ function Home( props ) {
   const onBtnWorks = () => {
     onSelectLeft( '#1' );
     props.history.push( '/works' );
+    testRef1.current.scrollIntoView( {block: "start"} );
   };
 
   const onBtnWorksD = () => {
-    onSelectLeft( '#2' );
+    onSelectLeft( '#1' );
     props.history.push( '/works/developer' );
+    testRef1.current.scrollIntoView( {block: "start"} );
   };
 
   const onBtnWorksE = () => {
-      onSelectLeft( '#3' );
-      props.history.push( '/works/electronic' );
+    onSelectLeft( '#1' );
+    props.history.push( '/works/electronic' );
+    testRef1.current.scrollIntoView( {block: "start"} );
   };
 
   const onBtnAboutMe = () => {
     onSelectLeft( '#1' );
     props.history.push( '/aboutme' );
+    testRef1.current.scrollIntoView( {block: "start"} );
+  };
+
+  const onBtnContact = () => {
+    props.history.push( '/contact' );
+    testRef1.current.scrollIntoView( {block: "start"} );
   };
 
   return (
     <div className="Home">
-      <Left2 selectLeft={selectLeft} onSelectLeft={onSelectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} />
+      <Left2 selectLeft={selectLeft} onSelectLeft={onSelectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4}/>
       <div className='section-1' id='section1' ref={testRef1}>
         <p className='H-title'>ANDRES</p>
         <p className='H-title'>MONTOYA</p>
@@ -85,44 +91,43 @@ function Home( props ) {
       <img id='H-img' className='H-img' src={wolf} alt='wolf'/>
 
       <div className='section-2' id='section2' ref={testRef2}>
-        <p className='H-title'>Projects</p>
+        <p className='H-title' onClick={onBtnWorks}>Projects</p>
         <button onClick={onBtnWorks} className='H-sub'>
           <div className='s1'></div>
             Show me more
           <div className='s2'></div>
         </button>
-        <p className='number'>02</p>
         <p className='H-main'>Passion for creating amazing products.</p>
-        <img onClick={onBtnWorks} src={electronic} alt='electronic'/>
         <div>
           <img onClick={onBtnWorksD} src={wolf} alt='electronic'/>
           <img onClick={onBtnWorksE} src={developer} alt='electronic'/>
           <img onClick={onBtnWorksD} src={electronic} alt='electronic'/>
           <img onClick={onBtnWorksE} src={wolf} alt='electronic'/>
         </div>
+        <p className='number'>02</p>
+        <img onClick={onBtnWorks} src={electronic} alt='electronic'/>
       </div>
 
       <div className='section-3' id='section3'  ref={testRef3}>
-      <p className='H-title'>About Me</p>
+        <p className='H-title' onClick={onBtnAboutMe}>About Me</p>
         <button onClick={onBtnAboutMe} className='H-sub'>
           <div className='s1'></div>
             Show me more
           <div className='s2'></div>
         </button>
-        <p className='number'>03</p>
         <p className='H-main'>I love Design, Technology, and Story.</p>
+        <p className='number'>03</p>
       </div>
 
       <div className='section-4' id='section4'  ref={testRef4}>
         <div className="Contact">
-          <Link to='/contact' className='Contact-L'><p className='H-title'>Get In Touch</p></Link>
+          <p className='H-title' onClick={onBtnContact}>Get In Touch</p>
           <button className={btnSub ? 'H-sub active' : 'H-sub'} onClick={onBtnSub}>
               <div className={btnSub ? 's1 active' : 's1'}></div>
               {btnSub ? 'THANK!' : 'CLICK'}
               <div className={btnSub ? 's2 active' : 's2'}></div>
           </button>
-          <p className='number'>04</p>
-          <a href="mailto:jmontoyaan@unsa.edu.pe">
+          <a href="mailto:jmontoyaan@unsa.edu.pe?subject=Quiero contactar contigo Andres!">
               jmontoyaan@unsa.edu.pe
           </a>
           <a className="whatsapp" href="https://wa.me/51954222771/?text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" rel="noreferrer">
@@ -154,6 +159,7 @@ function Home( props ) {
           <footer>
             <p>Developed by <span>Andres Montoya Angulo</span></p>
           </footer>
+          <p className='number'>04</p>
         </div>
       </div>
     </div>

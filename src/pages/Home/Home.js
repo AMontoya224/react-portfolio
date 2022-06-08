@@ -100,8 +100,8 @@ function Home( props ) {
         </button>
         <p className='H-main'>{selectLan ? 'Passion for creating amazing products' : 'Pasión por crear productos increíbles'}</p>
         <div>
-          <img onClick={onBtnWorksE} src={developer} alt='developer'/>
-          <img onClick={onBtnWorksD} src={electronic} alt='electronic'/>
+          <img onClick={onBtnWorksD} src={developer} alt='developer'/>
+          <img onClick={onBtnWorksE} src={electronic} alt='electronic'/>
         </div>
         <p className='number'>02</p>
       </div>

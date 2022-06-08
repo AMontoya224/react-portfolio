@@ -36,7 +36,7 @@ function Works_E( props ) {
                     </div>
                     <div>
                         <p>{selectLan ? 'Developer | Electronic engineer' : 'Desarrollador | Ingeniero electrónico'}</p>
-                        <p className='top-d'>{selectLan ? 'SEP 2020' : 'SEP 2020'}</p>
+                        <p className='top-d'>{selectLan ? 'SEPTEMBER 2020' : 'SEPTIEMBRE 2020'}</p>
                         <p className='top-o'>{selectLan ? 'Development of artificial vision, control of the robotic arm through cameras' : 'Desarrollo de visión artificial, control del brazo robótico a través de cámaras'}</p>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ function Works_E( props ) {
                     </div>
                     <div>
                         <p>{selectLan ? 'Electronic engineer | Researcher' : 'Ingeniero electrónico | Investigador'}</p>
-                        <p className='top-d'>{selectLan ? 'JAN 2020' : 'ENE 2020'}</p>
+                        <p className='top-d'>{selectLan ? 'JANUARY 2020' : 'ENERO 2020'}</p>
                         <p className='top-o'>{selectLan ? 'Development of a sleepiness detection system for transport drivers' : 'Desarrollo de un sistema de detección de somnolencia para conductores de transporte'}</p>
                     </div>
                 </div>
@@ -134,7 +134,7 @@ function Works_E( props ) {
                     </div>
                     <div>
                         <p>{selectLan ? 'Electronic engineer' : 'Ingeniero electronico'}</p>
-                        <p className='top-d'>{selectLan ? 'OCT 2018' : 'OCT 2018'}</p>
+                        <p className='top-d'>{selectLan ? 'OCTOBER 2018' : 'OCTUBRE 2018'}</p>
                         <p className='top-o'>{selectLan ? 'Research and programming of the Kotz electric wave output station' : 'Investigación y programación de la estación de salida de ondas eléctricas Kotz'}</p>
                     </div>
                 </div>

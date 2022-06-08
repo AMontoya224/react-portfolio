@@ -30,6 +30,8 @@
 }
 .Left > div > button.active{
     width: 5rem;
+    background: var(--color-danger);
+
 }
 
 .L-scroll{

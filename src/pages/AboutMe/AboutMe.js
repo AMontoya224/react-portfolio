@@ -93,7 +93,7 @@ function AboutMe( props ) {
                         <p><b>{selectLan ? 'Hello!' : '¡Hola!'}</b>{selectLan ? ' I was born in Arequipa in 1998. After graduating as an ' : ' Nací en Arequipa en 1998. Luego de graduarme como '}
                         <b>{selectLan ? 'electronic engineer ' : 'ingeniero electrónico '}</b>{selectLan ? 'and after being in charge of some ' : 'y después de estar a cargo de algunos '}<b>{selectLan ? 'research projects' : 'proyectos de investigación'}</b>, 
                         {selectLan ? ' i decided to study and become a ' : ' decidí estudiar y convertirme en '}<b>{selectLan ? 'full stack developer' : 'desarrollador full stack'}</b>.</p>
-                        <p>{selectLan ? "I haven't regretted that decision for a moment and can't wait to learn more!" : '¡No me he arrepentido de esa decisión por un momento y no puedo esperar para aprender más!'}</p>
+                        <p>{selectLan ? "I haven't regretted that decision for a moment and can't wait to learn more!" : '¡No me he arrepentido de esa decisión ni por un momento y no puedo esperar para aprender más!'}</p>
                     </div>
                 </div>
             </div>
@@ -150,10 +150,10 @@ function AboutMe( props ) {
                         </div>
                     </div>
                     <div className='leyenda'>
-                        <div className='leyenda-d' onClick={selectLevelD}></div>
-                        <div className='leyenda-g' onClick={selectLevelG}></div>
-                        <div className='leyenda-s' onClick={selectLevelS}></div>
-                        <div className='leyenda-b' onClick={selectLevelB}></div>
+                        <div className='leyenda-d' onClick={selectLevelD} title="Experto"></div>
+                        <div className='leyenda-g' onClick={selectLevelG} title="Avanzado"></div>
+                        <div className='leyenda-s' onClick={selectLevelS} title="Intermedio"></div>
+                        <div className='leyenda-b' onClick={selectLevelB} title="Basico"></div>
                     </div>
                     <div className='container'>
                         <h3>{selectLan ? 'ELECTRONIC ENGINEERING' : 'INGENIERÍA ELECTRÓNICA'}</h3>

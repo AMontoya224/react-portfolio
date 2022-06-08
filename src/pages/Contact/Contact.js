@@ -6,7 +6,7 @@ import concytec from './../../images/concytec.png';
 
 
 function Contact( props ) {
-    const { onSelectLeft, testRef1, testRef2, testRef3, testRef4 } = props;;
+    const { onSelectLeft, testRef1, testRef2, testRef3, testRef4, selectLan } = props;;
     const [btnSub, setBtnSub] = useState( false );
 
     const onBtnSub = () => {
@@ -27,7 +27,7 @@ function Contact( props ) {
     return (
         <div className="Contact" ref={testRef1}>
             <button onClick={scrollToBack} className='B-return'><span className="material-icons-round return">keyboard_backspace</span><p>BACK</p></button>
-            <p className='H-title'>Get In Touch</p>
+            <p className='H-title Contact-t'>{selectLan ? 'Get In Touch' : 'Contáctame'}</p>
             <button className={btnSub ? 'H-sub active' : 'H-sub'} onClick={onBtnSub}>
                 <div className={btnSub ? 's1 active' : 's1'}></div>
                 {btnSub ? 'THANK!' : 'CLICK'}

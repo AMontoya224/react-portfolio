@@ -1,7 +1,15 @@
 .Works{
     margin: 0 3.5rem 0 21.5rem;
-    padding-top: 12rem;
     text-align: left;
+}
+
+.Works > .section1{
+    padding-top: 12rem;
+    height: 100vh;
+}
+.Works > .section1 > .H-title{
+    -webkit-animation: slide-bottom 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-bottom 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .W-container{
@@ -13,20 +21,38 @@
 .W-container > div{
     width: 42%;
     height: 24rem;
-    cursor: pointer;
-    opacity: 0.5;
-    transition: all 500ms ease;
     border-radius: 1rem;
-}
-.W-container > div:hover{
-    opacity: 1;
-    transform: scale(1.1);
+    cursor: pointer;
+    text-align: center;
 }
 
 .W-container > div > img{
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
+    height: 20rem;
+    filter: grayscale(1);
+    transition: all 500ms ease;
+}
+
+.W-container > div:hover > img{
+    filter: grayscale(0) blur(1px);
+    transform: scale(1.1);
+}
+
+.W-container > div > p{
+    font-size:  4rem;
+    font-weight: 500;
+    letter-spacing: 1rem;
+    margin-left: 1rem;
+    visibility: hidden;
+    transition: all 500ms ease;
+}
+
+.W-container > div:hover > p{
+    visibility: visible;
+    transform: translateY(-13.6rem);
+}
+
+.Works > footer{
+    margin-top: -3rem;
 }
 
 .WorksD, .WorksE{
@@ -35,6 +61,207 @@
 }
 
 .WorksD > .section1, .WorksD > .section2, .WorksD > .section3, .WorksD > .section4, .WorksE > .section1, .WorksE > .section2, .WorksE > .section3, .WorksE > .section4{
-    padding-top: 12rem;
+    padding-top: 9rem;
     height: 100vh;
+}
+
+.WorksD > .section1, .WorksD > .section2, .WorksD > .section3, .WorksD > .section4, .WorksE > .section1, .WorksE > .section2, .WorksE > .section3{
+    padding-top: 12rem;
+}
+
+.WorksE > .section1 > img{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    filter: grayscale(0) blur(3px);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.WorksE > .section1 > .top{
+    margin: 1.5rem 0 3.5rem 0;
+}
+
+.WorksE > .section1 > .top > div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.WorksE > .section1 > .top > div > b{
+    flex: 2;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+.WorksE > .section1 > .top > div > p{
+    flex: 2;
+    font-size: 1.4rem;
+    color: var(--color-white-variant);
+}
+
+.WorksE > .section1 > .top > div > .top-d{
+    flex: 1;
+}
+
+.WorksE > .section1 > .top > div > .top-o{
+    flex: 4;
+}
+
+.WorksE > .section1 > .bottom{
+    display: flex;
+    align-items: flex-start;
+}
+
+.WorksE > .section1 > .bottom > .container-t{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.WorksE > .section1 > .bottom > .container-t > .img-b-b{
+    visibility: hidden;
+    position: relative;
+    left: -30rem;
+    transition: all 750ms ease;
+}
+
+.WorksE > .section1 > .bottom > .container-t:hover > .img-b-b{
+    visibility: visible;
+    left: 0;
+}
+
+.WorksE > .section1 > .bottom > .container-t > img{
+    flex: 1;
+    margin-right: 5rem;
+    height: 25rem;
+    width: 25rem;
+    border-radius: 50%;
+}
+
+.WorksE > .section1 > .bottom > .container-b{
+    flex: 1;
+}
+
+.WorksE > .section1 > .bottom > div > div > b{
+    flex: 1;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+.WorksE > .section1 > .bottom > div > div > div > img{
+    width: 6rem;
+    height: 6rem;
+    margin: 0.6rem;
+    padding: 0.5rem;
+    opacity: 0.7;
+    border-radius: 5px;
+    transition: all 350ms ease;
+}
+.WorksE > .section1 > .bottom > div > div > div > img:hover{
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+.WorksE > .section1 > .bottom > div > div > div > a > ion-icon{
+    margin: 1rem 2rem 0 1rem;
+    opacity: 0.7;
+    transition: all  350ms ease;
+}
+.WorksE > .section1 > .bottom > div > div > div > a > ion-icon:hover{
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+
+.WorksE > .section4{
+    padding-top: 12rem;
+}
+
+.WorksE > .section4 > .container{
+    margin-bottom: 5rem;
+}
+
+.WorksE > .section4 > .container > .c-info{
+    border-left: 1px solid var(--color-white);
+    border-right: 1px solid var(--color-white);
+    margin: 0 1rem 1.5rem 1rem;
+    padding-left: 1rem;
+    text-align: left;
+    cursor: pointer;
+    transition: all 350ms ease;
+}
+.WorksE > .section4 > .container > .c-info:hover{
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    background: rgba(100, 100, 100, 0.3);
+    border-radius: 0.2rem;
+    transform: scale(1.02);
+}
+
+.WorksE > .section4 > .container > .c-info > a > h4{
+    color: var(--color-white);
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+}
+
+.WorksE > .section4 > .container > .c-info > a > i{
+    color: var(--color-white);
+    font-size: 1.3rem;
+    font-weight: 200;
+    opacity: 0.7;
+}
+
+.WorksE > .section4 > .container > .c-info > a > p{
+    color: var(--color-white);
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+.WorksD > .section1 > img{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    filter: grayscale(0) blur(3px);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.WorksD > .section1 > .WS-container{
+    height: 55vh;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.WorksD > .section1 > .WS-container > div{
+    margin: 0 2rem;
+    padding: 1rem;
+    border-left: 1px solid var(--color-white-variant);
+    border-right: 1px solid var(--color-white-variant);
+    display: inline-block;
+    cursor: pointer;
+    text-align: left;
+    transition: all 350ms ease;
+}
+.WorksD > .section1 > .WS-container > div:hover{
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    background: rgba(100, 100, 100, 0.2);
+    border-radius: 0.2rem;
+    transform: scale(1.02);
+}
+
+.WorksD > .section1 > .WS-container > div > a > p{
+    color: var(--color-white);
+    letter-spacing: 0.3rem;
+}
+
+.WorksD > .section1 > .WS-container > div > a > div > img{
+    width: 6rem;
+    height: 6rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    opacity: 1;
+    border-radius: 5px;
 }

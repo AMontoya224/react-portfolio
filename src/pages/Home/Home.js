@@ -3,14 +3,15 @@ import {withRouter} from 'react-router-dom';
 import './Home.css';
 import wolf from './../../images/wolf.png';
 import Left2 from '../../components/Left/Left2';
+import rojo from './../../images/rojo-r.jpg';
 import cv from './../../images/cv.png';
 import concytec from './../../images/concytec.png';
-import developer from './../../images/developer.jpg';
-import electronic from './../../images/electronic.jpg';
+import developer from './../../images/developer-r.png';
+import electronic from './../../images/electronic-rrr.png';
 
 
 function Home( props ) {
-  const { selectLeft, onSelectLeft, testRef1, testRef2, testRef3, testRef4 } = props;
+  const { selectLeft, onSelectLeft, testRef1, testRef2, testRef3, testRef4, selectLan } = props;
   const [btnSub, setBtnSub] = useState( false );
 
   const onBtnSub = () => {
@@ -35,19 +36,19 @@ function Home( props ) {
 
   const onBtnWorks = () => {
     onSelectLeft( '#1' );
-    props.history.push( '/works' );
+    props.history.push( '/projects' );
     testRef1.current.scrollIntoView( {block: "start"} );
   };
 
   const onBtnWorksD = () => {
     onSelectLeft( '#1' );
-    props.history.push( '/works/developer' );
+    props.history.push( '/projects/developer' );
     testRef1.current.scrollIntoView( {block: "start"} );
   };
 
   const onBtnWorksE = () => {
     onSelectLeft( '#1' );
-    props.history.push( '/works/electronic' );
+    props.history.push( '/projects/electronic' );
     testRef1.current.scrollIntoView( {block: "start"} );
   };
 
@@ -65,7 +66,7 @@ function Home( props ) {
   return (
     <div className="Home">
       <Left2 selectLeft={selectLeft} onSelectLeft={onSelectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4}/>
-      <div className='section-1' id='section1' ref={testRef1}>
+      <div className='section-1' ref={testRef1}>
         <p className='H-title'>ANDRES</p>
         <p className='H-title'>MONTOYA</p>
         <button className={btnSub ? 'H-sub active' : 'H-sub'} onClick={onBtnSub}>
@@ -73,9 +74,9 @@ function Home( props ) {
           {btnSub ? 'PORTFOLIO' : 'CLICK'}
           <div className={btnSub ? 's2 active' : 's2'}></div>
         </button>
-        <p className='H-main'>Full stack developer /</p>
-        <p className='H-main'>Electronic engineer /</p>
-        <p className='H-main'>Investigator</p>
+        <p className='H-main'>{selectLan ? 'Full stack developer /' : 'Desarrollador full stack /'}</p>
+        <p className='H-main'>{selectLan ? 'Electronic engineer /' : 'Ingeniero electrónico /'}</p>
+        <p className='H-main'>{selectLan ? 'Investigator' : 'Investigador'}</p>
         <div id='H-wolf'>
           <div>
             <div>
@@ -90,38 +91,37 @@ function Home( props ) {
       </div>
       <img id='H-img' className='H-img' src={wolf} alt='wolf'/>
 
-      <div className='section-2' id='section2' ref={testRef2}>
-        <p className='H-title' onClick={onBtnWorks}>Projects</p>
+      <div className='section-2' ref={testRef2}>
+        <p className='H-title'>{selectLan ? 'Projects' : 'Proyectos'}</p>
         <button onClick={onBtnWorks} className='H-sub'>
           <div className='s1'></div>
-            Show me more
+            {selectLan ? 'SHOW ME MORE' : 'MUESTRAME MAS'}
           <div className='s2'></div>
         </button>
-        <p className='H-main'>Passion for creating amazing products.</p>
+        <p className='H-main'>{selectLan ? 'Passion for creating amazing products' : 'Pasión por crear productos increíbles'}</p>
         <div>
-          <img onClick={onBtnWorksD} src={wolf} alt='electronic'/>
-          <img onClick={onBtnWorksE} src={developer} alt='electronic'/>
+          <img onClick={onBtnWorksE} src={developer} alt='developer'/>
           <img onClick={onBtnWorksD} src={electronic} alt='electronic'/>
-          <img onClick={onBtnWorksE} src={wolf} alt='electronic'/>
         </div>
         <p className='number'>02</p>
-        <img onClick={onBtnWorks} src={electronic} alt='electronic'/>
       </div>
 
-      <div className='section-3' id='section3'  ref={testRef3}>
-        <p className='H-title' onClick={onBtnAboutMe}>About Me</p>
+      <div className='section-3' ref={testRef3}>
+        <p className='H-title'>{selectLan ? 'About me' : 'Sobre mí'}</p>
         <button onClick={onBtnAboutMe} className='H-sub'>
           <div className='s1'></div>
-            Show me more
+            {selectLan ? 'SHOW ME MORE' : 'MUESTRAME MAS'}
           <div className='s2'></div>
         </button>
-        <p className='H-main'>I love Design, Technology, and Story.</p>
+        <p className='H-main'>{selectLan ? 'I love design, technology,' : 'Me encanta el diseño, la tecnología'}</p>
+        <p className='H-main'>{selectLan ? 'and creativity' : 'y la creatividad'}</p>
         <p className='number'>03</p>
+        <img onClick={onBtnAboutMe} src={rojo} alt='foto'/>
       </div>
 
-      <div className='section-4' id='section4'  ref={testRef4}>
+      <div className='section-4' ref={testRef4}>
         <div className="Contact">
-          <p className='H-title' onClick={onBtnContact}>Get In Touch</p>
+          <p className='H-title' onClick={onBtnContact}>{selectLan ? 'Get In Touch' : 'Contáctame'}</p>
           <button className={btnSub ? 'H-sub active' : 'H-sub'} onClick={onBtnSub}>
               <div className={btnSub ? 's1 active' : 's1'}></div>
               {btnSub ? 'THANK!' : 'CLICK'}
@@ -157,7 +157,7 @@ function Home( props ) {
             </a>
           </div>
           <footer>
-            <p>Developed by <span>Andres Montoya Angulo</span></p>
+            <p>{selectLan ? 'Developed by ' : 'Desarrollado por '}<span>Andres Montoya Angulo</span></p>
           </footer>
           <p className='number'>04</p>
         </div>

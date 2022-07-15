@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.1a138c02.css",
+    "main.css": "/static/css/main.7f1073aa.css",
     "main.js": "/static/js/main.d571bd9d.js",
     "static/media/rojo-r.jpg": "/static/media/rojo-r.1f1ada4146ba71c8005f.jpg",
     "static/media/ejercito-r.jpg": "/static/media/ejercito-r.02ad48a7fd06a6da538f.jpg",
@@ -59,11 +59,11 @@
     "static/media/c-original.svg": "/static/media/c-original.4d943a0cb2aae0c439363d64b64f92e7.svg",
     "static/media/file-type-django.svg": "/static/media/file-type-django.2ecabf434df0f21f6018a0d4aa548331.svg",
     "static/media/file-type-vhdl.svg": "/static/media/file-type-vhdl.39b8a9645353cb3b7d2a4fccc3890976.svg",
-    "main.1a138c02.css.map": "/static/css/main.1a138c02.css.map",
+    "main.7f1073aa.css.map": "/static/css/main.7f1073aa.css.map",
     "main.d571bd9d.js.map": "/static/js/main.d571bd9d.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a138c02.css",
+    "static/css/main.7f1073aa.css",
     "static/js/main.d571bd9d.js"
   ]
 }

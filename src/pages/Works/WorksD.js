@@ -22,24 +22,26 @@ function Works_D( props ) {
                 <h2>{selectLan ? 'Full development' : 'Desarrollo completo'}</h2>
                 <div className='WS-container'>
                     <div>
-                        <a href="https://github.com/AMontoya224/libros_MySQL" target="_blank" rel="noreferrer">
-                            <p>{selectLan ? 'Sort numbers' : 'Ordenar números'}</p>
+                        <a href="https://github.com/AMontoya224/BookClub" target="_blank" rel="noreferrer">
+                            <p>{selectLan ? 'Book club' : 'club de libros'}</p>
                             <div>
-                                <img src={require('./../../images/iconduck/python.svg').default} title="Python" alt='python'/>
-                                <img src={require('./../../images/iconduck/icons8-flask.svg').default} title="Flask" alt='flask'/>
+                                <img src={require('./../../images/iconduck/spring.svg').default} title="Spring Boot" alt='spring'/>
+                                <img src={require('./../../images/iconduck/java-original.svg').default} title="Java" alt='java'/>
                                 <img src={require('./../../images/iconduck/mysql-original-wordmark.svg').default} title="MySQL" alt='mysql'/>
-                                <img src={require('./../../images/iconduck/jquery-plain.svg').default} title="jQuery" alt='jquery'/>
+                                <img src={require('./../../images/iconduck/file-type-html.svg').default} title="HTML" alt='html'/>
+                                <img src={require('./../../images/iconduck/file-type-css.svg').default} title="CSS" alt='css'/>
                             </div>
                         </a>
                     </div>
                     <div>
-                        <a href="https://github.com/AMontoya224/libros_MySQL" target="_blank" rel="noreferrer">
-                            <p>{selectLan ? 'Sort numbers' : 'Ordenar números'}</p>
+                        <a href="https://github.com/AMontoya224/ProjectManagerJava" target="_blank" rel="noreferrer">
+                            <p>{selectLan ? 'Project manager' : 'Gerente de proyecto'}</p>
                             <div>
-                                <img src={require('./../../images/iconduck/python.svg').default} title="Python" alt='python'/>
-                                <img src={require('./../../images/iconduck/icons8-flask.svg').default} title="Flask" alt='flask'/>
+                                <img src={require('./../../images/iconduck/spring.svg').default} title="Spring Boot" alt='spring'/>
+                                <img src={require('./../../images/iconduck/java-original.svg').default} title="Java" alt='java'/>
                                 <img src={require('./../../images/iconduck/mysql-original-wordmark.svg').default} title="MySQL" alt='mysql'/>
-                                <img src={require('./../../images/iconduck/jquery-plain.svg').default} title="jQuery" alt='jquery'/>
+                                <img src={require('./../../images/iconduck/file-type-html.svg').default} title="HTML" alt='html'/>
+                                <img src={require('./../../images/iconduck/file-type-css.svg').default} title="CSS" alt='css'/>
                             </div>
                         </a>
                     </div>
@@ -138,24 +140,24 @@ function Works_D( props ) {
                 <h2>{selectLan ? 'Backend development' : 'Desarrollo de back-end'}</h2>
                 <div className='WS-container'>
                     <div>
-                        <a href="https://github.com/AMontoya224/libros_MySQL" target="_blank" rel="noreferrer">
-                            <p>{selectLan ? 'Sort numbers' : 'Ordenar números'}</p>
+                        <a href="https://github.com/AMontoya224/ContadorJava" target="_blank" rel="noreferrer">
+                            <p>{selectLan ? 'Visitor counter' : 'Contador de visitas'}</p>
                             <div>
-                                <img src={require('./../../images/iconduck/python.svg').default} title="Python" alt='python'/>
-                                <img src={require('./../../images/iconduck/icons8-flask.svg').default} title="Flask" alt='flask'/>
+                                <img src={require('./../../images/iconduck/spring.svg').default} title="Spring Boot" alt='spring'/>
+                                <img src={require('./../../images/iconduck/java-original.svg').default} title="Java" alt='java'/>
                                 <img src={require('./../../images/iconduck/mysql-original-wordmark.svg').default} title="MySQL" alt='mysql'/>
-                                <img src={require('./../../images/iconduck/jquery-plain.svg').default} title="jQuery" alt='jquery'/>
+                                <img src={require('./../../images/iconduck/file-type-html.svg').default} title="HTML" alt='html'/>
                             </div>
                         </a>
                     </div>
                     <div>
-                        <a href="https://github.com/AMontoya224/libros_MySQL" target="_blank" rel="noreferrer">
-                            <p>{selectLan ? 'Sort numbers' : 'Ordenar números'}</p>
+                        <a href="https://github.com/AMontoya224/DojoOverflow" target="_blank" rel="noreferrer">
+                            <p>{selectLan ? 'Dojo Overflow' : 'Desbordamiento del Dojo'}</p>
                             <div>
-                                <img src={require('./../../images/iconduck/python.svg').default} title="Python" alt='python'/>
-                                <img src={require('./../../images/iconduck/icons8-flask.svg').default} title="Flask" alt='flask'/>
+                                <img src={require('./../../images/iconduck/spring.svg').default} title="Spring Boot" alt='spring'/>
+                                <img src={require('./../../images/iconduck/java-original.svg').default} title="Java" alt='java'/>
                                 <img src={require('./../../images/iconduck/mysql-original-wordmark.svg').default} title="MySQL" alt='mysql'/>
-                                <img src={require('./../../images/iconduck/jquery-plain.svg').default} title="jQuery" alt='jquery'/>
+                                <img src={require('./../../images/iconduck/file-type-html.svg').default} title="HTML" alt='html'/>
                             </div>
                         </a>
                     </div>

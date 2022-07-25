@@ -11,9 +11,10 @@
 
 .H-title{
     color: var(--color-white);
-    font-size: 11rem;
+    font-size: 10vw;
     font-weight: 400;
     letter-spacing: 1.55rem;
+    z-index: 5;
 }
 
 .H-sub{
@@ -68,7 +69,7 @@
 
 .H-main{
     margin-top: 1rem;
-    font-size: 1.8rem;
+    font-size: 1.6vw;
     font-weight: 400;
     letter-spacing: 0.5rem;
 }
@@ -156,10 +157,10 @@
 
 .number{
     color: var(--color-white);
-    font-size: 18rem;
+    font-size: 17vw;
     font-weight: 600;
     position: relative;
-    left: 88.5rem;
+    left: 63.5vw;
     z-index: 1;
     -webkit-animation: slide-left 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-left 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -262,12 +263,13 @@
 }
 
 .section-3 > img{
-    height: 74vh;
+    height: 80vh;
     border-radius: 0.5rem;
     cursor: pointer;
     position: relative;
-    top: -88.2vh;
-    right: -47.3vw;
+    bottom: 96.5vh;
+    left: 87.5vh;
+    z-index: -1;
     -webkit-animation: slide-scale-m 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-scale-m 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
@@ -423,5 +425,21 @@ footer > p > span{
     100% {
         -webkit-transform: translateX(0) translateY(0) scale(1);
         transform: translateX(0) translateY(0) scale(1);
+    }
+}
+
+
+@media only screen and (max-width: 960px){
+    .Home{
+        margin: 0 3.5rem 0 3.5rem;
+    }
+
+    .H-title{
+        font-size: 11vw;
+        line-height: 22vh;
+    }
+
+    .H-main{
+        font-size: 4vw;
     }
 }

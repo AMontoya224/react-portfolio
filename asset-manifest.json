@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.8ac92bf8.css",
-    "main.js": "/static/js/main.a273cce5.js",
+    "main.css": "/static/css/main.46624126.css",
+    "main.js": "/static/js/main.7411131e.js",
+    "static/media/pokedex.jpg": "/static/media/pokedex.64bb680c98a53b6be9f7.jpg",
     "static/media/rojo-r.jpg": "/static/media/rojo-r.1f1ada4146ba71c8005f.jpg",
     "static/media/ejercito-r.jpg": "/static/media/ejercito-r.02ad48a7fd06a6da538f.jpg",
+    "static/media/loading.gif": "/static/media/loading.94cd27f15ba689bca6b0.gif",
     "static/media/vest-2.png": "/static/media/vest-2.14f995b172f6835c37ec.png",
     "static/media/robot-1.jpg": "/static/media/robot-1.86f22c621450ea62933a.jpg",
     "static/media/siso-1.png": "/static/media/siso-1.7012fdc64987b8e41f2a.png",
@@ -14,6 +16,7 @@
     "static/media/robot-2.jpg": "/static/media/robot-2.d5de9bd2a09efeca7a4e.jpg",
     "static/media/developer-r.png": "/static/media/developer-r.bc470d5b1fcafc4ca72a.png",
     "static/media/vest-1.jpg": "/static/media/vest-1.b73bd2f56d75f3e99096.jpg",
+    "static/media/tailwind.png": "/static/media/tailwind.36b2728bf0d14b7b7576.png",
     "static/media/cayetano-r.png": "/static/media/cayetano-r.ddee28b8b45ac767b0f7.png",
     "static/media/ajax.jpg": "/static/media/ajax.fa16db15e77cb9717da6.jpg",
     "static/media/siso-2.png": "/static/media/siso-2.24bec5cb5dc2f617870a.png",
@@ -22,6 +25,7 @@
     "static/media/javascript.jpg": "/static/media/javascript.5648ae0aeb0182cbd857.jpg",
     "static/media/concytec.png": "/static/media/concytec.9a5e8c834a19acd77563.png",
     "static/media/matlab.svg": "/static/media/matlab.acdf78be5f670267138138c2cabb0f36.svg",
+    "static/media/next.png": "/static/media/next.644e86ec6ae8d96c7ebd.png",
     "static/media/github.svg": "/static/media/github.2cae1be336f1f15328ade671bed1aa73.svg",
     "static/media/foundation.svg": "/static/media/foundation.39efb5ea8226efec7f97c2432bc1fe2c.svg",
     "static/media/icons8-flask.svg": "/static/media/icons8-flask.a1e7c25c2cbdd49b78eccd2db588ad5d.svg",
@@ -51,6 +55,7 @@
     "static/media/git.svg": "/static/media/git.70f099170f46f760e5d9f09849c589b6.svg",
     "static/media/socket-io.svg": "/static/media/socket-io.b8720a3bcb9f85168e0767bd3a3d3d27.svg",
     "static/media/file-type-sql.svg": "/static/media/file-type-sql.dbc9c16ddf720813f8149ee999c10886.svg",
+    "static/media/typescript.svg": "/static/media/typescript.0862127c02a57f6d39dabe211ae436ab.svg",
     "static/media/spring.svg": "/static/media/spring.163d115dfcbe114ada371e05cc3a8f0c.svg",
     "index.html": "/index.html",
     "static/media/icons8-3ds-max.svg": "/static/media/icons8-3ds-max.e33ea6968cc5a721e8e5279140a77d4c.svg",
@@ -59,11 +64,11 @@
     "static/media/c-original.svg": "/static/media/c-original.4d943a0cb2aae0c439363d64b64f92e7.svg",
     "static/media/file-type-django.svg": "/static/media/file-type-django.2ecabf434df0f21f6018a0d4aa548331.svg",
     "static/media/file-type-vhdl.svg": "/static/media/file-type-vhdl.39b8a9645353cb3b7d2a4fccc3890976.svg",
-    "main.8ac92bf8.css.map": "/static/css/main.8ac92bf8.css.map",
-    "main.a273cce5.js.map": "/static/js/main.a273cce5.js.map"
+    "main.46624126.css.map": "/static/css/main.46624126.css.map",
+    "main.7411131e.js.map": "/static/js/main.7411131e.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ac92bf8.css",
-    "static/js/main.a273cce5.js"
+    "static/css/main.46624126.css",
+    "static/js/main.7411131e.js"
   ]
 }

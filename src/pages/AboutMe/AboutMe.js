@@ -7,6 +7,8 @@ import foto from './../../images/ejercito-r.jpg';
 import javascript from './../../images/iconduck/javascript.jpg';
 import express from './../../images/iconduck/express.png';
 import ajax from './../../images/iconduck/ajax.jpg';
+import next from './../../images/iconduck/next.png';
+import tailwind from './../../images/iconduck/tailwind.png';
 import proteus from './../../images/iconduck/proteus.png';
 import microchip from './../../images/iconduck/motorola-Logo.png';
 import xilinx from './../../images/iconduck/xilinx.png';
@@ -64,11 +66,16 @@ function AboutMe( props ) {
         }
     };
 
+    const scrollSelect = ( select ) => {
+        onSelectLeft( select );
+    };
+
     return (
         <div className="AboutMe">
-            <div className='section1' ref={testRef1}>
+            <title>{selectLan ? 'About Me | PORTFOLIO' : 'Sobre Mi | PORTAFOLIO'}</title>
+            <Left2 onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4}/>
+            <div className='section1' ref={testRef1} onMouseEnter={() => scrollSelect( '#1' )} onTouchStart={() => scrollSelect( '#1' )}>
                 <button onClick={scrollToBack} className='B-return'><span className="material-icons-round return">keyboard_backspace</span><p>BACK</p></button>
-                <Left2 onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4}/>
                 <p className='H-title'>{selectLan ? 'About me' : 'Sobre mí'}</p>
                 <button className='H-sub' onClick={scrollToBack}>
                     <div className='s1'></div>
@@ -79,7 +86,7 @@ function AboutMe( props ) {
                 <p className='H-main'>{selectLan ? 'and creativity' : 'y la creatividad'}</p>
                 <img className='A-img' src={rojo} alt='foto'/>
             </div>
-            <div className='section2'ref={testRef2}>
+            <div className='section2'ref={testRef2} onMouseEnter={() => scrollSelect( '#2' )} onTouchStart={() => scrollSelect( '#2' )}>
                 <h2>{selectLan ? 'Who I am' : 'Quién soy'}</h2>
                 <div className='w-container'>
                     <div>
@@ -97,7 +104,7 @@ function AboutMe( props ) {
                     </div>
                 </div>
             </div>
-            <div className='section3' ref={testRef3}>
+            <div className='section3' ref={testRef3} onMouseEnter={() => scrollSelect( '#3' )} onTouchStart={() => scrollSelect( '#3' )}>
                 <h2>{selectLan ? 'Skill set' : 'Conjunto de habilidades'}</h2>
                 <div className='row'>
                     <div className='container'>
@@ -106,44 +113,47 @@ function AboutMe( props ) {
                             <div>
                                 <p>{selectLan ? 'Languages' : 'Lenguajes'}</p>
                                 <div>
-                                    <img className={levelG ? 'SL-img gold active' : 'SL-img gold'} src={javascript} title="JavaScript" alt='javascript'/>
-                                    <img className={levelG ? 'SL-img gold active' : 'SL-img gold'} src={require('./../../images/iconduck/python.svg').default} title="Python" alt='python'/>
-                                    <img className={levelB ? 'SL-img bronze active' : 'SL-img bronze'} src={require('./../../images/iconduck/java-original.svg').default} title="Java" alt='java'/>
-                                    <img className={levelD ? 'SL-img diamond active' : 'SL-img diamond'} src={require('./../../images/iconduck/file-type-html.svg').default} title="HTML" alt='html'/>
-                                    <img className={levelD ? 'SL-img diamond active' : 'SL-img diamond'} src={require('./../../images/iconduck/file-type-css.svg').default} title="CSS" alt='css'/>
-                                    <img className={levelS ? 'SL-img silver active' : 'SL-img silver'} src={require('./../../images/iconduck/file-type-sql.svg').default} title="SQL" alt='sql'/>
+                                    <a href="https://www.w3schools.com/html/" target="_blank" rel="noreferrer"><img className={levelD ? 'SL-img diamond active' : 'SL-img diamond'} src={require('./../../images/iconduck/file-type-html.svg').default} title="HTML" alt='html'/></a>
+                                    <a href="https://www.w3schools.com/w3css/defaulT.asp" target="_blank" rel="noreferrer"><img className={levelD ? 'SL-img diamond active' : 'SL-img diamond'} src={require('./../../images/iconduck/file-type-css.svg').default} title="CSS" alt='css'/></a>
+                                    <a href="https://www.javascript.com/" target="_blank" rel="noreferrer"><img className={levelG ? 'SL-img gold active' : 'SL-img gold'} src={javascript} title="JavaScript" alt='javascript'/></a>
+                                    <a href="https://www.python.org/" target="_blank" rel="noreferrer"><img className={levelG ? 'SL-img gold active' : 'SL-img gold'} src={require('./../../images/iconduck/python.svg').default} title="Python" alt='python'/></a>
+                                    <a href="https://www.w3schools.com/sql/" target="_blank" rel="noreferrer"><img className={levelS ? 'SL-img silver active' : 'SL-img silver'} src={require('./../../images/iconduck/file-type-sql.svg').default} title="SQL" alt='sql'/></a>
+                                    <a href="https://www.java.com/es/" target="_blank" rel="noreferrer"><img className={levelB ? 'SL-img bronze active' : 'SL-img bronze'} src={require('./../../images/iconduck/java-original.svg').default} title="Java" alt='java'/></a>
+                                    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img className={levelB ? 'SL-img bronze active' : 'SL-img bronze'} src={require('./../../images/iconduck/typescript.svg').default} title="TypeScript" alt='typescript'/></a>
                                 </div>
                             </div>
                             <div>
                                 <p>{selectLan ? 'Frameworks' : 'Frameworks'}</p>
                                 <div>
-                                    <img className={levelD ? 'SF-img diamond active' : 'SF-img diamond'} src={require('./../../images/iconduck/react.svg').default} title="React" alt='react'/>
-                                    <img className={levelS ? 'SF-img silver active' : 'SF-img silver'} src={express} title="Express" alt='express'/>
-                                    <img className={levelS ? 'SF-img silver active' : 'SF-img silver'} src={require('./../../images/iconduck/file-type-django.svg').default} title="Django" alt='django'/>
-                                    <img className={levelS ? 'SF-img silver active' : 'SF-img silver'} src={require('./../../images/iconduck/icons8-flask.svg').default} title="Flask" alt='flask'/>
-                                    <img className={levelB ? 'SF-img bronze active' : 'SF-img bronze'} src={require('./../../images/iconduck/spring.svg').default} title="Spring Boot" alt='spring'/>
-                                    <img className={levelS ? 'SF-img silver active' : 'SF-img silver'} src={require('./../../images/iconduck/jquery-plain.svg').default} title="jQuery" alt='jquery'/>
-                                    <img className={levelG ? 'SF-img gold active' : 'SF-img gold'} src={ajax} title="AJAX" alt='ajax'/>
-                                    <img className={levelS ? 'SF-img silver active' : 'SF-img silver'} src={require('./../../images/iconduck/socket-io.svg').default} title="Socket.io" alt='socket'/>
-                                    <img className={levelS ? 'SF-img silver active' : 'SF-img silver'} src={require('./../../images/iconduck/bootstrap.svg').default} title="Bootstrap" alt='bootstrap'/>
-                                    <img className={levelB ? 'SF-img bronze active' : 'SF-img bronze'} src={require('./../../images/iconduck/foundation.svg').default} title="Foundation" alt='foundation'/>
+                                    <a href="https://es.reactjs.org/" target="_blank" rel="noreferrer"><img className={levelD ? 'SF-img diamond active' : 'SF-img diamond'} src={require('./../../images/iconduck/react.svg').default} title="React" alt='react'/></a>
+                                    <a href="https://www.w3schools.com/js/js_ajax_intro.asp" target="_blank" rel="noreferrer"><img className={levelG ? 'SF-img gold active' : 'SF-img gold'} src={ajax} title="AJAX" alt='ajax'/></a>
+                                    <a href="https://expressjs.com/" target="_blank" rel="noreferrer"><img className={levelS ? 'SF-img silver active' : 'SF-img silver'} src={express} title="Express" alt='express'/></a>
+                                    <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"><img className={levelS ? 'SF-img silver active' : 'SF-img silver'} src={require('./../../images/iconduck/file-type-django.svg').default} title="Django" alt='django'/></a>
+                                    <a href="https://flask.palletsprojects.com/en/2.2.x/" target="_blank" rel="noreferrer"><img className={levelS ? 'SF-img silver active' : 'SF-img silver'} src={require('./../../images/iconduck/icons8-flask.svg').default} title="Flask" alt='flask'/></a>
+                                    <a href="https://nextjs.org/" target="_blank" rel="noreferrer"><img className={levelS ? 'SF-img silver active' : 'SF-img silver'} src={next} title="Next.js" alt='next'/></a>
+                                    <a href="https://jquery.com/" target="_blank" rel="noreferrer"><img className={levelS ? 'SF-img silver active' : 'SF-img silver'} src={require('./../../images/iconduck/jquery-plain.svg').default} title="jQuery" alt='jquery'/></a>
+                                    <a href="https://socket.io/" target="_blank" rel="noreferrer"><img className={levelS ? 'SF-img silver active' : 'SF-img silver'} src={require('./../../images/iconduck/socket-io.svg').default} title="Socket.io" alt='socket'/></a>
+                                    <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer"><img className={levelS ? 'SF-img silver active' : 'SF-img silver'} src={require('./../../images/iconduck/bootstrap.svg').default} title="Bootstrap" alt='bootstrap'/></a>
+                                    <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"><img className={levelS ? 'SF-img silver active' : 'SF-img silver'} src={tailwind} title="Tailwind" alt='tailwind'/></a>
+                                    <a href="https://spring.io/projects/spring-boot" target="_blank" rel="noreferrer"><img className={levelB ? 'SF-img bronze active' : 'SF-img bronze'} src={require('./../../images/iconduck/spring.svg').default} title="Spring Boot" alt='spring'/></a>
+                                    <a href="https://get.foundation/" target="_blank" rel="noreferrer"><img className={levelB ? 'SF-img bronze active' : 'SF-img bronze'} src={require('./../../images/iconduck/foundation.svg').default} title="Foundation" alt='foundation'/></a>
                                 </div>
                             </div>
                             <div className='row'>
                                 <div>
                                     <p>{selectLan ? 'Database' : 'Base de datos'}</p>
                                     <div>
-                                        <img className={levelG ? 'SD-img gold active' : 'SD-img gold'} src={require('./../../images/iconduck/mongodb-original.svg').default} title="MongoDB" alt='mongodb'/>
-                                        <img className={levelG ? 'SD-img gold active' : 'SD-img gold'} src={require('./../../images/iconduck/mysql-original-wordmark.svg').default} title="MySQL" alt='mysql'/>
-                                        <img className={levelB ? 'SD-img bronze active' : 'SD-img bronze'} src={require('./../../images/iconduck/file-type-sqlite.svg').default} title="SQLite" alt='sqlite'/>
+                                        <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"><img className={levelG ? 'SD-img gold active' : 'SD-img gold'} src={require('./../../images/iconduck/mongodb-original.svg').default} title="MongoDB" alt='mongodb'/></a>
+                                        <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img className={levelG ? 'SD-img gold active' : 'SD-img gold'} src={require('./../../images/iconduck/mysql-original-wordmark.svg').default} title="MySQL" alt='mysql'/></a>
+                                        <a href="https://www.sqlite.org/index.html" target="_blank" rel="noreferrer"><img className={levelB ? 'SD-img bronze active' : 'SD-img bronze'} src={require('./../../images/iconduck/file-type-sqlite.svg').default} title="SQLite" alt='sqlite'/></a>
                                     </div>
                                 </div>
                                 <div>
                                     <p>{selectLan ? 'Software' : 'Programas'}</p>
                                     <div>
-                                        <img className={levelS ? 'SS-img silver active' : 'SS-img silver'} src={require('./../../images/iconduck/github.svg').default} title="GitHub" alt='github'/>
-                                        <img className={levelS ? 'SS-img silver active' : 'SS-img silver'} src={require('./../../images/iconduck/postman.svg').default} title="Postman" alt='postman'/>
-                                        <img className={levelG ? 'SS-img gold active' : 'SS-img gold'} src={require('./../../images/iconduck/git.svg').default} title="GitBash" alt='gitbash'/>
+                                        <a href="https://git-scm.com/" target="_blank" rel="noreferrer"><img className={levelG ? 'SS-img gold active' : 'SS-img gold'} src={require('./../../images/iconduck/git.svg').default} title="GitBash" alt='gitbash'/></a>
+                                        <a href="https://github.com/" target="_blank" rel="noreferrer"><img className={levelS ? 'SS-img silver active' : 'SS-img silver'} src={require('./../../images/iconduck/github.svg').default} title="GitHub" alt='github'/></a>
+                                        <a href="https://www.postman.com/" target="_blank" rel="noreferrer"><img className={levelS ? 'SS-img silver active' : 'SS-img silver'} src={require('./../../images/iconduck/postman.svg').default} title="Postman" alt='postman'/></a>
                                     </div>
                                 </div>
                             </div>
@@ -161,38 +171,38 @@ function AboutMe( props ) {
                             <div>
                                 <p>{selectLan ? 'Languages' : 'Lenguajes'}</p>
                                 <div>
-                                    <img className={levelS ? 'EL-img silver active' : 'EL-img silver'} src={require('./../../images/iconduck/c-original.svg').default} title="C" alt='c'/>
-                                    <img className={levelS ? 'EL-img silver active' : 'EL-img silver'} src={require('./../../images/iconduck/c-plusplus.svg').default} title="C++" alt='c++'/>
-                                    <img className={levelB ? 'EL-img bronze active' : 'EL-img bronze'} src={require('./../../images/iconduck/c-sharp.svg').default} title="C#" alt='c#'/>
-                                    <img className={levelD ? 'EL-img diamond active' : 'EL-img diamond'} src={require('./../../images/iconduck/python.svg').default} title="Python" alt='python'/>
-                                    <img className={levelD ? 'EL-img diamond active' : 'EL-img diamond'} src={require('./../../images/iconduck/matlab.svg').default} title="MatLab" alt='matlab'/>
-                                    <img className={levelS ? 'EL-img silver active' : 'EL-img silver'} src={require('./../../images/iconduck/file-type-vhdl.svg').default} title="VHDL" alt='vhdl'/>
-                                    <img className={levelB ? 'EL-img bronze active' : 'EL-img bronze'} src={require('./../../images/iconduck/file-type-assembly.svg').default} title="Assembler" alt='assembler'/>
-                                    <img className={levelG ? 'EL-img gold active' : 'EL-img gold'} src={require('./../../images/iconduck/icons8-texshop.svg').default} title="LaTeX" alt='latex'/>
+                                    <a href="https://www.python.org/" target="_blank" rel="noreferrer"><img className={levelD ? 'EL-img diamond active' : 'EL-img diamond'} src={require('./../../images/iconduck/python.svg').default} title="Python" alt='python'/></a>
+                                    <a href="https://la.mathworks.com/products/matlab.html" target="_blank" rel="noreferrer"><img className={levelD ? 'EL-img diamond active' : 'EL-img diamond'} src={require('./../../images/iconduck/matlab.svg').default} title="MatLab" alt='matlab'/></a>
+                                    <a href="https://es.overleaf.com/" target="_blank" rel="noreferrer"><img className={levelG ? 'EL-img gold active' : 'EL-img gold'} src={require('./../../images/iconduck/icons8-texshop.svg').default} title="LaTeX" alt='latex'/></a>
+                                    <a href="https://www.w3schools.com/c/c_intro.php" target="_blank" rel="noreferrer"><img className={levelS ? 'EL-img silver active' : 'EL-img silver'} src={require('./../../images/iconduck/c-original.svg').default} title="C" alt='c'/></a>
+                                    <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"><img className={levelS ? 'EL-img silver active' : 'EL-img silver'} src={require('./../../images/iconduck/c-plusplus.svg').default} title="C++" alt='c++'/></a>
+                                    <a href="https://www.xilinx.com/" target="_blank" rel="noreferrer"><img className={levelS ? 'EL-img silver active' : 'EL-img silver'} src={require('./../../images/iconduck/file-type-vhdl.svg').default} title="VHDL" alt='vhdl'/></a>
+                                    <a href="https://www.w3schools.com/cs/index.php" target="_blank" rel="noreferrer"><img className={levelB ? 'EL-img bronze active' : 'EL-img bronze'} src={require('./../../images/iconduck/c-sharp.svg').default} title="C#" alt='c#'/></a>
+                                    <a href="https://assemblysoftware.com/" target="_blank" rel="noreferrer"><img className={levelB ? 'EL-img bronze active' : 'EL-img bronze'} src={require('./../../images/iconduck/file-type-assembly.svg').default} title="Assembly" alt='assembly'/></a>
                                 </div>
                             </div>
                             <div>
                                 <p>{selectLan ? 'Software' : 'Programas'}</p>
                                 <div>
-                                    <img className={levelD ? 'ES-img diamond active' : 'ES-img diamond'} src={require('./../../images/iconduck/solidworks.svg').default} title="SolidWorks" alt='solidworks'/>
-                                    <img className={levelS ? 'ES-img silver active' : 'ES-img silver'} src={require('./../../images/iconduck/icons8-3ds-max.svg').default} title="3Ds Max" alt='3dsmax'/>
-                                    <img className={levelS ? 'ES-img silver active' : 'ES-img silver'} src={require('./../../images/iconduck/icons8-autocad.svg').default} title="AutoCAD" alt='autocad'/>
-                                    <img className={levelD ? 'ES-img diamond active' : 'ES-img diamond'} src={require('./../../images/iconduck/eagle.svg').default} title="Eagle" alt='eagle'/>
-                                    <img className={levelS ? 'ES-img silver active' : 'ES-img silver'} src={proteus} title="Proteus" alt='proteus'/>
-                                    <img className={levelS ? 'ES-img silver active' : 'ES-img silver'} src={require('./../../images/iconduck/qtproject-designer.svg').default} title="QtDesigner" alt='qtdesigner'/>
-                                    <img className={levelS ? 'ES-img silver active' : 'ES-img silver'} src={require('./../../images/iconduck/raspberry-pi.svg').default} title="Raspberry Pi" alt='raspberry'/>
-                                    <img className={levelG ? 'ES-img gold active' : 'ES-img gold'} src={microchip} title="Microchip" alt='microchip'/>
-                                    <img className={levelS ? 'ES-img silver active' : 'ES-img silver'} src={require('./../../images/iconduck/arduino.svg').default} title="Arduino" alt='arduino'/>
-                                    <img className={levelB ? 'ES-img bronze active' : 'ES-img bronze'} src={xilinx} title="Xilinx" alt='xilinx'/>
-                                    <img className={levelG ? 'ES-img gold active' : 'ES-img gold'} src={require('./../../images/iconduck/visual-studio-code.svg').default} title="VS Code" alt='vscode'/>
-                                    <img className={levelB ? 'ES-img bronze active' : 'ES-img bronze'} src={require('./../../images/iconduck/icons8-davinci-resolver.svg').default} title="DaVinci" alt='davinci'/>
+                                    <a href="https://www.solidworks.com/es/" target="_blank" rel="noreferrer"><img className={levelD ? 'ES-img diamond active' : 'ES-img diamond'} src={require('./../../images/iconduck/solidworks.svg').default} title="SolidWorks" alt='solidworks'/></a>
+                                    <a href="https://www.autodesk.com/products/eagle/overview?term=1-YEAR&tab=subscription" target="_blank" rel="noreferrer"><img className={levelD ? 'ES-img diamond active' : 'ES-img diamond'} src={require('./../../images/iconduck/eagle.svg').default} title="Eagle" alt='eagle'/></a>
+                                    <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"><img className={levelG ? 'ES-img gold active' : 'ES-img gold'} src={require('./../../images/iconduck/visual-studio-code.svg').default} title="VS Code" alt='vscode'/></a>
+                                    <a href="https://www.microchip.com/" target="_blank" rel="noreferrer"><img className={levelG ? 'ES-img gold active' : 'ES-img gold'} src={microchip} title="Microchip" alt='microchip'/></a>
+                                    <a href="https://www.autodesk.es/products/3ds-max/overview?term=1-YEAR&tab=subscription" target="_blank" rel="noreferrer"><img className={levelS ? 'ES-img silver active' : 'ES-img silver'} src={require('./../../images/iconduck/icons8-3ds-max.svg').default} title="3Ds Max" alt='3dsmax'/></a>
+                                    <a href="https://web.autocad.com/" target="_blank" rel="noreferrer"><img className={levelS ? 'ES-img silver active' : 'ES-img silver'} src={require('./../../images/iconduck/icons8-autocad.svg').default} title="AutoCAD" alt='autocad'/></a>
+                                    <a href="https://www.labcenter.com/" target="_blank" rel="noreferrer"><img className={levelS ? 'ES-img silver active' : 'ES-img silver'} src={proteus} title="Proteus" alt='proteus'/></a>
+                                    <a href="https://www.qt.io/" target="_blank" rel="noreferrer"><img className={levelS ? 'ES-img silver active' : 'ES-img silver'} src={require('./../../images/iconduck/qtproject-designer.svg').default} title="QtDesigner" alt='qtdesigner'/></a>
+                                    <a href="https://www.raspberrypi.org/" target="_blank" rel="noreferrer"><img className={levelS ? 'ES-img silver active' : 'ES-img silver'} src={require('./../../images/iconduck/raspberry-pi.svg').default} title="Raspberry Pi" alt='raspberry'/></a>
+                                    <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"><img className={levelS ? 'ES-img silver active' : 'ES-img silver'} src={require('./../../images/iconduck/arduino.svg').default} title="Arduino" alt='arduino'/></a>
+                                    <a href="https://www.xilinx.com/" target="_blank" rel="noreferrer"><img className={levelB ? 'ES-img bronze active' : 'ES-img bronze'} src={xilinx} title="Xilinx" alt='xilinx'/></a>
+                                    <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" rel="noreferrer"><img className={levelB ? 'ES-img bronze active' : 'ES-img bronze'} src={require('./../../images/iconduck/icons8-davinci-resolver.svg').default} title="DaVinci" alt='davinci'/></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='section4'ref={testRef4}>
+            <div className='section4' ref={testRef4} onMouseEnter={() => scrollSelect( '#4' )} onTouchStart={() => scrollSelect( '#4' )}>
                 <h2>{selectLan ? 'Education' : 'Educación'}</h2>
                 <div>
                     <div className='E-container'>

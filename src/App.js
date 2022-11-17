@@ -26,26 +26,15 @@ function App() {
     setSelectLan( newSelect );
   };
 
-  const handleScroll = event => {
-    if( event.currentTarget.scrollTop < 600 ){
-      setSelectLeft( '#1' );
-    }
-    else if( event.currentTarget.scrollTop > 600 && event.currentTarget.scrollTop < 1200 ){
-      setSelectLeft( '#2' );
-    }
-    else if( event.currentTarget.scrollTop > 1200 && event.currentTarget.scrollTop < 1800 ){
-      setSelectLeft( '#3' );
-    }
-    else if( event.currentTarget.scrollTop > 1800 ){
-      setSelectLeft( '#4' );
-    }
-  };
-
   return (
-    <div className="App" onScroll={handleScroll}>
+    <div className="App">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"></link>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet"/>
       <BrowserRouter>
         <Header onSelectLeft={onSelectLeft} testRef1={testRef1} selectLan={selectLan} onSelectLan={onSelectLan}/>
         <Switch>

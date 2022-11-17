@@ -197,7 +197,7 @@
     animation: slide-top 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.section-2 > .H-sub > .s1, .section-2 > .H-sub > .s2, .section-3 > .H-sub > .s1, .section-3 > .H-sub > .s2{
+.section-2 > .H-sub > .s1, .section-2 > .H-sub > .s2, .section-3 > .H-sub > .s1, .section-3 > .H-sub > .s2, .section-4 > .H-sub > .s1, .section-4 > .H-sub > .s2{
     width: 22.5rem;
 }
 
@@ -283,34 +283,45 @@
     padding-top: 7rem;
 }
 
-.section-4 > .Contact > .H-title{
+.section-4 > .Contact > div > .H-title{
     opacity: 1;
     margin-top: 0rem;
-    cursor: pointer;
     transition: all 500ms ease;
     -webkit-animation: slide-top 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-top 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-.section-4 > .Contact > .H-title:hover{
-    opacity: 0.7;
-}
 
-.section-4 > .Contact > .H-sub{
+.section-4 > .Contact > div > .H-sub{
     -webkit-animation: slide-top 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-top 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.section-4 > .Contact > a{
+#H-sub{
+    padding: 0;
+    margin-left: 6.5rem;
+}
+
+#H-sub > .s1{
+    width: 22.5rem;
+}
+
+#H-sub > .s2{
+    width: 22.5rem;
+}
+
+.section-4 > .Contact > div > a{
     -webkit-animation: slide-top 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-top 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.Contact > .number{
-    bottom: 24.5rem;
+.Contact > .n-cont{
+    position: relative;
+    right: 23px;
+    bottom: 34rem;
 }
 
-.section-4 > .Contact > div{
-    margin-bottom: 11.8rem;
+.section-4 > .Contact > div > div{
+    margin-bottom: 17.8rem;
 }
 
 footer{

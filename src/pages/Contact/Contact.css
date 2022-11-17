@@ -1,7 +1,48 @@
 .Contact{
     margin: 0 3.5rem 0 21.5rem;
-    padding-top: 12rem;
     text-align: left;
+}
+
+.Contact > .section1{
+    padding-top: 12rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.C-return{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--color-white);
+    opacity: 1;
+    cursor: pointer;
+    background: transparent;
+    transition: all 500ms ease;
+}
+.C-return:hover{
+    opacity: 0.7;
+}
+
+.C-return > span{
+    margin: 0;
+    padding: 0;
+    margin-right: 3rem;
+}
+
+.C-return > p{
+    letter-spacing: 0.6rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.Contact > div > footer{
+    margin-bottom: 3rem;
 }
 
 .B-return{
@@ -30,35 +71,41 @@
     transform: scale(1.3);
 }
 
-.Contact-t{
-    padding-top: 1rem;
-}
-
-.Contact > .H-title{
+.Contact > div > .H-title{
     margin: -2rem 0 -2rem -0.5rem;
+    z-index: 1;
     -webkit-animation: slide-bottom 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-bottom 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.Contact > .H-sub{
+.Contact > div > .H-sub{
+    text-align: left;
+    padding-left: 6.5rem;
     -webkit-animation: slide-bottom 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-bottom 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-
-.Contact > .H-sub.active{
+.Contact > div > .H-sub.active{
     width: 41.5rem;
-    margin-left: 53.5rem;
+    margin-left: 63.5rem; 
 }
 
-.Contact > .H-sub > .s1.active{
-    width: 87rem;
+.Contact > div > .H-sub > .s1{
+    margin-left: -6.5rem;
+}
+.Contact > div > .H-sub > .s1.active{
+    width: 69rem;
+    margin-left: -17rem;
 }
 
-.Contact > .H-sub > .s2.active{
-    width: 34.5rem;
+.Contact > div > .H-sub > .s2{
+    margin-left: 0;
+}
+.Contact > div > .H-sub > .s2.active{
+    width: 24.5rem;
+    margin-left: -10rem;
 }
 
-.Contact > a{
+.Contact > div > a{
     display: block;
     color: var(--color-white);
     opacity: 1;
@@ -71,28 +118,28 @@
     -webkit-animation: slide-bottom 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-bottom 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-.Contact > a:hover{
+.Contact > div > a:hover{
     opacity: 0.7;
 }
 
-.Contact > div{
+.Contact > div > div{
     margin-top: 4rem;
     -webkit-animation: opacity 1750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: opacity 1750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     margin-bottom: 7rem;
 }
 
-.Contact > div > a > ion-icon{
+.Contact > div > div > a > ion-icon{
     margin: 0 2rem 0 0;
     opacity: 0.7;
     transition: all  350ms ease;
 }
-.Contact > div > a > ion-icon:hover{
+.Contact > div > div > a > ion-icon:hover{
     opacity: 1;
     transform: scale(1.3);
 }
 
-.Contact > div > a > img{
+.Contact > div > div > a > img{
     margin: 0 2rem 0 0;
     width: 3rem;
     height: 3rem;
@@ -101,13 +148,13 @@
     border-radius: 50%;
     transition: all 350ms ease;
 }
-.Contact > div > a > img:hover{
+.Contact > div > div > a > img:hover{
     opacity: 1;
     transform: scale(1.3);
 }
 
 .Contact > .section2, .Contact > .section3, .Contact > .section4{
-    height: 88.65vh;
+    height: 100vh;
 }
 
 @-webkit-keyframes opacity {

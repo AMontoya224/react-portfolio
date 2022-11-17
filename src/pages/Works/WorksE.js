@@ -21,12 +21,17 @@ function Works_E( props ) {
         testRef1.current.scrollIntoView( {block: "start"} );
     };
 
+    const scrollSelect = ( select ) => {
+        onSelectLeft( select );
+    };
+
     return (
         <div className="WorksE">
-            <div className='section1'ref={testRef1}>
+            <title>{selectLan ? 'Electronic Works | PORTFOLIO' : 'Trabajos de Electrónica | PORTAFOLIO'}</title>
+            <Left2 onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4}/>
+            <div className='section1'ref={testRef1} onMouseEnter={() => scrollSelect( '#1' )} onTouchStart={() => scrollSelect( '#1' )}>
                 <img src={electronic} alt='developer'/>
                 <button onClick={scrollToBack} className='B-return'><span className="material-icons-round return">keyboard_backspace</span><p>BACK</p></button>
-                <Left2 onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4}/>
                 <h2>{selectLan ? 'Explosive ordnance disposal robot' : 'Robot de eliminación de explosivos'}</h2>
                 <div className='top'>
                     <div>
@@ -36,7 +41,7 @@ function Works_E( props ) {
                     </div>
                     <div>
                         <p>{selectLan ? 'Developer | Electronic engineer' : 'Desarrollador | Ingeniero electrónico'}</p>
-                        <p className='top-d'>{selectLan ? 'SEPTEMBER 2020' : 'SEPTIEMBRE 2020'}</p>
+                        <p className='top-d'>{selectLan ? 'SEPTEMBER 2020 - MARCH 2022' : 'SEPTIEMBRE 2020 - MARZO 2022'}</p>
                         <p className='top-o'>{selectLan ? 'Development of artificial vision, control of the robotic arm through cameras' : 'Desarrollo de visión artificial, control del brazo robótico a través de cámaras'}</p>
                     </div>
                 </div>
@@ -49,13 +54,13 @@ function Works_E( props ) {
                         <div>
                             <b>{selectLan ? 'TECHNOLOGIES' : 'TECNOLOGÍAS'}</b>
                             <div>
-                                <img src={require('./../../images/iconduck/python.svg').default} title="Python" alt='python'/>
-                                <img src={require('./../../images/iconduck/qtproject-designer.svg').default} title="QtDesigner" alt='qtdesigner'/>
-                                <img src={require('./../../images/iconduck/matlab.svg').default} title="MatLab" alt='matlab'/>
-                                <img src={require('./../../images/iconduck/solidworks.svg').default} title="SolidWorks" alt='solidworks'/>
-                                <img src={require('./../../images/iconduck/icons8-autocad.svg').default} title="AutoCAD" alt='autocad'/>
-                                <img src={require('./../../images/iconduck/icons8-3ds-max.svg').default} title="3Ds Max" alt='3dsmax'/>
-                                <img src={require('./../../images/iconduck/icons8-davinci-resolver.svg').default} title="DaVinci" alt='davinci'/>
+                                <a href="https://www.python.org/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/python.svg').default} title="Python" alt='python'/></a>
+                                <a href="https://www.qt.io/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/qtproject-designer.svg').default} title="QtDesigner" alt='qtdesigner'/></a>
+                                <a href="https://la.mathworks.com/products/matlab.html" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/matlab.svg').default} title="MatLab" alt='matlab'/></a>
+                                <a href="https://www.solidworks.com/es/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/solidworks.svg').default} title="SolidWorks" alt='solidworks'/></a>
+                                <a href="https://web.autocad.com/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/icons8-autocad.svg').default} title="AutoCAD" alt='autocad'/></a>
+                                <a href="https://www.autodesk.es/products/3ds-max/overview?term=1-YEAR&tab=subscription" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/icons8-3ds-max.svg').default} title="3Ds Max" alt='3dsmax'/></a>
+                                <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/icons8-davinci-resolver.svg').default} title="DaVinci" alt='davinci'/></a>
                             </div>
                         </div>
                         <div>
@@ -75,7 +80,7 @@ function Works_E( props ) {
                     </div>
                 </div>
             </div>
-            <div className='section1' ref={testRef2}>
+            <div className='section1' ref={testRef2} onMouseEnter={() => scrollSelect( '#2' )} onTouchStart={() => scrollSelect( '#2' )}>
                 <h2>{selectLan ? 'Driver drowsiness detection' : 'Detección de somnolencia'}</h2>
                 <div className='top'>
                     <div>
@@ -85,7 +90,7 @@ function Works_E( props ) {
                     </div>
                     <div>
                         <p>{selectLan ? 'Electronic engineer | Researcher' : 'Ingeniero electrónico | Investigador'}</p>
-                        <p className='top-d'>{selectLan ? 'JANUARY 2020' : 'ENERO 2020'}</p>
+                        <p className='top-d'>{selectLan ? 'JANUARY 2020 - SEPTEMBER 2020' : 'ENERO 2020 - SEPTIEMBRE 2020'}</p>
                         <p className='top-o'>{selectLan ? 'Development of a sleepiness detection system for transport drivers' : 'Desarrollo de un sistema de detección de somnolencia para conductores de transporte'}</p>
                     </div>
                 </div>
@@ -98,13 +103,12 @@ function Works_E( props ) {
                         <div>
                             <b>{selectLan ? 'TECHNOLOGIES' : 'TECNOLOGÍAS'}</b>
                             <div>
-                            <img src={require('./../../images/iconduck/python.svg').default} title="Python" alt='python'/>
-                            <img src={require('./../../images/iconduck/matlab.svg').default} title="MatLab" alt='matlab'/>
-                            <img src={require('./../../images/iconduck/raspberry-pi.svg').default} title="Raspberry Pi" alt='raspberry'/>
-                            <img src={require('./../../images/iconduck/c-original.svg').default} title="C" alt='c'/>
-                            <img src={microchip} title="Microchip" alt='microchip'/>
-                            <img src={require('./../../images/iconduck/visual-studio-code.svg').default} title="VS Code" alt='vscode'/>
-
+                                <a href="https://www.python.org/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/python.svg').default} title="Python" alt='python'/></a>
+                                <a href="https://la.mathworks.com/products/matlab.html" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/matlab.svg').default} title="MatLab" alt='matlab'/></a>
+                                <a href="https://www.raspberrypi.org/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/raspberry-pi.svg').default} title="Raspberry Pi" alt='raspberry'/></a>
+                                <a href="https://www.w3schools.com/c/c_intro.php" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/c-original.svg').default} title="C" alt='c'/></a>
+                                <a href="https://www.microchip.com/" target="_blank" rel="noreferrer"><img src={microchip} title="Microchip" alt='microchip'/></a>
+                                <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/visual-studio-code.svg').default} title="VS Code" alt='vscode'/></a>
                             </div>
                         </div>
                         <div>
@@ -124,7 +128,7 @@ function Works_E( props ) {
                     </div>
                 </div>
             </div>
-            <div className='section1' ref={testRef3}>
+            <div className='section1' ref={testRef3} onMouseEnter={() => scrollSelect( '#3' )} onTouchStart={() => scrollSelect( '#3' )}>
                 <h2>{selectLan ? 'Desing of electrostimulation vest' : 'Chaleco de electroestimulación'}</h2>
                 <div className='top'>
                     <div>
@@ -134,7 +138,7 @@ function Works_E( props ) {
                     </div>
                     <div>
                         <p>{selectLan ? 'Electronic engineer' : 'Ingeniero electronico'}</p>
-                        <p className='top-d'>{selectLan ? 'OCTOBER 2018' : 'OCTUBRE 2018'}</p>
+                        <p className='top-d'>{selectLan ? 'OCTOBER 2018 - JANUARY 2020' : 'OCTUBRE 2018 - ENERO 2020'}</p>
                         <p className='top-o'>{selectLan ? 'Research and programming of the Kotz electric wave output station' : 'Investigación y programación de la estación de salida de ondas eléctricas Kotz'}</p>
                     </div>
                 </div>
@@ -147,13 +151,13 @@ function Works_E( props ) {
                         <div>
                             <b>{selectLan ? 'TECHNOLOGIES' : 'TECNOLOGÍAS'}</b>
                             <div>
-                                <img src={require('./../../images/iconduck/c-plusplus.svg').default} title="C++" alt='c++'/>
-                                <img src={require('./../../images/iconduck/c-sharp.svg').default} title="C#" alt='c#'/>
-                                <img src={require('./../../images/iconduck/eagle.svg').default} title="Eagle" alt='eagle'/>
-                                <img src={proteus} title="Proteus" alt='proteus'/>
-                                <img src={microchip} title="Microchip" alt='microchip'/>
-                                <img src={require('./../../images/iconduck/icons8-texshop.svg').default} title="LaTeX" alt='latex'/>
-                                <img src={require('./../../images/iconduck/arduino.svg').default} title="Arduino" alt='arduino'/>
+                                <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/c-plusplus.svg').default} title="C++" alt='c++'/></a>
+                                <a href="https://www.w3schools.com/cs/index.php" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/c-sharp.svg').default} title="C#" alt='c#'/></a>
+                                <a href="https://www.autodesk.com/products/eagle/overview?term=1-YEAR&tab=subscription" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/eagle.svg').default} title="Eagle" alt='eagle'/></a>
+                                <a href="https://www.labcenter.com/" target="_blank" rel="noreferrer"><img src={proteus} title="Proteus" alt='proteus'/></a>
+                                <a href="https://www.microchip.com/" target="_blank" rel="noreferrer"><img src={microchip} title="Microchip" alt='microchip'/></a>
+                                <a href="https://www.overleaf.com/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/icons8-texshop.svg').default} title="LaTeX" alt='latex'/></a>
+                                <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/arduino.svg').default} title="Arduino" alt='arduino'/></a>
                             </div>
                         </div>
                         <div>
@@ -173,9 +177,23 @@ function Works_E( props ) {
                     </div>
                 </div>
             </div>
-            <div className='section4' ref={testRef4}>
+            <div className='section4' ref={testRef4} onMouseEnter={() => scrollSelect( '#4' )} onTouchStart={() => scrollSelect( '#4' )}>
                 <h2>{selectLan ? 'Published scientific articles' : 'Artículos científicos publicados'}</h2>
                 <div className='container'>
+                    <div className='c-info'>
+                        <a href="https://www.mdpi.com/2218-6581/11/5/100" target="_blank" rel="noreferrer">
+                            <h4>Assisted Operation of a Robotic Arm Based on Stereo Vision for Positioning near an Explosive Device</h4>
+                            <i>MDPI | Robotics | 2022</i>
+                            <p><b>DOI:</b> 10.3390/robotics11050100</p>
+                        </a>
+                    </div>
+                    <div className='c-info'>
+                        <a href="https://thesai.org/Publications/ViewPaper?Volume=13&Issue=7&Code=IJACSA&SerialNo=104" target="_blank" rel="noreferrer">
+                            <h4>Development of a Low-Cost Teleoperated Explorer Robot (TXRob)</h4>
+                            <i>SAI | IJACSA | 2022</i>
+                            <p><b>DOI:</b> 10.14569/IJACSA.2022.01307104</p>
+                        </a>
+                    </div>
                     <div className='c-info'>
                         <a href="https://www.mdpi.com/2079-9292/11/11/1690" target="_blank" rel="noreferrer">
                             <h4>Analysis of a User Interface Based on Multimodal Interaction to Control a Robotic Arm for EOD Applications</h4>

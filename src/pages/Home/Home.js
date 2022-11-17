@@ -59,14 +59,20 @@ function Home( props ) {
   };
 
   const onBtnContact = () => {
+    onSelectLeft( '#1' );
     props.history.push( '/contact' );
     testRef1.current.scrollIntoView( {block: "start"} );
   };
 
+  const scrollSelect = ( select ) => {
+    onSelectLeft( select );
+  };
+
   return (
     <div className="Home">
+      <title>{selectLan ? 'Home | PORTFOLIO' : 'Inicio | PORTAFOLIO'}</title>
       <Left2 selectLeft={selectLeft} onSelectLeft={onSelectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4}/>
-      <div className='section-1' ref={testRef1}>
+      <div className='section-1' ref={testRef1} onMouseEnter={() => scrollSelect( '#1' )} onTouchStart={() => scrollSelect( '#1' )}>
         <p className='H-title'>ANDRES</p>
         <p className='H-title'>MONTOYA</p>
         <button className={btnSub ? 'H-sub active' : 'H-sub'} onClick={onBtnSub}>
@@ -91,7 +97,7 @@ function Home( props ) {
       </div>
       <img id='H-img' className='H-img' src={wolf} alt='wolf'/>
 
-      <div className='section-2' ref={testRef2}>
+      <div className='section-2' ref={testRef2} onMouseEnter={() => scrollSelect( '#2' )} onTouchStart={() => scrollSelect( '#2' )}>
         <p className='H-title'>{selectLan ? 'Projects' : 'Proyectos'}</p>
         <button onClick={onBtnWorks} className='H-sub'>
           <div className='s1'></div>
@@ -106,7 +112,7 @@ function Home( props ) {
         <p className='number'>02</p>
       </div>
 
-      <div className='section-3' ref={testRef3}>
+      <div className='section-3' ref={testRef3} onMouseEnter={() => scrollSelect( '#3' )} onTouchStart={() => scrollSelect( '#3' )}>
         <p className='H-title'>{selectLan ? 'About me' : 'Sobre mí'}</p>
         <button onClick={onBtnAboutMe} className='H-sub'>
           <div className='s1'></div>
@@ -119,47 +125,51 @@ function Home( props ) {
         <img onClick={onBtnAboutMe} src={rojo} alt='foto'/>
       </div>
 
-      <div className='section-4' ref={testRef4}>
+      <div className='section-4' ref={testRef4} onMouseEnter={() => scrollSelect( '#4' )} onTouchStart={() => scrollSelect( '#4' )}>
         <div className="Contact">
-          <p className='H-title' onClick={onBtnContact}>{selectLan ? 'Get In Touch' : 'Contáctame'}</p>
-          <button className={btnSub ? 'H-sub active' : 'H-sub'} onClick={onBtnSub}>
-              <div className={btnSub ? 's1 active' : 's1'}></div>
-              {btnSub ? 'THANK!' : 'CLICK'}
-              <div className={btnSub ? 's2 active' : 's2'}></div>
-          </button>
-          <a href="mailto:jmontoyaan@unsa.edu.pe?subject=Quiero contactar contigo Andres!">
-              jmontoyaan@unsa.edu.pe
-          </a>
-          <a className="whatsapp" href="https://wa.me/51954222771/?text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" rel="noreferrer">
-              +51 954 222 771
-          </a>
           <div>
-            <a className="pagina" href="https://www.linkedin.com/in/amontoya224/" target="_blank" rel="noreferrer">
-                <ion-icon name="logo-linkedin" size="large"></ion-icon>
+            <p className='H-title'>{selectLan ? 'Get In Touch' : 'Contáctame'}</p>
+            <button onClick={onBtnContact} className='H-sub' id='H-sub'>
+              <div className='s1'></div>
+                {selectLan ? 'SHOW ME MORE' : 'MUESTRAME MAS'}
+              <div className='s2'></div>
+            </button>
+            <a href="mailto:montyang224@gmail.com?subject=Quiero contactar contigo Andres!">
+              montyang224@gmail.com
             </a>
-            <a className="pagina" href="https://github.com/AMontoya224" target="_blank" rel="noreferrer">
-                <ion-icon name="logo-github" size="large"></ion-icon>
+            <a className="whatsapp" href="https://wa.me/51954222771/?text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" rel="noreferrer">
+              +51 954 222 771
             </a>
-            <a className="pagina" href="https://scholar.google.com/citations?user=LI023coAAAAJ&hl=es" target="_blank" rel="noreferrer">
-                <ion-icon name="logo-chrome" size="large"></ion-icon>
-            </a>
-            <a className="pagina" href='https://drive.google.com/file/d/1O0kGnQr3pxzlfkDREknbgMkmAbcx95Dx/view?usp=sharing' target="_blank" rel="noreferrer">
-                <img src={cv} alt='cv'/>
-            </a>
-            <a className="pagina" href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=140140" target="_blank" rel="noreferrer">
-                <img src={concytec} alt='concytec'/>
-            </a>
-            <a className="pagina" href="https://web.facebook.com/juan.andres.montoya.angulo" target="_blank" rel="noreferrer">
-                <ion-icon name="logo-facebook" size="large"></ion-icon>
-            </a>
-            <a className="pagina" href="https://www.youtube.com/channel/UC94EeNbFYtW6vIUds8qR94A" target="_blank" rel="noreferrer">
-                <ion-icon name="logo-youtube" size="large"></ion-icon>
-            </a>
+            <div>
+              <a className="pagina" href="https://www.linkedin.com/in/amontoya224/" target="_blank" rel="noreferrer">
+                  <ion-icon name="logo-linkedin" size="large"></ion-icon>
+              </a>
+              <a className="pagina" href="https://github.com/AMontoya224" target="_blank" rel="noreferrer">
+                  <ion-icon name="logo-github" size="large"></ion-icon>
+              </a>
+              <a className="pagina" href="https://scholar.google.com/citations?user=LI023coAAAAJ&hl=es" target="_blank" rel="noreferrer">
+                  <ion-icon name="logo-chrome" size="large"></ion-icon>
+              </a>
+              <a className="pagina" href='https://drive.google.com/file/d/1O0kGnQr3pxzlfkDREknbgMkmAbcx95Dx/view?usp=sharing' target="_blank" rel="noreferrer">
+                  <img src={cv} alt='cv'/>
+              </a>
+              <a className="pagina" href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=140140" target="_blank" rel="noreferrer">
+                  <img src={concytec} alt='concytec'/>
+              </a>
+              <a className="pagina" href="https://web.facebook.com/juan.andres.montoya.angulo" target="_blank" rel="noreferrer">
+                  <ion-icon name="logo-facebook" size="large"></ion-icon>
+              </a>
+              <a className="pagina" href="https://www.youtube.com/channel/UC94EeNbFYtW6vIUds8qR94A" target="_blank" rel="noreferrer">
+                  <ion-icon name="logo-youtube" size="large"></ion-icon>
+              </a>
+            </div>
           </div>
           <footer>
             <p>{selectLan ? 'Developed by ' : 'Desarrollado por '}<span>Andres Montoya Angulo</span></p>
           </footer>
-          <p className='number'>04</p>
+          <div className='n-cont'>
+            <p className='number'>04</p>
+          </div>
         </div>
       </div>
     </div>

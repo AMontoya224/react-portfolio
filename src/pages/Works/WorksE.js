@@ -2,15 +2,6 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import Left2 from '../../components/Left/Left2';
 import './Works.css';
-import robot1 from './../../images/robot-1.jpg';
-import robot2 from './../../images/robot-2.jpg';
-import proteus from './../../images/iconduck/proteus.png';
-import microchip from './../../images/iconduck/motorola-Logo.png';
-import siso1 from './../../images/siso-1.png';
-import siso2 from './../../images/siso-2.png';
-import vest1 from './../../images/vest-1.jpg';
-import vest2 from './../../images/vest-2.png';
-import electronic from './../../images/electronic-rrr.png';
 
 
 function Works_E( props ) {
@@ -30,7 +21,7 @@ function Works_E( props ) {
             <title>{selectLan ? 'Electronic Works | PORTFOLIO' : 'Trabajos de Electrónica | PORTAFOLIO'}</title>
             <Left2 onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4}/>
             <div className='section1'ref={testRef1} onMouseEnter={() => scrollSelect( '#1' )} onTouchStart={() => scrollSelect( '#1' )}>
-                <img src={electronic} alt='developer'/>
+                <img src={require('./../../images/electronic.png')} alt='electronic'/>
                 <button onClick={scrollToBack} className='B-return'><span className="material-icons-round return">keyboard_backspace</span><p>BACK</p></button>
                 <h2>{selectLan ? 'Explosive ordnance disposal robot' : 'Robot de eliminación de explosivos'}</h2>
                 <div className='top'>
@@ -47,20 +38,20 @@ function Works_E( props ) {
                 </div>
                 <div className='bottom'>
                     <div className='container-t'>
-                        <img className='img-b-t' src={robot1} alt='robot'/>
-                        <img className='img-b-b' src={robot2} alt='robot'/>
+                        <img className='img-b-t' src={require('./../../images/robot-1.jpg')} alt='robot'/>
+                        <img className='img-b-b' src={require('./../../images/robot-2.jpg')} alt='robot'/>
                     </div>
                     <div className='container-b'>
                         <div>
                             <b>{selectLan ? 'TECHNOLOGIES' : 'TECNOLOGÍAS'}</b>
                             <div>
                                 <a href="https://www.python.org/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/python.svg').default} title="Python" alt='python'/></a>
-                                <a href="https://www.qt.io/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/qtproject-designer.svg').default} title="QtDesigner" alt='qtdesigner'/></a>
+                                <a href="https://www.qt.io/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/qtproject.svg').default} title="QtDesigner" alt='qtdesigner'/></a>
                                 <a href="https://la.mathworks.com/products/matlab.html" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/matlab.svg').default} title="MatLab" alt='matlab'/></a>
                                 <a href="https://www.solidworks.com/es/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/solidworks.svg').default} title="SolidWorks" alt='solidworks'/></a>
-                                <a href="https://web.autocad.com/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/icons8-autocad.svg').default} title="AutoCAD" alt='autocad'/></a>
-                                <a href="https://www.autodesk.es/products/3ds-max/overview?term=1-YEAR&tab=subscription" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/icons8-3ds-max.svg').default} title="3Ds Max" alt='3dsmax'/></a>
-                                <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/icons8-davinci-resolver.svg').default} title="DaVinci" alt='davinci'/></a>
+                                <a href="https://web.autocad.com/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/autocad.svg').default} title="AutoCAD" alt='autocad'/></a>
+                                <a href="https://www.autodesk.es/products/3ds-max/overview?term=1-YEAR&tab=subscription" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/3ds.svg').default} title="3Ds Max" alt='3dsmax'/></a>
+                                <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/davinci.svg').default} title="DaVinci" alt='davinci'/></a>
                             </div>
                         </div>
                         <div>
@@ -96,8 +87,8 @@ function Works_E( props ) {
                 </div>
                 <div className='bottom'>
                     <div className='container-t'>
-                        <img className='img-b-t' src={siso1} alt='siso'/>
-                        <img className='img-b-b' src={siso2} alt='siso'/>
+                        <img className='img-b-t' src={require('./../../images/siso-1.jpg')} alt='siso'/>
+                        <img className='img-b-b' src={require('./../../images/siso-2.jpg')} alt='siso'/>
                     </div>
                     <div className='container-b'>
                         <div>
@@ -105,10 +96,10 @@ function Works_E( props ) {
                             <div>
                                 <a href="https://www.python.org/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/python.svg').default} title="Python" alt='python'/></a>
                                 <a href="https://la.mathworks.com/products/matlab.html" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/matlab.svg').default} title="MatLab" alt='matlab'/></a>
-                                <a href="https://www.raspberrypi.org/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/raspberry-pi.svg').default} title="Raspberry Pi" alt='raspberry'/></a>
-                                <a href="https://www.w3schools.com/c/c_intro.php" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/c-original.svg').default} title="C" alt='c'/></a>
-                                <a href="https://www.microchip.com/" target="_blank" rel="noreferrer"><img src={microchip} title="Microchip" alt='microchip'/></a>
-                                <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/visual-studio-code.svg').default} title="VS Code" alt='vscode'/></a>
+                                <a href="https://www.raspberrypi.org/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/raspberry.svg').default} title="Raspberry Pi" alt='raspberry'/></a>
+                                <a href="https://www.w3schools.com/c/c_intro.php" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/c.svg').default} title="C" alt='c'/></a>
+                                <a href="https://www.microchip.com/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/microchip.png')} title="Microchip" alt='microchip'/></a>
+                                <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/visual.svg').default} title="VS Code" alt='vscode'/></a>
                             </div>
                         </div>
                         <div>
@@ -144,8 +135,8 @@ function Works_E( props ) {
                 </div>
                 <div className='bottom'>
                     <div className='container-t'>
-                        <img className='img-b-t' src={vest1} alt='vest'/>
-                        <img className='img-b-b' src={vest2} alt='vest'/>
+                        <img className='img-b-t' src={require('./../../images/vest-1.jpg')} alt='vest'/>
+                        <img className='img-b-b' src={require('./../../images/vest-2.jpg')} alt='vest'/>
                     </div>
                     <div className='container-b'>
                         <div>
@@ -154,9 +145,9 @@ function Works_E( props ) {
                                 <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/c-plusplus.svg').default} title="C++" alt='c++'/></a>
                                 <a href="https://www.w3schools.com/cs/index.php" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/c-sharp.svg').default} title="C#" alt='c#'/></a>
                                 <a href="https://www.autodesk.com/products/eagle/overview?term=1-YEAR&tab=subscription" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/eagle.svg').default} title="Eagle" alt='eagle'/></a>
-                                <a href="https://www.labcenter.com/" target="_blank" rel="noreferrer"><img src={proteus} title="Proteus" alt='proteus'/></a>
-                                <a href="https://www.microchip.com/" target="_blank" rel="noreferrer"><img src={microchip} title="Microchip" alt='microchip'/></a>
-                                <a href="https://www.overleaf.com/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/icons8-texshop.svg').default} title="LaTeX" alt='latex'/></a>
+                                <a href="https://www.labcenter.com/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/proteus.png')} title="Proteus" alt='proteus'/></a>
+                                <a href="https://www.microchip.com/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/microchip.png')} title="Microchip" alt='microchip'/></a>
+                                <a href="https://www.overleaf.com/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/latex.svg').default} title="LaTeX" alt='latex'/></a>
                                 <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/arduino.svg').default} title="Arduino" alt='arduino'/></a>
                             </div>
                         </div>

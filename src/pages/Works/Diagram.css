@@ -1,0 +1,58 @@
+.Diagram{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.Diagram > div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.Diagram > div > button{
+    color: var(--color-white);
+    background: var(--color-primary);
+    padding: 2rem 3rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: all 350ms ease;
+}
+.Diagram > div > button:hover{
+    background: var(--color-primary-variant);
+}
+
+.Diagram > div > input{
+    width: 100%;
+    border-radius: 0.3rem;
+}
+
+.Diagram > div > .radius{
+    border-radius: 1rem;
+}
+
+.Diagram > div > .thickness{
+    width: 100%;
+    height: 4rem;
+    background: rgb(255, 255, 255);
+    border: 1px solid white;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 960px){
+    .Diagram{
+        flex-direction: column;
+    }
+
+    .Diagram > div{
+        height: 10rem;
+        flex-direction: row;
+        gap: 3rem;
+    }
+}

@@ -1,7 +1,5 @@
 import { withRouter} from 'react-router-dom';
 import './Works.css';
-import developer from './../../images/developer-r.png';
-import electronic from './../../images/electronic-rrr.png';
 
 
 function Works( props ) {
@@ -31,11 +29,11 @@ function Works( props ) {
                 <p className='H-title'>{selectLan ? 'Projects' : 'Proyectos'}</p>
                 <div className='W-container'>
                     <div onClick={onBtnWorksD}>
-                        <img className='wd-img' src={developer} alt='developer'/>
+                        <img className='wd-img' src={require('./../../images/developer.png')} alt='developer'/>
                         <p>{selectLan ? 'DEVELOPING' : 'DESARROLLO'}</p>
                     </div>
                     <div onClick={onBtnWorksE}>
-                        <img className='we-img' src={electronic} alt='electronic'/>
+                        <img className='we-img' src={require('./../../images/electronic.png')} alt='electronic'/>
                         <p>{selectLan ? 'ELECTRONICS' : 'ELECTRÓNICA'}</p>
                     </div>
                 </div>

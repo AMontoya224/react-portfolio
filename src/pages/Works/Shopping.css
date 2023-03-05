@@ -1,0 +1,153 @@
+.Shopping{
+    background: var(--color-white);
+    border-radius: 0.5rem;
+    text-align: center;
+    color: var(--color-black);
+    width: 90%;
+    margin: 1.5rem auto 0 auto;
+}
+
+.Shopping > .header{
+    background: white;
+    padding: 1rem 5rem;
+}
+
+.Shopping > .header > div > div > p{
+    font-size: 2.5rem;
+}
+
+.Shopping > div{
+    padding: 1rem 5rem;
+}
+
+.Shopping > div > div{
+    gap: 5rem;
+}
+
+.Shopping > .header > div > div > ul {
+    list-style: none;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+.submenu #carrito > a{
+    border: 0.1rem solid var(--color-danger);
+    color: var(--color-black);
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding: 1rem 10rem 0.5rem 10rem;
+    margin: 2rem 0;
+    text-align: center;
+    padding-top: 0.5rem;
+    cursor: pointer;
+    transition: all 350ms ease;
+}
+.submenu #carrito > a:hover{
+    color: var(--color-white);
+    background: var(--color-danger);
+}
+
+#lista-cursos .row {
+    margin-bottom: 20px;
+}
+
+#lista-carrito td {
+    font-size: 1rem;
+}
+
+.agregar-carrito {
+    margin: 10px 0;
+}
+
+.submenu > span{
+    font-size: 4rem;
+    transition: all 350ms ease;
+    cursor: pointer;
+}
+.submenu > span:hover{
+    opacity: 0.7;
+}
+
+.borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#encabezado {
+    margin: 2rem 0;
+}
+
+.card {
+    text-align: center;
+    background: white;
+    border-radius: 0.5rem;
+}
+
+.card > img{
+    width: 32rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.info-card {
+    padding: 1rem 2rem;
+}
+
+.info-card > p {
+    font-size: 1.4rem;
+}
+
+.info-card > .precio {
+    text-decoration: line-through;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+.info-card > .precio > span {
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-left: 18rem;
+}
+
+.info-card > a{
+    background: var(--color-danger);
+    color: var(--color-white);
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding: 1rem 7.3rem 0.5rem 7.3rem;
+    margin: 1rem auto;
+    text-align: center;
+    padding-top: 0.5rem;
+    cursor: pointer;
+    transition: all 350ms ease;
+}
+.info-card > a:hover{
+    background: var(--color-danger-variant);
+}
+
+@media (min-width: 550px) {
+    .card {
+        text-align: left;
+    }
+}

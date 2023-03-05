@@ -4,76 +4,6 @@
     overflow: 'scroll'
 }
 
-.section-1{
-    height: 100vh;
-    padding-top: 12rem;
-}
-
-.H-title{
-    color: var(--color-white);
-    font-size: 10vw;
-    font-weight: 400;
-    letter-spacing: 1.55rem;
-    z-index: 5;
-}
-
-.H-sub{
-    font-size: 1.4rem;
-    letter-spacing: 0.3rem;
-    padding: 0;
-    margin-left: 0.5rem;
-    height: 10rem;
-    opacity: 1;
-    color: var(--color-danger);
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    transition: all 500ms ease;
-}
-.H-sub:hover{
-    opacity: 0.7;
-}
-.H-sub.active{
-    height: 10rem;
-    font-size: 6rem;
-    font-weight: 700;
-    letter-spacing: 1rem;
-    transform: translateX(53rem) translateY(0);
-}
-
-.H-sub > .s1{
-    width: 12rem;
-    height: 0.5rem;
-    margin: 0 0 0.3rem -0.3rem;
-    border-radius: 0.5rem;
-    background: var(--color-danger);
-    transition: all 500ms ease;
-}
-.H-sub > .s1.active{
-    width: 63.5rem;
-    transform: translateX(-53rem) translateY(-2rem);
-}
-
-.H-sub > .s2{
-    width: 12rem;
-    height: 0.5rem;
-    margin: 0.3rem 0 0 6.4rem;
-    border-radius: 0.5rem;
-    background: var(--color-danger);
-    transition: all 500ms ease;
-}
-.H-sub > .s2.active{
-    width: 29.8rem;
-    transform: translateX(-59.9rem) translateY(1rem);
-}
-
-.H-main{
-    margin-top: 1rem;
-    font-size: 1.6vw;
-    font-weight: 400;
-    letter-spacing: 0.5rem;
-}
-
 #H-wolf{
     border-radius: 50%;
     background: rgba(200, 200, 200, .1);
@@ -140,7 +70,7 @@
     justify-content: center;
 }
 
-.H-img{
+#H-img{
     position: absolute;
     top: 13rem;
     left: 81rem;
@@ -148,6 +78,7 @@
     height: 50rem;
     border-radius: 50%;
     z-index: -1;
+    opacity: 0.8;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
@@ -155,21 +86,110 @@
     -ms-user-select: none;
 }
 
-.number{
+.H-title{
     color: var(--color-white);
-    font-size: 17vw;
-    font-weight: 600;
-    position: relative;
-    left: 63.5vw;
+    font-size: 10vw;
+    margin-left: -0.5rem;
+    font-weight: 400;
+    letter-spacing: 1.55rem;
     z-index: 1;
-    -webkit-animation: slide-left 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-left 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-top 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+.H-sub{
+    width: 30rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.3rem;
+    height: 10rem;
+    color: var(--color-danger);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 500ms ease;
+    -webkit-animation: slide-top 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.H-sub:hover{
+    opacity: 0.7;
+}
+.H-sub.active{
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    margin-left: 42rem;
+}
+
+.H-sub > .s1{
+    width: 23rem;
+    height: 0.5rem;
+    margin: 0 0 0.3rem 0;
+    border-radius: 0.5rem;
+    background: var(--color-danger);
+    transition: all 500ms ease;
+}
+.H-sub > .s1.active{
+    transform: translateX(-4rem) translateY(-2rem) scaleX(7);
+}
+
+.H-sub > .s2{
+    width: 23rem;
+    height: 0.5rem;
+    margin: 0.3rem 0 0 6.4rem;
+    border-radius: 0.5rem;
+    background: var(--color-danger);
+    transition: all 500ms ease;
+}
+.H-sub > .s2.active{
+    transform: translateX(27rem) translateY(1rem) scaleX(7);
+}
+
+.H-main{
+    font-size: 1.6vw;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    -webkit-animation: slide-top 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.Home > section{
+    height: 100vh;
+    padding-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Home > section > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number{
+    font-size: 20rem;
+    font-weight: 600;
+    width: 26rem;
+    color: var(--color-white);
+    -webkit-animation: slide-left 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-left 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    z-index: 1;
+}
+
+/*Section 1*/
 .section-1 > .H-title{
-    margin: -5rem 0 -2rem -0.5rem;
-    -webkit-animation: slide-right 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-right 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    height: 10rem;
+    -webkit-animation: slide-right 1500ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-right 1500ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.section-1 > .H-sub{
+    width: 19rem;
+    margin-top: 8rem;
+}
+
+.section-1 > .H-sub > .s1, .section-1 > .H-sub > .s2{
+    width: 12.5rem;
 }
 
 .section-1 > .H-main{
@@ -177,154 +197,97 @@
     animation: slide-right 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.section-2{
-    height: 100vh;
-    padding-top: 7rem;
+.section-1 > #CH-main{
+    margin-bottom: 5rem;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.section-2 > .H-title{
-    -webkit-animation: slide-top 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-top 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+/*Section 2*/
+.section-2 > div > div > div{
+    text-align: center;
 }
 
-.section-2 > .H-sub{
-    -webkit-animation: slide-top 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-top 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.section-2 > .H-main{
-    -webkit-animation: slide-top 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-top 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.section-2 > .H-sub > .s1, .section-2 > .H-sub > .s2, .section-3 > .H-sub > .s1, .section-3 > .H-sub > .s2, .section-4 > .H-sub > .s1, .section-4 > .H-sub > .s2{
-    width: 22.5rem;
-}
-
-.section-2 > .number{
-    bottom: 18rem;
-}
-
-.section-2 > div{
-    display: flex;
-}
-
-.section-2 > img{
-    position: relative;
-    left: 73.5rem;
-    bottom: 71rem;
-    width: 36rem;
-    cursor: pointer;
-    border-radius: 1rem;
-    opacity: 0.7;
-    transition: all 500ms ease;
-}
-.section-2 > img:hover{
-    opacity: 1;
-    transform: scale(1.1);
-}
-
-.section-2 > div > img{
-    width: 15rem;
-    margin: 5rem 4rem 0 0;
+.section-2 > div > div > div > img{
+    width: 20rem;
+    margin: 5rem 5rem 0 5rem;
     border-radius: 1rem;
     opacity: 0.7;
     filter: grayscale(1);
     cursor: pointer;
     transition: all 500ms ease;
 }
-.section-2 > div > img:hover{
+.section-2 > div > div > div > img:hover{
     opacity: 1;
     transform: scale(1.1);
+    filter: none;
 }
 
-.section-3{
-    height: 100vh;
-    padding-top: 7rem;
-}
-
-.section-3 > .H-title{
-    -webkit-animation: slide-top 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-top 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.section-3 > .H-sub{
-    -webkit-animation: slide-top 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-top 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.section-3 > .H-main{
-    -webkit-animation: slide-top 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-top 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.section-3 > .number{
-    top: -2.1rem;
-}
-
-.section-3 > img{
-    height: 80vh;
-    border-radius: 0.5rem;
-    cursor: pointer;
+/*Section 3*/
+.section-3 > div > div{
     position: relative;
-    bottom: 96.5vh;
-    left: 87.5vh;
-    z-index: -1;
+    width: 104rem;
+}
+
+.section-3 > div > div > img{
+    height: 67rem;
+    border-radius: 5rem;
+    position: absolute;
+    top: -43.5rem;
+    right: -25.7rem;
+    filter: brightness(0.6);
+    cursor: pointer;
+    z-index: 0;
     -webkit-animation: slide-scale-m 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-scale-m 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.section-4{
-    height: 100vh;
-}
-
-.section-4 > .Contact{
-    margin: 0;
-    padding-top: 7rem;
-}
-
-.section-4 > .Contact > div > .H-title{
-    opacity: 1;
-    margin-top: 0rem;
+/*Section 4*/
+.section-4 > div > div > a{
+    display: block;
+    color: var(--color-white);
+    opacity: 0.7;
+    width: 40rem;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
     transition: all 500ms ease;
-    -webkit-animation: slide-top 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-top 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.section-4 > .Contact > div > .H-sub{
     -webkit-animation: slide-top 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-top 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-
-#H-sub{
-    padding: 0;
-    margin-left: 6.5rem;
+.section-4 > div > div > a:hover{
+    opacity: 1;
 }
 
-#H-sub > .s1{
-    width: 22.5rem;
+.section-4 > div > div > div{
+    display: flex;
+    gap: 3rem;
+    margin: 5rem 0;
 }
 
-#H-sub > .s2{
-    width: 22.5rem;
+.section-4 > div > div > div > a > ion-icon{
+    opacity: 0.7;
+    transition: all  350ms ease;
+}
+.section-4 > div > div > div > a > ion-icon:hover, .section-4 > div > div > div > a > img:hover{
+    opacity: 1;
+    transform: scale(1.5);
 }
 
-.section-4 > .Contact > div > a{
-    -webkit-animation: slide-top 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-top 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.Contact > .n-cont{
-    position: relative;
-    right: 23px;
-    bottom: 34rem;
-}
-
-.section-4 > .Contact > div > div{
-    margin-bottom: 17.8rem;
+.section-4 > div > div > div > a > img{
+    width: 3rem;
+    height: 3rem;
+    opacity: 0.7;
+    border-radius: 0.3rem;
+    filter: grayscale(1);
+    background: var(--color-white);
+    transition: all 350ms ease;
 }
 
 footer{
+    height: 5rem;
+    padding-top: 1.5rem;
     text-align: right;
     font-size: 1.4rem;
     letter-spacing: 0.2rem;
@@ -335,9 +298,6 @@ footer > p > span{
     font-weight: 600;
 }
 
-.section-4 > .Contact > footer{
-    padding-top: 2.5rem;
-}
 
 @-webkit-keyframes slide-right {
     0% {
@@ -420,8 +380,8 @@ footer > p > span{
 
 @-webkit-keyframes slide-scale-m{
     0% {
-        -webkit-transform: translateX(-2rem) translateY(-1.5rem) scale(1.35);
-        transform: translateX(-2rem) translateY(-1.5rem) scale(1.35);
+        -webkit-transform: translateX(-2rem) translateY(-6rem) scale(1.2);
+        transform: translateX(-2rem) translateY(-6rem) scale(1.2);
     }
     100% {
         -webkit-transform: translateX(0) translateY(0) scale(1);
@@ -430,8 +390,8 @@ footer > p > span{
 }
 @keyframes slide-scale-m{
     0% {
-        -webkit-transform: translateX(-2rem) translateY(-1.5rem) scale(1.35);
-        transform: translateX(-2rem) translateY(-1.5rem) scale(1.35);
+        -webkit-transform: translateX(-2rem) translateY(-6rem) scale(1.2);
+        transform: translateX(-2rem) translateY(-6rem) scale(1.2);
     }
     100% {
         -webkit-transform: translateX(0) translateY(0) scale(1);

@@ -5,14 +5,14 @@
 /* ------------- ROOT VARIABLES ------------- */
 :root{
     --color-primary: #2c54cc;
-    --color-primary-variant: #1b40af;
+    --color-primary-variant: #163590;
     --color-danger: #be3039;
-    --color-danger-variant: #3F0509;
+    --color-danger-variant: #921e26;
     --color-sucess: #22e2a2;
     --color-sucess-variant: #33ce9a;
     --color-warning: #ffbb55;
     --color-warning-variant: #dd9f41;
-    --color-white: #eee;
+    --color-white: #e7e7e7;
     --color-white-variant: rgb(145, 143, 143);
     --color-black: rgb(41, 41, 41);
     --color-black-variant: rgb(58, 58, 58);
@@ -62,7 +62,6 @@ body{
 .App {
     text-align: center;
     height: 100vh;
-    overflow: scroll;
 }
 
 ion-icon {

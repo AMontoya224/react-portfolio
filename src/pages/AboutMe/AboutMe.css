@@ -8,8 +8,16 @@
     height: 100vh;
 }
 
+.AboutMe > .section1 > .H-sub{
+    width: 25rem;
+}
+
+.AboutMe > .section1 > .H-sub > .s1, .AboutMe > .section1 > .H-sub > .s2{
+    transform: scaleX(1.3) translateX(1.5rem);
+}
+
 .AboutMe > .section2, .section3, .section4{
-    padding-top: 10rem;
+    padding-top: 15rem;
     height: 100vh;
 }
 
@@ -48,10 +56,6 @@ h2{
     animation: slide-bottom 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.AboutMe > .section2 > h2{
-    margin: 3rem 0;
-}
-
 .AboutMe > .section2 > p{
     font-size: 2rem;
     width: 45%;
@@ -60,9 +64,8 @@ h2{
 
 .AboutMe > .section1 > .A-img{
     position: relative;
-    top: -72.2vh;
-    top: -80.8vh;
-    right: -40vw;
+    top: -75.5vh;
+    right: -38.1vw;
     height: 100vh;
     z-index: -1;
     -webkit-animation: slide-scale-p 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -334,8 +337,8 @@ h2{
 
 @-webkit-keyframes slide-scale-p{
     0% {
-        -webkit-transform: translateX(2rem) translateY(1.5rem) scale(0.74);
-        transform: translateX(2rem) translateY(1.5rem) scale(0.74);
+        -webkit-transform: translateX(1.5rem) translateY(5.5rem) scale(0.87);
+        transform: translateX(1rem) translateY(5.5rem) scale(0.87);
     }
     100% {
         -webkit-transform: translateX(0) translateY(0) scale(1);
@@ -344,8 +347,8 @@ h2{
 }
 @keyframes slide-scale-p {
     0% {
-        -webkit-transform: translateX(2rem) translateY(1.5rem) scale(0.74);
-        transform: translateX(2rem) translateY(1.5rem) scale(0.74);
+        -webkit-transform: translateX(1.5rem) translateY(5.5rem) scale(0.87);
+        transform: translateX(1rem) translateY(5.5rem) scale(0.87);
     }
     100% {
         -webkit-transform: translateX(0) translateY(0) scale(1);

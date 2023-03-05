@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
 import './Contact.css';
-import cv from './../../images/cv.png';
-import concytec from './../../images/concytec.png';
 
 
 function Contact( props ) {
@@ -52,10 +50,10 @@ function Contact( props ) {
                         <ion-icon name="logo-chrome" size="large"></ion-icon>
                     </a>
                     <a className="pagina" href='https://drive.google.com/file/d/1O0kGnQr3pxzlfkDREknbgMkmAbcx95Dx/view?usp=sharing' target="_blank" rel="noreferrer">
-                        <img src={cv} alt='cv'/>
+                        <img src={require('./../../images/cv.jpg')} alt='cv' title='Curriculum Vitae'/>
                     </a>
                     <a className="pagina" href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=140140" target="_blank" rel="noreferrer">
-                        <img src={concytec} alt='concytec'/>
+                        <img src={require('./../../images/concytec.png')} alt='concytec' title='Concytec'/>
                     </a>
                     <a className="pagina" href="https://web.facebook.com/juan.andres.montoya.angulo" target="_blank" rel="noreferrer">
                         <ion-icon name="logo-facebook" size="large"></ion-icon>

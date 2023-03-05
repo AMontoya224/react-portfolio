@@ -78,31 +78,23 @@
     animation: slide-bottom 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.Contact > div > .H-sub{
-    text-align: left;
-    padding-left: 6.5rem;
+.Contact > .section1 > .H-sub{
     -webkit-animation: slide-bottom 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-bottom 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-.Contact > div > .H-sub.active{
-    width: 41.5rem;
-    margin-left: 63.5rem; 
+
+.Contact > .section1 > .H-sub{
+    width: 22rem;
+}
+.Contact > .section1 > .H-sub.active{
+    width: 4rem;
 }
 
-.Contact > div > .H-sub > .s1{
-    margin-left: -6.5rem;
+.Contact > .section1 > .H-sub > .s1, .Contact > .section1 > .H-sub > .s2{
+    width: 15rem;
 }
-.Contact > div > .H-sub > .s1.active{
-    width: 69rem;
-    margin-left: -17rem;
-}
-
-.Contact > div > .H-sub > .s2{
-    margin-left: 0;
-}
-.Contact > div > .H-sub > .s2.active{
-    width: 24.5rem;
-    margin-left: -10rem;
+.Contact > .section1 > .H-sub > .s1.active,.Contact > .section1 > .H-sub > .s2.active{
+    width: 12rem;
 }
 
 .Contact > div > a{

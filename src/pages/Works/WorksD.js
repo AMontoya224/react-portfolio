@@ -6,7 +6,6 @@ import Diagram from './Diagram';
 import Pokedex from './Pokedex';
 import Shopping from './Shopping';
 import Music from './Music';
-import Music2 from './Music2';
 
 
 function Works_D( props ) {
@@ -44,7 +43,7 @@ function Works_D( props ) {
 
             <section className='section4' ref={testRef4} onMouseEnter={() => scrollSelect( '#4' )} onTouchStart={() => scrollSelect( '#4' )}>
                 <h2>{selectLan ? 'Music Player' : 'Reproductor de Música'}</h2>
-                <Music2 selectLan={selectLan}/>
+                <Music/>
                 <footer>
                     <p>{selectLan ? 'Developed by ' : 'Desarrollado por '}<span>Andres Montoya Angulo</span></p>
                 </footer>

@@ -88,7 +88,7 @@
 
 .H-title{
     color: var(--color-white);
-    font-size: 10vw;
+    font-size: 20vh;
     margin-left: -0.5rem;
     font-weight: 400;
     letter-spacing: 1.55rem;
@@ -209,7 +209,7 @@
 }
 
 .section-2 > div > div > div > img{
-    width: 20rem;
+    height: 25vh;
     margin: 5rem 5rem 0 5rem;
     border-radius: 1rem;
     opacity: 0.7;
@@ -230,10 +230,10 @@
 }
 
 .section-3 > div > div > img{
-    height: 67rem;
+    height: 84.5vh;
     border-radius: 5rem;
     position: absolute;
-    top: -43.5rem;
+    bottom: -15.5vh;
     right: -25.7rem;
     filter: brightness(0.6);
     cursor: pointer;

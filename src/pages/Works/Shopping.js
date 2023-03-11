@@ -5,23 +5,13 @@ import './Shopping.css';
 function Shopping(props) {
     const { selectLan } = props;
 
-    const carrito = document.querySelector("#carrito");
-
-    let contenidoCarrito = 0;
-    let vaciarCarritoBtn = 0;
-    let listaCursos = 0;
+    let contenidoCarrito;
     let articulosCarrito = [];
 
     useEffect(() => {
         contenidoCarrito = document.querySelector("#lista-carrito tbody");
-        vaciarCarritoBtn = document.querySelector("#vaciar-carrito");
-        listaCursos = document.querySelector("#lista-cursos");
         cargarStorage();
     }, []);
-
-    /*useEffect(() => {
-        cargarStorage();
-    }, [articulosCarrito]);*/
 
     const limpiarHTML = () => {
         while (contenidoCarrito.firstChild) {
@@ -37,17 +27,13 @@ function Shopping(props) {
     const agregarCurso = e => {
         e.preventDefault();
         if (e.target.classList.contains("agregar-carrito")) {
-            const cursoSelecionado = e.target.parentElement.parentElement;
-            leerDatosCurso(cursoSelecionado)
+            leerDatosCurso(e.target.parentElement.parentElement);
         }
     };
 
     const eliminarCurso = e => {
-        if (e.target.classList.contains("borrar-curso")) {
-            const cursoId = e.target.getAttribute("data-id")
-            articulosCarrito = articulosCarrito.filter(cursos => cursos.id !== cursoId)
-            carritoHTML()
-        }
+        articulosCarrito = articulosCarrito.filter(cursos => cursos.id !== e.target.getAttribute("data-id"))
+        carritoHTML()
     };
 
     const leerDatosCurso = cursos => {
@@ -55,13 +41,11 @@ function Shopping(props) {
             imagen: cursos.querySelector("img").src,
             titulo: cursos.querySelector("h4").textContent,
             precio: cursos.querySelector(".precio span").textContent,
-            id: cursos.querySelector("a").getAttribute("data-id"),
+            id: cursos.querySelector("button").getAttribute("data-id"),
             cantidad: 1,
         };
 
-        const existe = articulosCarrito.some(cursos => cursos.id === infoCurso.id);
-
-        if (existe) {
+        if (articulosCarrito.some(cursos => cursos.id === infoCurso.id)) {
             const cursos = articulosCarrito.map(cursos => {
                 if (cursos.id === infoCurso.id) {
                     cursos.cantidad++;
@@ -91,7 +75,7 @@ function Shopping(props) {
             const row = document.createElement("tr");
             row.innerHTML = `
                 <td>
-                    <img src="${imagen}" width="100">
+                    <img src="${imagen}" width="80">
                 </td>
                 <td>
                     ${titulo}
@@ -103,7 +87,7 @@ function Shopping(props) {
                     ${cantidad}
                 </td>
                 <td>
-                    <a href="#" className="borrar-curso" data-id="${id}" > X </a>
+                    <button data-id="${id}" class="borrar-curso" onClick={eliminarCurso}>X</button>
                 </td>
             `;
             contenidoCarrito.appendChild(row);
@@ -140,7 +124,7 @@ function Shopping(props) {
                                         </thead>
                                         <tbody></tbody>
                                     </table>
-                                    <a href="#" id="vaciar-carrito" className="button u-full-width" onClick={vaciarCarrito}>{selectLan ? 'Empty cart' : 'Vaciar Carrito'}</a>
+                                    <button id="vaciar-carrito" className="button u-full-width" onClick={vaciarCarrito}>{selectLan ? 'Empty cart' : 'Vaciar Carrito'}</button>
                                 </div>
                             </li>
                         </ul>
@@ -156,7 +140,7 @@ function Shopping(props) {
                             <h4>{selectLan ? 'HTML5 and CSS3 for Beginners' : 'HTML5 y CSS3 para Principiantes'}</h4>
                             <p>Nahuel Esteban</p>
                             <p className="precio">$200  <span className="u-pull-right ">$150</span></p>
-                            <a href="#" className="agregar-carrito" data-id="1">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</a>
+                            <button className="agregar-carrito" data-id="1">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</button>
                         </div>
                     </div>
                     <div className="card">
@@ -164,8 +148,8 @@ function Shopping(props) {
                         <div className="info-card">
                             <h4>{selectLan ? 'Bootstrap 4 and Sass' : 'Bootstrap 4 y Sass'}</h4>
                             <p>Nahuel Esteban</p>
-                            <p className="precio">$200  <span className="u-pull-right ">$150</span></p>
-                            <a href="#" className="agregar-carrito" data-id="2">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</a>
+                            <p className="precio">$200<span className="u-pull-right ">$150</span></p>
+                            <button className="agregar-carrito" data-id="2">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</button>
                         </div>
                     </div>
                     <div className="card">
@@ -174,7 +158,7 @@ function Shopping(props) {
                             <h4>{selectLan ? 'JavaScript for Beginners' : 'JavaScript para Principiantes'}</h4>
                             <p>Nahuel Esteban</p>
                             <p className="precio">$200  <span className="u-pull-right ">$150</span></p>
-                            <a href="#" className="agregar-carrito" data-id="3">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</a>
+                            <button className="agregar-carrito" data-id="3">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</button>
                         </div>
                     </div>
                 </div>

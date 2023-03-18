@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { createBrowserHistory } from "history";
 import { Switch, HashRouter, Route, BrowserRouter} from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
@@ -27,7 +28,7 @@ function App() {
   };
 
   const hist = createBrowserHistory();
-  
+
   return (
     <div className="App">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
+import Theme from '../Theme/Theme';
 import './Header.css';
 
 
@@ -66,12 +67,13 @@ function Header( props ) {
             </p>
             <b></b>
             <div className='H-row'>
-                <a  href="https://amontoya224.com/" target="_blank" rel="noreferrer">
+                {/*<a  href="https://amontoya224.com/" target="_blank" rel="noreferrer">
                     <ion-icon name="globe-outline" size="large"></ion-icon>
-                </a>
+                </a>*/}
                 <a href="mailto:jmontoyaan@unsa.edu.pe?subject=Quiero contactar contigo Andres!">
                     <ion-icon name="mail-outline" size="large"></ion-icon>
                 </a>
+                <Theme/>
                 <button className='L-btn' onClick={onBtnLan}>{selectLan ? 'English' : 'Español'}</button>
                 <button className='H-btn' onClick={onBtnEsc}><div className={btnEsc ? 's1 active' : 's1'}></div><div className={btnEsc ? 's2 active' : 's2'}></div></button>
             </div>
@@ -81,9 +83,10 @@ function Header( props ) {
                 <button className={btnEsc ? 'menu-p' : 'menu-np'} onClick={onBtnAboutMe}>{selectLan ? 'ABOUT ME' : 'SOBRE MÍ'}</button>
                 <button className={btnEsc ? 'menu-p' : 'menu-np'} onClick={onBtnContact}>{selectLan ? 'CONTACT' : 'CONTACTO'}</button>
                 <div>
-                    <a className={btnEsc ? 'menu-a' : 'menu-na'} href="https://amontoya224.com/" target="_blank" rel="noreferrer">
+                    {/*<a className={btnEsc ? 'menu-a' : 'menu-na'} href="https://amontoya224.com/" target="_blank" rel="noreferrer">
                         <ion-icon name="globe-outline" size="large"></ion-icon>
-                    </a>
+                    </a>*/}
+                    <Theme/>
                     <a className={btnEsc ? 'menu-a' : 'menu-na'} href="mailto:jmontoyaan@unsa.edu.pe?subject=Quiero contactar contigo Andres!">
                         <ion-icon name="mail-outline" size="large"></ion-icon>
                     </a>

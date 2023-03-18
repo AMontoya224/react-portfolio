@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { createBrowserHistory } from "history";
-import { Switch, HashRouter, Route, BrowserRouter} from 'react-router-dom';
+import { Switch, Route, BrowserRouter} from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
 import AboutMe from './pages/AboutMe/AboutMe';
@@ -27,8 +26,6 @@ function App() {
     setSelectLan( newSelect );
   };
 
-  const hist = createBrowserHistory();
-
   return (
     <div className="App">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
@@ -38,7 +35,7 @@ function App() {
       <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet"/>
       <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet"/>
       <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet"/>
-      <BrowserRouter history={hist}>
+      <BrowserRouter>
         <Header onSelectLeft={onSelectLeft} testRef1={testRef1} selectLan={selectLan} onSelectLan={onSelectLan}/>
         <Switch>
           <Route exact path="/" render={ routeProps => <Home onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} {...routeProps} />}/>

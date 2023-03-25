@@ -3,7 +3,7 @@ import './Shopping.css';
 
 
 function Shopping(props) {
-    const { selectLan } = props;
+    const { selectLan, scrollToBack } = props;
 
     let contenidoCarrito;
     let articulosCarrito = [];
@@ -102,67 +102,64 @@ function Shopping(props) {
 
     return (
         <div className='Shopping'>
-            <header id="header" className="header">
-                <div className="row">
-                    <div>
-                        <p>Monty<b>Ang</b></p>
-                    </div>
-                    <div className="two columns u-pull-right">
-                        <ul>
-                            <li className="submenu">
-                                <span className="material-symbols-outlined">shopping_cart</span>
-                                <div id="carrito" onClick={eliminarCurso}>
-                                    <table id="lista-carrito">
-                                        <thead>
-                                            <tr>
-                                                <th>{selectLan ? 'Image' : 'Imagen'}</th>
-                                                <th>{selectLan ? 'Name' : 'Nombre'}</th>
-                                                <th>{selectLan ? 'Price' : 'Precio'}</th>
-                                                <th>{selectLan ? 'Amount' : 'Cantidad'}</th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody></tbody>
-                                    </table>
-                                    <button id="vaciar-carrito" className="button u-full-width" onClick={vaciarCarrito}>{selectLan ? 'Empty cart' : 'Vaciar Carrito'}</button>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+            <header></header>
+            <main>
+                <div className="header">
+                    <button onClick={scrollToBack} className='B-return'><span className="material-icons-round return">keyboard_backspace</span><p>BACK</p></button>
+                    <ul>
+                        <li className="submenu">
+                            <span className="material-symbols-outlined">shopping_cart</span>
+                            <div id="carrito" onClick={eliminarCurso}>
+                                <table id="lista-carrito">
+                                    <thead>
+                                        <tr>
+                                            <th>{selectLan ? 'Image' : 'Imagen'}</th>
+                                            <th>{selectLan ? 'Name' : 'Nombre'}</th>
+                                            <th>{selectLan ? 'Price' : 'Precio'}</th>
+                                            <th>{selectLan ? 'Amount' : 'Cantidad'}</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <button id="vaciar-carrito" className="button u-full-width" onClick={vaciarCarrito}>{selectLan ? 'Empty cart' : 'Vaciar Carrito'}</button>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </header>
-            <div id="lista-cursos" className="container" onClick={agregarCurso}>
-                <h1 id="encabezado" className="encabezado">{selectLan ? 'Online Courses' : 'Cursos En Línea'}</h1>
-                <div className="row">
-                    <div className="card">
-                        <img src={require('./../../images/curso1.jpg')} alt='curso1' />
-                        <div className="info-card">
-                            <h4>{selectLan ? 'HTML5 and CSS3 for Beginners' : 'HTML5 y CSS3 para Principiantes'}</h4>
-                            <p>Nahuel Esteban</p>
-                            <p className="precio">$200  <span className="u-pull-right ">$150</span></p>
-                            <button className="agregar-carrito" data-id="1">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</button>
+                <div id="lista-cursos" className="container" onClick={agregarCurso}>
+                    <h1 id="encabezado" className="encabezado">{selectLan ? 'Online Courses' : 'Cursos En Línea'}</h1>
+                    <div className="row">
+                        <div className="card">
+                            <img src={require('./../../images/curso1.jpg')} alt='curso1' />
+                            <div className="info-card">
+                                <h4>{selectLan ? 'HTML5 and CSS3 for Beginners' : 'HTML5 y CSS3 para Principiantes'}</h4>
+                                <p>Nahuel Esteban</p>
+                                <p className="precio">$200  <span className="u-pull-right ">$150</span></p>
+                                <button className="agregar-carrito" data-id="1">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</button>
+                            </div>
                         </div>
-                    </div>
-                    <div className="card">
-                        <img src={require('./../../images/curso2.jpg')} alt='curso2' />
-                        <div className="info-card">
-                            <h4>{selectLan ? 'Bootstrap 4 and Sass' : 'Bootstrap 4 y Sass'}</h4>
-                            <p>Nahuel Esteban</p>
-                            <p className="precio">$200<span className="u-pull-right ">$150</span></p>
-                            <button className="agregar-carrito" data-id="2">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</button>
+                        <div className="card">
+                            <img src={require('./../../images/curso2.jpg')} alt='curso2' />
+                            <div className="info-card">
+                                <h4>{selectLan ? 'Bootstrap 4 and Sass' : 'Bootstrap 4 y Sass'}</h4>
+                                <p>Nahuel Esteban</p>
+                                <p className="precio">$200<span className="u-pull-right ">$150</span></p>
+                                <button className="agregar-carrito" data-id="2">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</button>
+                            </div>
                         </div>
-                    </div>
-                    <div className="card">
-                        <img src={require('./../../images/curso3.jpg')} alt='curso3' />
-                        <div className="info-card">
-                            <h4>{selectLan ? 'JavaScript for Beginners' : 'JavaScript para Principiantes'}</h4>
-                            <p>Nahuel Esteban</p>
-                            <p className="precio">$200  <span className="u-pull-right ">$150</span></p>
-                            <button className="agregar-carrito" data-id="3">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</button>
+                        <div className="card">
+                            <img src={require('./../../images/curso3.jpg')} alt='curso3' />
+                            <div className="info-card">
+                                <h4>{selectLan ? 'JavaScript for Beginners' : 'JavaScript para Principiantes'}</h4>
+                                <p>Nahuel Esteban</p>
+                                <p className="precio">$200  <span className="u-pull-right ">$150</span></p>
+                                <button className="agregar-carrito" data-id="3">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </main>
         </div>
     )
 }

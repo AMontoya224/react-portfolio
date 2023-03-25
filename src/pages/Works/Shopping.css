@@ -1,36 +1,36 @@
 .Shopping{
-    background: var(--color-white);
+    background: var(--color-black);
     border-radius: 0.5rem;
     text-align: center;
     color: var(--color-black);
-    width: 90%;
-    margin: 1.5rem auto 0 auto;
+    width: 100vw;
+    height: 100vh;
 }
 
-.Shopping > .header{
-    background: white;
-    padding: 1rem 5rem;
+.Shopping > header{
+    background: var(--color-black-variant);
+    height: 10rem;
 }
 
-.Shopping > .header > div > div > p{
-    font-size: 2.5rem;
+.Shopping > main > .header{
+    margin: 5rem 0;
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.Shopping > div{
-    padding: 1rem 5rem;
-}
-
-.Shopping > div > div{
-    gap: 5rem;
-}
-
-.Shopping > .header > div > div > ul {
+.Shopping > main > .header > ul{
     list-style: none;
 }
 
-.submenu {
+.submenu{
     position: relative;
-    
+    width: 20rem;
+}
+
+.submenu > span{
+    color: var(--color-white);
 }
 
 .submenu #carrito {
@@ -40,10 +40,11 @@
 .submenu:hover #carrito {
     display: block;
     position: absolute;
-    right: 0;
+    right: -10rem;
     top: 100%;
     z-index: 1;
     background-color: white;
+    border-radius: 0.5rem;
     padding: 20px;
     min-height: 400px;
     min-width: 300px;
@@ -68,8 +69,15 @@
     background: var(--color-danger);
 }
 
-#lista-cursos .row {
-    margin-bottom: 20px;
+#lista-cursos{
+    margin: 0 auto;
+    width: 80%;
+}
+
+#lista-cursos > .encabezado{
+    color: var(--color-white);
+    margin-bottom: 5rem;
+    
 }
 
 #lista-carrito th{
@@ -116,7 +124,8 @@
 
 .card {
     text-align: center;
-    background: white;
+    background: var(--color-black-variant);
+    color: var(--color-white);
     border-radius: 0.5rem;
 }
 

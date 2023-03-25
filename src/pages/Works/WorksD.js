@@ -24,15 +24,13 @@ function Works_D( props ) {
         <div className="WorksD">
             <title>{selectLan ? 'Development Works | PORTFOLIO' : 'Trabajos de Desarrollo | PORTAFOLIO'}</title>
             <Left2 onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4}/>
+            
             <section className='section1' ref={testRef1} onMouseEnter={() => scrollSelect( '#1' )} onTouchStart={() => scrollSelect( '#1' )}>
-                <img src={require('./../../images/developer.png')} alt='developer'/>
-                <button onClick={scrollToBack} className='B-return'><span className="material-icons-round return">keyboard_backspace</span><p>BACK</p></button>
-                <h2>{selectLan ? 'Shopping cart' : 'Carro de compras'}</h2>
-                <Shopping selectLan={selectLan}/>
+                <Shopping selectLan={selectLan} scrollToBack={scrollToBack}/>
             </section>
 
             <section className='section2' ref={testRef2} onMouseEnter={() => scrollSelect( '#2' )} onTouchStart={() => scrollSelect( '#2' )}>
-                <h2>{selectLan ? 'Pokedex' : 'Pokedex'}</h2>
+                <img src={require('./../../images/title_pokedex.png')} alt='pokedex'/>
                 <Pokedex selectLan={selectLan}/>
             </section>
 

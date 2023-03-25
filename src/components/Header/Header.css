@@ -152,13 +152,6 @@
     opacity: 0.8;
 }
 
-.menu-np, .menu-na{
-    color: transparent;
-    background: transparent;
-    border: none;
-    visibility: hidden;
-}
-
 .menu > div{
     display: flex;
     align-items: center;
@@ -195,6 +188,13 @@
 .menu-a:hover{
     transform: scale(1.7);
     opacity: 0.7;
+}
+
+.menu-np, .menu-na, .menu-bk > div > .Theme > span{
+    color: transparent;
+    background: transparent;
+    border: none;
+    visibility: hidden;
 }
 
 @keyframes slide-bottom-fw{

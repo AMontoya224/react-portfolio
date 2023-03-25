@@ -23,7 +23,7 @@ function Theme(){
     return (
         <div className='Theme' onClick={changeTheme}>
             <span className='material-icons-round'>
-                {iconTheme ? "light_mode" : "dark_mode"}
+                {iconTheme ? 'dark_mode' : 'light_mode'}
             </span>
         </div>
     )

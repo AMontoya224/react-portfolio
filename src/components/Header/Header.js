@@ -74,7 +74,7 @@ function Header( props ) {
                     <ion-icon name="mail-outline" size="large"></ion-icon>
                 </a>
                 <Theme/>
-                <button className='L-btn' onClick={onBtnLan}>{selectLan ? 'English' : 'Español'}</button>
+                <button className='L-btn' onClick={onBtnLan}>{selectLan ? 'Español' : 'English'}</button>
                 <button className='H-btn' onClick={onBtnEsc}><div className={btnEsc ? 's1 active' : 's1'}></div><div className={btnEsc ? 's2 active' : 's2'}></div></button>
             </div>
             <div className={btnEsc ? 'menu menu-fw' : 'menu menu-bk'}>

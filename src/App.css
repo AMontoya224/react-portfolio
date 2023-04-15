@@ -69,3 +69,28 @@ body{
 ion-icon {
     color: var(--color-white);
 }
+
+.B-return{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 4rem;
+    color: var(--color-white);
+    cursor: pointer;
+    background: transparent;
+    transition: all 350ms ease;
+}
+.B-return:hover{
+    opacity: 0.7;
+}
+
+.B-return > span{
+    font-size: 3.2rem;
+}
+
+.B-return > p{
+    letter-spacing: 0.6rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background: transparent;
+}

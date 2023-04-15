@@ -25,7 +25,7 @@ function Works( props ) {
         <div className="Works">
             <title>{selectLan ? 'Works | PORTFOLIO' : 'Trabajos | PORTAFOLIO'}</title>
             <div className='section1' ref={testRef1}>
-                <button onClick={scrollToBack} className='W-return'><span className="material-icons-round return">keyboard_backspace</span><p>BACK</p></button>
+                <button onClick={scrollToBack} className='W-return'><span className="material-icons-round">keyboard_backspace</span><p>BACK</p></button>
                 <p className='H-title'>{selectLan ? 'Projects' : 'Proyectos'}</p>
                 <div className='W-container'>
                     <div onClick={onBtnWorksD}>

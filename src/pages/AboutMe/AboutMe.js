@@ -63,7 +63,7 @@ function AboutMe( props ) {
             <Left2 onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4}/>
             
             <section className='section1' ref={testRef1} onMouseEnter={() => scrollSelect( '#1' )} onTouchStart={() => scrollSelect( '#1' )}>
-                <button onClick={scrollToBack} className='B-return'><span className="material-icons-round return">keyboard_backspace</span><p>BACK</p></button>
+                <button onClick={scrollToBack} className='B-return'><span className="material-icons-round">keyboard_backspace</span><p>BACK</p></button>
                 <p className='H-title'>{selectLan ? 'About me' : 'Sobre mí'}</p>
                 <button className='H-sub' onClick={scrollToBack}>
                     <div className='s1'></div>

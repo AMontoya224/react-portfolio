@@ -26,7 +26,7 @@ function Contact( props ) {
         <div className="Contact">
             <title>{selectLan ? 'Contact | PORTFOLIO' : 'Contacto | PORTAFOLIO'}</title>
             <div className='section1' ref={testRef1}>
-                <button onClick={scrollToBack} className='B-return'><span className="material-icons-round return">keyboard_backspace</span><p>BACK</p></button>
+                <button onClick={scrollToBack} className='B-return'><span className="material-icons-round">keyboard_backspace</span><p>BACK</p></button>
                 <p className='H-title'>{selectLan ? 'Get In Touch' : 'Contáctame'}</p>
                 <button className={btnSub ? 'H-sub active' : 'H-sub'} onClick={onBtnSub}>
                     <div className={btnSub ? 's1 active' : 's1'}></div>

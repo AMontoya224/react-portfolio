@@ -1,6 +1,8 @@
 import './Music.css';
 
-function Music2() {
+function Music2(props) {
+    const { selectLan } = props;
+
     const music_list = [
         {
             img : 'https://raw.githubusercontent.com/AMontoya224/react-portfolio/master/src/pages/Works/img/Stan.jpg',
@@ -28,7 +30,7 @@ function Music2() {
         }
     ];
 
-    let background = document.querySelector('.Music2');
+    let background = document.querySelector('.Music');
     let now_playing = document.querySelector('.now-playing');
     let track_art = document.querySelector('.track-art');
     let track_name = document.querySelector('.track-name');
@@ -198,7 +200,8 @@ function Music2() {
     };
 
     return (
-        <div className="Music2">
+        <div className="Music">
+            <h1>{selectLan ? 'Music Player' : 'Reproductor de Música'}</h1>
             <div className="wrapper">
                 <div className="details">
                     <div className="now-playing">Música X de Y</div>
@@ -246,8 +249,10 @@ function Music2() {
                     <span className="stroke"></span>
                     <span className="stroke"></span>
                 </div>
-
             </div>
+            <footer>
+                <p>{selectLan ? 'Developed by ' : 'Desarrollado por '}<span>Andres Montoya Angulo</span></p>
+            </footer>
         </div>
     );
 }

@@ -35,16 +35,12 @@ function Works_D( props ) {
             </section>
 
             <section className='section3' ref={testRef3} onMouseEnter={() => scrollSelect( '#3' )} onTouchStart={() => scrollSelect( '#3' )}>
-                <h2>{selectLan ? 'My first canvas' : 'Mi primer lienzo'}</h2>
+                <h1>{selectLan ? 'My First Canvas' : 'Mi Primer Lienzo'}</h1>
                 <Diagram selectLan={selectLan}/>
             </section>
 
             <section className='section4' ref={testRef4} onMouseEnter={() => scrollSelect( '#4' )} onTouchStart={() => scrollSelect( '#4' )}>
-                <h2>{selectLan ? 'Music Player' : 'Reproductor de Música'}</h2>
-                <Music/>
-                <footer>
-                    <p>{selectLan ? 'Developed by ' : 'Desarrollado por '}<span>Andres Montoya Angulo</span></p>
-                </footer>
+                <Music selectLan={selectLan}/>
             </section>
         </div>
     );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import Left2 from '../../components/Left/Left2';
-import './Works.css';
+import './WorksE.css';
 
 
 function Works_E( props ) {
@@ -20,7 +20,7 @@ function Works_E( props ) {
         <div className="WorksE">
             <title>{selectLan ? 'Electronic Works | PORTFOLIO' : 'Trabajos de Electrónica | PORTAFOLIO'}</title>
             <Left2 onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4}/>
-            <div className='section1'ref={testRef1} onMouseEnter={() => scrollSelect( '#1' )} onTouchStart={() => scrollSelect( '#1' )}>
+            <section className='section1'ref={testRef1} onMouseEnter={() => scrollSelect( '#1' )} onTouchStart={() => scrollSelect( '#1' )}>
                 <img src={require('./../../images/electronic.png')} alt='electronic'/>
                 <button onClick={scrollToBack} className='B-return'><span className="material-icons-round">keyboard_backspace</span><p>BACK</p></button>
                 <h2>{selectLan ? 'Explosive ordnance disposal robot' : 'Robot de eliminación de explosivos'}</h2>
@@ -70,8 +70,9 @@ function Works_E( props ) {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className='section1' ref={testRef2} onMouseEnter={() => scrollSelect( '#2' )} onTouchStart={() => scrollSelect( '#2' )}>
+            </section>
+
+            <section className='section2' ref={testRef2} onMouseEnter={() => scrollSelect( '#2' )} onTouchStart={() => scrollSelect( '#2' )}>
                 <h2>{selectLan ? 'Driver drowsiness detection' : 'Detección de somnolencia'}</h2>
                 <div className='top'>
                     <div>
@@ -118,8 +119,9 @@ function Works_E( props ) {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className='section1' ref={testRef3} onMouseEnter={() => scrollSelect( '#3' )} onTouchStart={() => scrollSelect( '#3' )}>
+            </section>
+
+            <section className='section3' ref={testRef3} onMouseEnter={() => scrollSelect( '#3' )} onTouchStart={() => scrollSelect( '#3' )}>
                 <h2>{selectLan ? 'Desing of electrostimulation vest' : 'Chaleco de electroestimulación'}</h2>
                 <div className='top'>
                     <div>
@@ -167,10 +169,18 @@ function Works_E( props ) {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className='section4' ref={testRef4} onMouseEnter={() => scrollSelect( '#4' )} onTouchStart={() => scrollSelect( '#4' )}>
+            </section>
+
+            <section className='section4' ref={testRef4} onMouseEnter={() => scrollSelect( '#4' )} onTouchStart={() => scrollSelect( '#4' )}>
                 <h2>{selectLan ? 'Published scientific articles' : 'Artículos científicos publicados'}</h2>
                 <div className='container'>
+                    <div className='c-info'>
+                        <a href="http://pe.org.pl/articles/2023/5/46.pdf" target="_blank" rel="noreferrer">
+                            <h4>Design of a Terrain Mapping System for Low-cost Exploration Robots based on Stereo Vision</h4>
+                            <i>Przegląd Elektrotechniczny | 2023</i>
+                            <p><b>DOI:</b> 10.15199/48.2023.05.46</p>
+                        </a>
+                    </div>
                     <div className='c-info'>
                         <a href="https://www.mdpi.com/2218-6581/11/5/100" target="_blank" rel="noreferrer">
                             <h4>Assisted Operation of a Robotic Arm Based on Stereo Vision for Positioning near an Explosive Device</h4>
@@ -217,7 +227,7 @@ function Works_E( props ) {
                 <footer>
                     <p>{selectLan ? 'Developed by ' : 'Desarrollado por '}<span>Andres Montoya Angulo</span></p>
                 </footer>
-            </div>
+            </section>
         </div>
     );
 }

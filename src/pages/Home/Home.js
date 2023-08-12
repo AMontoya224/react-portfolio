@@ -17,6 +17,7 @@ function Home(props) {
     }
   };
 
+  /*
   setTimeout(() => {
     let wolf = document.getElementById('H-wolf');
     let img = document.getElementById('H-img');
@@ -27,6 +28,7 @@ function Home(props) {
       img.style.top = ((e.pageY) / 30) + 120 + 'px';
     }
   }, 500);
+  */
 
   const onBtnWorks = () => {
     onSelectLeft('#1');

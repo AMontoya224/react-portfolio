@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import './Works.css';
+import './WorksD.css';
 import Left2 from '../../components/Left/Left2';
 import Diagram from './Diagram';
 import Pokedex from './Pokedex';

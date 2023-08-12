@@ -1,0 +1,85 @@
+.WorksD{
+    margin: 0;
+    text-align: left;
+}
+
+.WorksD > section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.WorksD > .section1{
+    align-items: flex-start;
+}
+
+.WorksD > .section1 > img{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    filter: grayscale(0) blur(3px);
+    opacity: 0.2;
+    z-index: -1;
+    -webkit-animation: slide-scale-dd 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-scale-dd 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.WorksD > .section2{
+    background-image: url(../../images/background_pokemon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.WorksD > .section2 > img{
+    width: 40vh;
+}
+
+.WorksD > .section3{
+    padding-top: 12rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.WorksD > .section3 > h1{
+    font-size: 5rem;
+}
+
+.WorksD > .section4{
+    padding: 0;
+}
+
+@-webkit-keyframes slide-scale-dd{
+    0% {
+        -webkit-transform: translateX(-25.5rem) translateY(8rem) scale(0.4);
+        transform: translateX(-25.5rem) translateY(8rem) scale(0.4);
+    }
+    100% {
+        -webkit-transform: translateX(0) translateY(0) scale(1);
+        transform: translateX(0) translateY(0) scale(1);
+    }
+}
+@keyframes slide-scale-dd{
+    0% {
+        -webkit-transform: translateX(-25.5rem) translateY(8rem) scale(0.4);
+        transform: translateX(-25.5rem) translateY(8rem) scale(0.4);
+    }
+    100% {
+        -webkit-transform: translateX(0) translateY(0) scale(1);
+        transform: translateX(0) translateY(0) scale(1);
+    }
+}
+
+@media only screen and (max-width: 960px){
+    .WorksD{
+        margin: 0;
+        padding: 1.5rem;
+    }
+}

@@ -67,9 +67,6 @@ function Header( props ) {
             </p>
             <b></b>
             <div className='H-row'>
-                {/*<a  href="https://amontoya224.com/" target="_blank" rel="noreferrer">
-                    <ion-icon name="globe-outline" size="large"></ion-icon>
-                </a>*/}
                 <a href="mailto:jmontoyaan@unsa.edu.pe?subject=Quiero contactar contigo Andres!">
                     <ion-icon name="mail-outline" size="large"></ion-icon>
                 </a>
@@ -83,14 +80,11 @@ function Header( props ) {
                 <button className={btnEsc ? 'menu-p' : 'menu-np'} onClick={onBtnAboutMe}>{selectLan ? 'ABOUT ME' : 'SOBRE MÍ'}</button>
                 <button className={btnEsc ? 'menu-p' : 'menu-np'} onClick={onBtnContact}>{selectLan ? 'CONTACT' : 'CONTACTO'}</button>
                 <div>
-                    {/*<a className={btnEsc ? 'menu-a' : 'menu-na'} href="https://amontoya224.com/" target="_blank" rel="noreferrer">
-                        <ion-icon name="globe-outline" size="large"></ion-icon>
-                    </a>*/}
                     <Theme/>
                     <a className={btnEsc ? 'menu-a' : 'menu-na'} href="mailto:jmontoyaan@unsa.edu.pe?subject=Quiero contactar contigo Andres!">
                         <ion-icon name="mail-outline" size="large"></ion-icon>
                     </a>
-                    <button className={btnEsc ? 'menu-a' : 'menu-na'} onClick={onBtnLan}>{selectLan ? 'English' : 'Español'}</button>
+                    <button className={btnEsc ? 'menu-a' : 'menu-na'} onClick={onBtnLan}>{selectLan ? 'Español' : 'English'}</button>
                 </div>
             </div>
         </div>

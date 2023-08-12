@@ -45,7 +45,7 @@
     display: block;
     color: var(--color-white);
     opacity: 1;
-    width: 40rem;
+    width: 100%;
     margin-top: 1rem;
     font-size: 1.8rem;
     font-weight: 400;
@@ -113,5 +113,21 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    .Contact{
+        margin: 0;
+        padding: 1.5rem;
+    }
+
+    .Contact > .section1{
+        padding-top: 12rem;
+        padding-bottom: 8rem;
+    }
+
+    .Contact > div > .H-title{
+        margin: 0;
     }
 }

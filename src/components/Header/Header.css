@@ -49,11 +49,7 @@
     opacity: 0.7;
 }
 
-.H-row > .wpp{
-    text-align: center;
-}
-
-.H-row > .L-btn{
+.H-row >.L-btn{
     margin: 0 1rem;
     font-size: 2.2rem;
     font-weight: 400;
@@ -65,7 +61,7 @@
     transition: all 350ms ease;
     opacity: 1;
 }
-.H-row > .L-btn:hover{
+.H-row >.L-btn:hover{
     opacity: 0.7;
 }
 
@@ -120,7 +116,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     background: rgb(136,16,25);
     background: linear-gradient(90deg, rgba(136,16,25,1) 0%, rgba(99,10,16,1) 50%, rgba(60,5,9,1) 100%);
     z-index: 3;
@@ -221,12 +217,26 @@
 
 
 @media only screen and (max-width: 960px){
+    .Header{
+        padding: 2rem 1rem;
+    }
+
     .Header > .H-row > a, .Header > .H-row > .L-btn{
         visibility: hidden;
     }
 
     .menu{
+        
         padding-top: 10vh;
+    }
+
+    .menu-fw{
+        -webkit-animation: slide-bottom-fw 350ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-bottom-fw 350ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    .menu-bk{
+        -webkit-animation: slide-bottom-bk 700ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-bottom-bk 700ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
 
     .menu > div{
@@ -234,6 +244,14 @@
     }
 
     .menu-p{
-        font-size: 10vh;
+        font-size: 13vw;
+    }
+
+    .menu-a{
+        font-size: 6vw;
+    }
+
+    .menu > div > .Theme{
+        display: block;
     }
 }

@@ -106,6 +106,7 @@ function Shopping(props) {
             <main>
                 <div className="header">
                     <button onClick={scrollToBack} className='B-return'><span className="material-icons-round return">keyboard_backspace</span><p>BACK</p></button>
+                    <h1 className="encabezado">{selectLan ? 'Online Courses' : 'Cursos En Línea'}</h1>
                     <ul>
                         <li className="submenu">
                             <span className="material-symbols-outlined">shopping_cart</span>
@@ -127,35 +128,32 @@ function Shopping(props) {
                         </li>
                     </ul>
                 </div>
-                <div id="lista-cursos" className="container" onClick={agregarCurso}>
-                    <h1 id="encabezado" className="encabezado">{selectLan ? 'Online Courses' : 'Cursos En Línea'}</h1>
-                    <div className="row">
-                        <div className="card">
-                            <img src={require('./../../images/curso1.jpg')} alt='curso1' />
-                            <div className="info-card">
-                                <h4>{selectLan ? 'HTML5 and CSS3 for Beginners' : 'HTML5 y CSS3 para Principiantes'}</h4>
-                                <p>Nahuel Esteban</p>
-                                <p className="precio">$200  <span className="u-pull-right ">$150</span></p>
-                                <button className="agregar-carrito" data-id="1">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</button>
-                            </div>
+                <div id="lista-cursos" className="container" onClick={agregarCurso}>      
+                    <div className="card">
+                        <img src={require('./../../images/curso1.jpg')} alt='curso1' />
+                        <div className="info-card">
+                            <h4>{selectLan ? 'HTML5 and CSS3' : 'HTML5 y CSS3'}</h4>
+                            <p>Nahuel Esteban</p>
+                            <p className="precio">$200  <span className="u-pull-right ">$150</span></p>
+                            <button className="agregar-carrito" data-id="1">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</button>
                         </div>
-                        <div className="card">
-                            <img src={require('./../../images/curso2.jpg')} alt='curso2' />
-                            <div className="info-card">
-                                <h4>{selectLan ? 'Bootstrap 4 and Sass' : 'Bootstrap 4 y Sass'}</h4>
-                                <p>Nahuel Esteban</p>
-                                <p className="precio">$200<span className="u-pull-right ">$150</span></p>
-                                <button className="agregar-carrito" data-id="2">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</button>
-                            </div>
+                    </div>
+                    <div className="card">
+                        <img src={require('./../../images/curso2.jpg')} alt='curso1' />
+                        <div className="info-card">
+                            <h4>{selectLan ? 'Bootstrap 4 and Sass' : 'Bootstrap 4 y Sass'}</h4>
+                            <p>Nahuel Esteban</p>
+                            <p className="precio">$200  <span className="u-pull-right ">$150</span></p>
+                            <button className="agregar-carrito" data-id="1">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</button>
                         </div>
-                        <div className="card">
-                            <img src={require('./../../images/curso3.jpg')} alt='curso3' />
-                            <div className="info-card">
-                                <h4>{selectLan ? 'JavaScript for Beginners' : 'JavaScript para Principiantes'}</h4>
-                                <p>Nahuel Esteban</p>
-                                <p className="precio">$200  <span className="u-pull-right ">$150</span></p>
-                                <button className="agregar-carrito" data-id="3">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</button>
-                            </div>
+                    </div>
+                    <div className="card">
+                        <img src={require('./../../images/curso3.jpg')} alt='curso3' />
+                        <div className="info-card">
+                            <h4>{selectLan ? 'JavaScript for Beginners' : 'JavaScript para Principiantes'}</h4>
+                            <p>Nahuel Esteban</p>
+                            <p className="precio">$200  <span className="u-pull-right ">$150</span></p>
+                            <button className="agregar-carrito" data-id="3">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</button>
                         </div>
                     </div>
                 </div>

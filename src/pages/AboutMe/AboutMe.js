@@ -212,7 +212,7 @@ function AboutMe( props ) {
                             </div>
                         </a>
                     </div>
-                    <div className='E-container E-container-C'>
+                    <div className='E-container'>
                         <a href="https://drive.google.com/file/d/1KWhjxaZMYPExmHJureVZ1XCuRgTMglf1/view?usp=sharing" target="_blank" rel="noreferrer">
                             <img className='E-logo-C' src={require('./../../images/cayetano.png')} alt='cayetano'/>
                             <div className='E-info'>

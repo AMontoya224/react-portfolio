@@ -68,10 +68,10 @@ function Header( props ) {
             <b></b>
             <div className='H-row'>
                 <a href="mailto:jmontoyaan@unsa.edu.pe?subject=Quiero contactar contigo Andres!">
-                    <ion-icon name="mail-outline" size="large"></ion-icon>
+                    <span className='material-icons-round'>mail</span>
                 </a>
                 <Theme/>
-                <button className='L-btn' onClick={onBtnLan}>{selectLan ? 'Español' : 'English'}</button>
+                <button className='L-btn' onClick={onBtnLan}><span className='material-icons-round'>translate</span></button>
                 <button className='H-btn' onClick={onBtnEsc}><div className={btnEsc ? 's1 active' : 's1'}></div><div className={btnEsc ? 's2 active' : 's2'}></div></button>
             </div>
             <div className={btnEsc ? 'menu menu-fw' : 'menu menu-bk'}>
@@ -80,11 +80,11 @@ function Header( props ) {
                 <button className={btnEsc ? 'menu-p' : 'menu-np'} onClick={onBtnAboutMe}>{selectLan ? 'ABOUT ME' : 'SOBRE MÍ'}</button>
                 <button className={btnEsc ? 'menu-p' : 'menu-np'} onClick={onBtnContact}>{selectLan ? 'CONTACT' : 'CONTACTO'}</button>
                 <div>
-                    <Theme/>
                     <a className={btnEsc ? 'menu-a' : 'menu-na'} href="mailto:jmontoyaan@unsa.edu.pe?subject=Quiero contactar contigo Andres!">
-                        <ion-icon name="mail-outline" size="large"></ion-icon>
+                        <span className='material-icons-round'>mail</span>
                     </a>
-                    <button className={btnEsc ? 'menu-a' : 'menu-na'} onClick={onBtnLan}>{selectLan ? 'Español' : 'English'}</button>
+                    <Theme/>
+                    <button className={btnEsc ? 'menu-a' : 'menu-na'} onClick={onBtnLan}><span className='material-icons-round'>translate</span></button>
                 </div>
             </div>
         </div>

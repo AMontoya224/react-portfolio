@@ -3,7 +3,17 @@
     text-align: left;
 }
 
-.Works > .section1{
+.Home > main{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.Home > main > section{
+    scroll-snap-align: start;
+}
+
+.Works > main > .one{
   padding-top: 12rem;
   height: 100vh;
   display: flex;
@@ -11,7 +21,7 @@
   justify-content: space-between;
 }
 
-.Works > .section1 > button{
+.Works > main > .one > button{
   text-align: left;
   display: flex;
   flex-direction: row;
@@ -44,11 +54,11 @@
   background: transparent;
 }
 
-.Works > .section1 > footer{
+.Works > main > .one > footer{
   margin-bottom: 3rem;
 }
 
-.Works > .section1 > .H-title{
+.Works > main > .one > .H-title{
   z-index: 1;
   -webkit-animation: slide-bottom 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: slide-bottom 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -152,7 +162,7 @@
         padding: 1.5rem;
     }
 
-    .Works > .section1{
+    .Works > main > .one{
         padding-top: 12rem;
         padding-bottom: 8rem;
     }

@@ -3,12 +3,19 @@
     text-align: left;
 }
 
-.WorksE > section{
-    padding-top: 12rem;
+.WorksE > main{
     height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 
-.WorksE > section > img{
+.WorksE > main > section{
+    height: 100vh;
+    padding-top: 12rem;
+    scroll-snap-align: start;
+}
+
+.WorksE > main > section > img{
     position: absolute;
     top: 15%;
     left: 30%;
@@ -19,60 +26,60 @@
     animation: slide-scale-ee 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.WorksE > section > .top{
+.WorksE > main > section > .top{
     margin: 2.5rem 0 7.5rem 0;
 }
 
-.WorksE > section > .top > div{
+.WorksE > main > section > .top > div{
     display: flex;
     justify-content: left;
     align-items: center;
 }
 
-.WorksE > section > .top > div > b{
+.WorksE > main > section > .top > div > b{
     flex: 2;
     font-size: 2rem;
     letter-spacing: 0.5rem;
 }
 
-.WorksE > section > .top > div > .top-d{
+.WorksE > main > section > .top > div > .top-d{
     flex: 2;
 }
 
-.WorksE > section > .top > div > .top-o{
+.WorksE > main > section > .top > div > .top-o{
     flex: 5;
 }
 
-.WorksE > section > .top > div > p{
+.WorksE > main > section > .top > div > p{
     flex: 2;
     font-size: 1.4rem;
     color: var(--color-white-variant);
 }
 
-.WorksE > section > .bottom{
+.WorksE > main > section > .bottom{
     display: flex;
     align-items: flex-start;
 }
 
-.WorksE > section > .bottom > .container-t{
+.WorksE > main > section > .bottom > .container-t{
     flex: 1;
     display: flex;
     align-items: center;
 }
 
-.WorksE > section > .bottom > .container-t > .img-b-b{
+.WorksE > main > section > .bottom > .container-t > .img-b-b{
     visibility: hidden;
     position: relative;
     left: -30rem;
     transition: all 750ms ease;
 }
 
-.WorksE > section > .bottom > .container-t:hover > .img-b-b{
+.WorksE > main > section > .bottom > .container-t:hover > .img-b-b{
     visibility: visible;
     left: 0;
 }
 
-.WorksE > section > .bottom > .container-t > img{
+.WorksE > main > section > .bottom > .container-t > img{
     flex: 1;
     margin-right: 5rem;
     height: 25rem;
@@ -80,17 +87,17 @@
     border-radius: 50%;
 }
 
-.WorksE > section > .bottom > .container-b{
+.WorksE > main > section > .bottom > .container-b{
     flex: 1;
 }
 
-.WorksE > section > .bottom > .container-b > div > b{
+.WorksE > main > section > .bottom > .container-b > div > b{
     flex: 1;
     font-size: 2rem;
     letter-spacing: 0.5rem;
 }
 
-.WorksE > section > .bottom > .container-b > div > div > a > img{
+.WorksE > main > section > .bottom > .container-b > div > div > a > img{
     width: 6rem;
     height: 6rem;
     margin: 0.6rem;
@@ -99,30 +106,28 @@
     border-radius: 5px;
     transition: all 350ms ease;
 }
-.WorksE > section > .bottom > .container-b > div > div > a > img:hover{
+.WorksE > main > section > .bottom > .container-b > div > div > a > img:hover{
     opacity: 1;
     transform: scale(1.3);
 }
 
-.WorksE > section > .bottom > .container-b > div > div > a > ion-icon{
+.WorksE > main > section > .bottom > .container-b > div > div > a > ion-icon{
     margin: 1rem 2rem 0 1rem;
     opacity: 0.7;
     transition: all  350ms ease;
 }
-.WorksE > section > .bottom > .container-b > div > div > a > ion-icon:hover{
+.WorksE > main > section > .bottom > .container-b > div > div > a > ion-icon:hover{
     opacity: 1;
     transform: scale(1.3);
 }
 
-.WorksE > .section4{
-    padding-top: 12rem;
+
+
+.WorksE > main > .four > .container{
+    margin: 3rem 0;
 }
 
-.WorksE > .section4 > .container{
-    margin-bottom: 5rem;
-}
-
-.WorksE > .section4 > .container > .c-info{
+.WorksE > main > .four > .container > .c-info{
     border-left: 1px solid var(--color-white);
     border-right: 1px solid var(--color-white);
     margin: 0 1rem 1.5rem 1rem;
@@ -131,30 +136,30 @@
     cursor: pointer;
     transition: all 350ms ease;
 }
-.WorksE > .section4 > .container > .c-info:hover{
+.WorksE > main > .four > .container > .c-info:hover{
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
     background: rgba(100, 100, 100, 0.3);
     border-radius: 0.2rem;
 }
 
-.WorksE > .section4 > .container > .c-info > a > h4{
+.WorksE > main > .four > .container > .c-info > a > h4{
     color: var(--color-white);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     letter-spacing: 0.1rem;
     font-weight: 500;
 }
 
-.WorksE > .section4 > .container > .c-info > a > i{
+.WorksE > main > .four > .container > .c-info > a > i{
     color: var(--color-white);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 200;
     opacity: 0.7;
 }
 
-.WorksE > .section4 > .container > .c-info > a > p{
+.WorksE > main > .four > .container > .c-info > a > p{
     color: var(--color-white);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 200;
 }
 
@@ -185,70 +190,75 @@
         padding: 1.5rem;
     }
 
-    .WorksE > .section2, .WorksE > .section3{
+    .WorksE > main > .two, .WorksE > main > .three{
         padding-top: 15rem;
     }
 
-    .WorksE > section > img{
+    .WorksE > main > section > img{
         width: 80%;
         top: 30%;
         left: 10%;
         opacity: 0.15;
     }
 
-    .WorksE > section > .top{
+    .WorksE > main > section > .top{
         margin: 2.5rem 0;
     }
     
-    .WorksE > section > .top > div > b{
+    .WorksE > main > section > .top > div > b{
         font-size: 1rem;
     }
 
-    .WorksE > section > .top > div > p{
+    .WorksE > main > section > .top > div > p{
         font-size: 0.8rem;
     }
 
-    .WorksE > section > .bottom{
+    .WorksE > main > section > .bottom{
         flex-direction: column;
     }
     
-    .WorksE > section > .bottom > .container-t > .img-b-b{
+    .WorksE > main > section > .bottom > .container-t > .img-b-b{
         left: -16rem;
     }
     
-    .WorksE > section > .bottom > .container-t:hover > .img-b-b{
+    .WorksE > main > section > .bottom > .container-t:hover > .img-b-b{
         left: 4rem;
     }
     
-    .WorksE > section > .bottom > .container-t > img{
+    .WorksE > main > section > .bottom > .container-t > img{
         height: 32vw;
         width: 32vw;
         margin-bottom: 3rem;
     }
     
-    .WorksE > section > .bottom > .container-b > div > b{
+    .WorksE > main > section > .bottom > .container-b > div > b{
         font-size: 1rem;
     }
 
-    .WorksE > section > .bottom > .container-b > div > div > a > img{
+    .WorksE > main > section > .bottom > .container-b > div > div > a > img{
         width: 3rem;
         height: 3rem;
         padding: 0;
     }
 
-    .WorksE > .section4 > h2{
-        margin-bottom: 2rem;
+    .WorksE > main > .four{
+        padding-top: 8rem;
     }
 
-    .WorksE > .section4 > .container > .c-info > a > h4{
-        font-size: 1.2rem;
+    .WorksE > main > .four > h2{
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .WorksE > main > .four > .container > .c-info > a > h4{
+        font-size: 1.1rem;
     }
     
-    .WorksE > .section4 > .container > .c-info > a > i{
-        font-size: 1rem;
+    .WorksE > main > .four > .container > .c-info > a > i{
+        display: none;
     }
     
-    .WorksE > .section4 > .container > .c-info > a > p{
-        font-size: 1rem;
+    .WorksE > main > .four > .container > .c-info > a > p{
+        font-size: 0.8rem;
     }
 }

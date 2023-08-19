@@ -1,6 +1,8 @@
 .Theme{
     flex: 1;
-    height: 3.3rem;
+    margin: 0 1rem;
+    color: var(--color-white);
+    background: transparent;
     text-align: center;
     cursor: pointer;
     transition: all 350ms ease;
@@ -14,11 +16,4 @@
     font-weight: 400;
     color: var(--color-white);
     vertical-align: middle;
-}
-
-
-@media only screen and (max-width: 960px){
-    .Theme{
-        display: none;
-    }
 }

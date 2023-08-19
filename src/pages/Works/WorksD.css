@@ -3,18 +3,25 @@
     text-align: left;
 }
 
-.WorksD > section{
+.WorksD > main{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.WorksD > main > section{
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    scroll-snap-align: start;
 }
 
-.WorksD > .section1{
+.WorksD > main > .one{
     align-items: flex-start;
 }
 
-.WorksD > .section1 > img{
+.WorksD > main > .one > img{
     position: absolute;
     top: 15%;
     left: 30%;
@@ -25,7 +32,7 @@
     animation: slide-scale-dd 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.WorksD > .section2{
+.WorksD > main > .two{
     background-image: url(../../images/background_pokemon.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -35,11 +42,11 @@
     align-items: center;
 }
 
-.WorksD > .section2 > img{
+.WorksD > main > .two > img{
     width: 40vh;
 }
 
-.WorksD > .section3{
+.WorksD > main > .three{
     padding-top: 12rem;
     text-align: center;
     display: flex;
@@ -48,11 +55,11 @@
     justify-content: space-evenly;
 }
 
-.WorksD > .section3 > h1{
+.WorksD > main > .three > h1{
     font-size: 5rem;
 }
 
-.WorksD > .section4{
+.WorksD > main > .four{
     padding: 0;
 }
 
@@ -79,7 +86,6 @@
 
 @media only screen and (max-width: 960px){
     .WorksD{
-        margin: 0;
         padding: 1.5rem;
     }
 }

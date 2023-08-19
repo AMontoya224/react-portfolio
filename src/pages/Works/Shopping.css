@@ -175,8 +175,8 @@
     background: var(--color-danger-variant);
 }
 
-@media (min-width: 550px) {
-    .card {
-        text-align: left;
+@media only screen and (max-width: 960px){
+    .Shopping{
+        padding: 1.5rem;
     }
 }

@@ -52,6 +52,10 @@
         flex-direction: column;
     }
 
+    .Diagram > main{
+        height: 20vh;
+    }
+
     .Diagram > div{
         height: 10rem;
         flex-direction: row;

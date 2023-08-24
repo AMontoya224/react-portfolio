@@ -59,12 +59,34 @@
 
 @media only screen and (max-width: 960px){
     .Left{
-        height: 90vh;
-        transform: translateY(5vh) translateX(10vw) rotateZ(-90deg);
-        top: 43%;
+        top: 44vh;
+        left: 15vh;
+        flex-direction: row;
+    }
+
+    .Left > .button{
+        transform: rotateZ(-90deg);
+    }
+
+    .Left > div > button{
+        margin: 2.5rem 2.5rem 2.5rem 0;
+    }
+    .Left > div > button:hover{
+        margin: 2.5rem 0 2.5rem 0;
+    }
+    .Left > div > button.active{
+        margin: 2.5rem 0 2.5rem 0;
+    }
+
+    .Left > .scroll{
+        transform: translateY(-20vh) translateX(14vh) rotateZ(-180deg);
     }
 
     .Left > .one{
         display: none;
+    }
+
+    .L-scroll.active{
+        transform: translateY(-40rem);
     }
 }

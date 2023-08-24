@@ -5,7 +5,7 @@ import Left from '../../components/Left/Left';
 
 
 function Home(props) {
-  const { selectLeft, scrollSelect, onSelectLeft, testRef1, testRef2, testRef3, testRef4, selectLan } = props;
+  const { selectLeft, scrollSelect, onSelectLeft, testRef1, testRef2, testRef3, testRef4, selectLan, theme } = props;
   const [btnSub, setBtnSub] = useState(false);
 
   const onBtnSub = () => {
@@ -77,7 +77,7 @@ function Home(props) {
           </div>
         </div>
       </div>
-      <img id='H-img' className={selectLeft === '#1' ? 'H-img' : 'H-img active'} src={require('./../../images/wolf.png')} alt='wolf'/>
+      <img id='H-img' className={selectLeft === '#1' ? 'H-img' : 'H-img active'} src={theme ? require('./../../images/island.jpg') : require('./../../images/wolf.png')} alt='wolf'/>
 
       <main>
         <section className='one' ref={testRef1} onMouseEnter={() => scrollSelect('#1')} onTouchStart={() => scrollSelect('#1')}>
@@ -107,7 +107,7 @@ function Home(props) {
             </div>
             <p className={selectLeft === '#2' ? 'number' : 'number active'}>02</p>
           </div>
-          <button className={btnSub && selectLeft === '#2' ? 'H-sub active' : selectLeft === '#2' ? 'H-sub' : 'H-sub off'} onClick={onBtnWorks}>
+          <button className={selectLeft === '#2' ? 'H-sub' : 'H-sub off'} onClick={onBtnWorks}>
             <div className='s1'></div>
             {selectLan ? 'SHOW ME MORE' : 'MUESTRAME MAS'}
             <div className='s2'></div>
@@ -119,13 +119,13 @@ function Home(props) {
           <p className={selectLeft === '#3' ? 'H-title' : 'H-title active'}>{selectLan ? 'About me' : 'Sobre mí'}</p>
           <div>
             <div>
-              <p className={selectLeft === '#3' ? 'H-main' : 'H-main active'}>{selectLan ? 'I love design, technology,' : 'Me encanta el diseño, la tecnología'}</p>
-              <p className={selectLeft === '#3' ? 'H-main' : 'H-main active'}>{selectLan ? 'and creativity' : 'y la creatividad'}</p>
-              <img className={selectLeft === '#3' ? '' : 'active'} src={require('./../../images/perfil.jpg')} alt='foto'/>
+              <p className={selectLeft === '#3' ? 'H-main' : 'H-main active'}>{selectLan ? 'I love design, technology and creativity' : 'Me encanta el diseño, la tecnología y la creatividad'}</p>
+    
+              <img className={selectLeft === '#3' ? '' : 'active'} src={require('./../../images/perfil2.jpg')} alt='foto'/>
             </div>
             <p className={selectLeft === '#3' ? 'number' : 'number active'}>03</p>
           </div>
-          <button className={btnSub && selectLeft === '#3' ? 'H-sub active' : selectLeft === '#3' ? 'H-sub' : 'H-sub off'} onClick={onBtnAboutMe}>
+          <button className={selectLeft === '#3' ? 'H-sub' : 'H-sub off'} onClick={onBtnAboutMe}>
             <div className='s1'></div>
             {selectLan ? 'SHOW ME MORE' : 'MUESTRAME MAS'}
             <div className='s2'></div>
@@ -154,7 +154,7 @@ function Home(props) {
                   <ion-icon name="logo-chrome" size="large"></ion-icon>
                 </a>
                 <a className="pagina" href='https://drive.google.com/file/d/1O0kGnQr3pxzlfkDREknbgMkmAbcx95Dx/view?usp=sharing' target="_blank" rel="noreferrer">
-                  <img src={require('./../../images/cv.jpg')} alt='cv' title='Curriculum Vitae' />
+                  <img src={theme ? require('./../../images/cv2.jpg') : require('./../../images/cv.jpg')} alt='cv' title='Curriculum Vitae' />
                 </a>
                 <a className="pagina" href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=140140" target="_blank" rel="noreferrer">
                   <img src={require('./../../images/concytec.png')} alt='concytec' title='Concytec' />
@@ -169,7 +169,7 @@ function Home(props) {
             </div>
             <p className={selectLeft === '#4' ? 'number' : 'number active'}>04</p>
           </div>
-          <button className={btnSub && selectLeft === '#4' ? 'H-sub active' : selectLeft === '#4' ? 'H-sub' : 'H-sub off'} onClick={onBtnContact}>
+          <button className={selectLeft === '#4' ? 'H-sub' : 'H-sub off'} onClick={onBtnContact}>
             <div className='s1'></div>
             {selectLan ? 'SHOW ME MORE' : 'MUESTRAME MAS'}
             <div className='s2'></div>

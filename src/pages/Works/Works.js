@@ -5,10 +5,12 @@ import './Works.css';
 function Works( props ) {
     const { onSelectLeft, testRef1, testRef2, testRef3, testRef4, selectLan } = props;
 
-    const scrollToBack = () => {
-        onSelectLeft( '#2' );
-        props.history.push("/");
-        testRef2.current.scrollIntoView( {block: "start"} );
+    const toBack = () => {
+        props.history.push('/');
+        setTimeout( () => {
+            onSelectLeft('#2');
+            testRef2.current.scrollIntoView({block: 'start'})
+        }, 0);
     };
 
     const onBtnWorksD = () => {
@@ -27,7 +29,7 @@ function Works( props ) {
             
             <main>
                 <section className='one' ref={testRef1}>
-                    <button onClick={scrollToBack} className='W-return'><span className="material-icons-round">keyboard_backspace</span><p>BACK</p></button>
+                    <button onClick={toBack} className='W-return'><span className="material-icons-round">keyboard_backspace</span><p>BACK</p></button>
                     <p className='H-title'>{selectLan ? 'Projects' : 'Proyectos'}</p>
                     <div className='W-container'>
                         <div onClick={onBtnWorksD}>

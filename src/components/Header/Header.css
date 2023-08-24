@@ -106,8 +106,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgb(136,16,25);
-    background: linear-gradient(90deg, rgba(136,16,25,1) 0%, rgba(99,10,16,1) 50%, rgba(60,5,9,1) 100%);
+    background: var(--color-header);
     z-index: 3;
 }
 .menu-fw{

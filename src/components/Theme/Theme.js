@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './Theme.css';
 
 
-function Theme(){
+function Theme(props){
+    const { setTheme } = props;
     const [iconTheme, setIconTheme] = useState( () => {
         const initialValue = JSON.parse( localStorage.getItem( 'iconTheme' ) );
         return initialValue || false;
@@ -13,10 +14,12 @@ function Theme(){
         if( document.body.classList.toString() === '' ){
             localStorage.setItem( 'iconTheme', JSON.stringify( false ) );
             setIconTheme( false );
+            setTheme( false );
         }
         else{
             localStorage.setItem( 'iconTheme', JSON.stringify( true ) );
             setIconTheme( true );
+            setTheme( true );
         }
     };
 

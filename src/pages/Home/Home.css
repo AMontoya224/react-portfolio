@@ -6,7 +6,7 @@
 
 #H-wolf{
     border-radius: 50%;
-    background: rgba(200, 200, 200, .1);
+    background: var(--color-d);
     width: 140rem;
     height: 140rem;
     display: flex;
@@ -21,7 +21,7 @@
 
 #H-wolf > div{
     border-radius: 50%;
-    background: rgba(180, 180, 180, .1);
+    background: var(--color-d1);
     width: 125rem;
     height: 125rem;
     display: flex;
@@ -31,7 +31,7 @@
 
 #H-wolf > div > div{
     border-radius: 50%;
-    background: rgba(160, 160, 160, .1);
+    background: var(--color-d2);
     width: 110rem;
     height: 110rem;
     display: flex;
@@ -41,7 +41,7 @@
 
 #H-wolf > div > div > div{
     border-radius: 50%;
-    background: rgba(140, 140, 140, .2);
+    background: var(--color-d3);
     width: 95rem;
     height: 95rem;
     display: flex;
@@ -51,7 +51,7 @@
 
 #H-wolf > div > div > div > div{
     border-radius: 50%;
-    background: rgba(120, 120, 120, .3);
+    background: var(--color-d4);
     width: 80rem;
     height: 80rem;
     display: flex;
@@ -61,7 +61,7 @@
 
 #H-wolf > div > div > div > div > div{
     border-radius: 50%;
-    background: rgba(50, 50, 50, .3);
+    background: var(--color-d5);
     width: 65rem;
     height: 65rem;
     display: flex;
@@ -120,13 +120,14 @@
     animation: slide-right-n .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .H-sub:hover{
-    opacity: 0.7;
+    color: var(--color-danger-variant);
 }
 .H-sub.active{
     font-size: 6rem;
     font-weight: 700;
     letter-spacing: 1rem;
     margin-left: 42rem;
+    color: var(--color-danger-variant);
 }
 
 .H-sub > .s1{
@@ -137,8 +138,12 @@
     background: var(--color-danger);
     transition: all 500ms ease;
 }
+.H-sub:hover > .s1{
+    background: var(--color-danger-variant);
+}
 .H-sub > .s1.active{
     transform: translateX(-4rem) translateY(-2rem) scaleX(7);
+    background: var(--color-danger-variant);
 }
 
 .H-sub > .s2{
@@ -149,8 +154,12 @@
     background: var(--color-danger);
     transition: all 500ms ease;
 }
+.H-sub:hover > .s2{
+    background: var(--color-danger-variant);
+}
 .H-sub > .s2.active{
     transform: translateX(27rem) translateY(1rem) scaleX(7);
+    background: var(--color-danger-variant);
 }
 
 .H-main{
@@ -222,7 +231,7 @@
     margin: 5rem 5rem 0 5rem;
     border-radius: 1rem;
     opacity: 0.7;
-    filter: grayscale(1);
+    filter: var(--filter);
     cursor: pointer;
     transition: all 500ms ease;
     animation: slide-scale 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -240,6 +249,10 @@
 .Home > main > .three > div > div{
     position: relative;
     width: 100%;
+}
+
+.Home > main > .three > div > div > p{
+    width: 60%;
 }
 
 .Home > main > .three > div > div > img{
@@ -264,7 +277,6 @@
 .Home > main > .four > div > div > a{
     display: block;
     color: var(--color-white);
-    opacity: 0.7;
     width: 50%;
     margin-top: 1rem;
     font-size: 1.8rem;
@@ -274,7 +286,7 @@
     animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .Home > main > .four > div > div > a:hover{
-    opacity: 1;
+    opacity: 0.7;
 }
 .Home > main > .four > div > div > a.active{
     animation: slide-top-n .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -295,18 +307,16 @@
 }
 
 .Home > main > .four > div > div > .container > a > ion-icon{
-    opacity: 0.7;
     transition: all  350ms ease;
 }
 .Home > main > .four > div > div > .container > a > ion-icon:hover, .Home > main > .four > div > div > .container > a > img:hover{
-    opacity: 1;
+    opacity: 0.7;
     transform: scale(1.5);
 }
 
 .Home > main > .four > div > div > .container > a > img{
     width: 3rem;
     height: 3rem;
-    opacity: 0.7;
     border-radius: 0.3rem;
     filter: grayscale(1);
     background: var(--color-white);
@@ -441,13 +451,15 @@ footer > p > span{
 
     #H-img{
         left: 0;
-        width: 100%;
+        width: 90%;
+        margin: 0 5%;
         height: auto;
         opacity: 0.2;  
     }
 
     .Home > main > section{
         padding-bottom: 15rem;
+        border: var(--test);
     }
     .Home > main > .one{
         padding-top: 20rem;
@@ -499,6 +511,10 @@ footer > p > span{
 
     .Home > main > .three > .H-sub{
         margin: 2rem 0;
+    }
+
+    .Home > main > .three > div > div > p{
+        width: 100%;
     }
 
     .Home > main > .three > div > div > img{

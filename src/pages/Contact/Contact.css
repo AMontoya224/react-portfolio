@@ -77,11 +77,10 @@
 
 .Contact > main > .one > div > a > ion-icon{
     margin: 0 2rem 0 0;
-    opacity: 0.7;
     transition: all  350ms ease;
 }
 .Contact > main > .one > div > a > ion-icon:hover{
-    opacity: 1;
+    opacity: 0.7;
     transform: scale(1.3);
 }
 
@@ -89,13 +88,12 @@
     margin: 0 2rem 0 0;
     width: 3rem;
     height: 3rem;
-    opacity: 0.7;
     background: var(--color-white);
     border-radius: 50%;
     transition: all 350ms ease;
 }
 .Contact > main > .one > div > a > img:hover{
-    opacity: 1;
+    opacity: 0.7;
     transform: scale(1.3);
 }
 

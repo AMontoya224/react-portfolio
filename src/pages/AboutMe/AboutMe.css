@@ -202,6 +202,7 @@
 .leyenda > div{
     width: 100%;
     height: 25%;
+    color: black;
     cursor: pointer;
     text-align: center;
     display: flex;
@@ -212,9 +213,12 @@
 .leyenda > div:hover{
     opacity: 0.7;
 }
+.leyenda > div.active{
+    color: var(--color-white);
+    background: transparent;
+}
 
 .leyenda > div > p{
-    color: black;
     font-weight: 700;
     margin: auto;
     font-size: 0.8rem;
@@ -222,19 +226,33 @@
 }
 
 .leyenda-d{
+    border-radius: 0.5rem 0.5rem 0 0;
     background: #00ffe5;
+}
+.leyenda-d.active{
+    border: 1px solid #00ffe5;
 }
 
 .leyenda-g{
     background: #ffb700;
 }
+.leyenda-g.active{
+    border: 1px solid #ffb700;
+}
 
 .leyenda-s{
     background: #C8C8C8;
 }
+.leyenda-s.active{
+    border: 1px solid #C8C8C8;
+}
 
 .leyenda-b{
+    border-radius: 0 0 0.5rem 0.5rem;
     background: #E05B2E;
+}
+.leyenda-b.active{
+    border: 1px solid #E05B2E;
 }
 
 .AboutMe > main > .four{
@@ -293,7 +311,7 @@
 
 .E-info > i{
     font-size: 1.4rem;
-    color: rgb(181, 181, 182);
+    color: var(--color-white-variant);
     margin: 0;
 }
 

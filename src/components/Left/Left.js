@@ -28,13 +28,13 @@ function Left( props ) {
     return (
         <div className="Left">
             <div></div>
-            <div>
+            <div className='button'>
                 <button className={(selectLeft === '#1' ) ? 'active' : '' } onClick={scrollToElement1} title="Page 1"></button>
                 <button className={(selectLeft === '#2' ) ? 'active' : '' } onClick={scrollToElement2} title="Page 2"></button>
                 <button className={(selectLeft === '#3' ) ? 'active' : '' } onClick={scrollToElement3} title="Page 3"></button>
                 <button className={(selectLeft === '#4' ) ? 'active' : '' } onClick={scrollToElement4} title="Page 4"></button>
             </div>
-            <div>
+            <div className='scroll'>
                 <div className={(selectLeft === '#1' ) ? 'L-scroll' : 'L-scroll active' }>
                     <p>SCROLLDOWN</p>
                 <div></div>

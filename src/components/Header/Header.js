@@ -5,7 +5,7 @@ import './Header.css';
 
 
 function Header( props ) {
-    const { onSelectLeft, testRef1, selectLan, onSelectLan } = props;
+    const { onSelectLeft, testRef1, selectLan, onSelectLan, setTheme } = props;
     const [btnEsc, setBtnEsc] = useState( false );
 
     const onBtnEsc = () => {
@@ -70,7 +70,7 @@ function Header( props ) {
                 <a href="mailto:jmontoyaan@unsa.edu.pe?subject=Quiero contactar contigo Andres!">
                     <span className='material-icons-round'>mail</span>
                 </a>
-                <Theme/>
+                <Theme setTheme={setTheme}/>
                 <button className='L-btn' onClick={onBtnLan}><span className='material-icons-round'>translate</span></button>
                 <button className='H-btn' onClick={onBtnEsc}><div className={btnEsc ? 's1 active' : 's1'}></div><div className={btnEsc ? 's2 active' : 's2'}></div></button>
             </div>
@@ -83,7 +83,7 @@ function Header( props ) {
                     <a className={btnEsc ? 'menu-a' : 'menu-na'} href="mailto:jmontoyaan@unsa.edu.pe?subject=Quiero contactar contigo Andres!">
                         <span className='material-icons-round'>mail</span>
                     </a>
-                    <Theme/>
+                    <Theme setTheme={setTheme}/>
                     <button className={btnEsc ? 'menu-a' : 'menu-na'} onClick={onBtnLan}><span className='material-icons-round'>translate</span></button>
                 </div>
             </div>

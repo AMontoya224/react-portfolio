@@ -6,15 +6,17 @@ import Left from './../../components/Left/Left';
 
 function AboutMe( props ) {
     const { onSelectLeft, scrollSelect, selectLeft, testRef1, testRef2, testRef3, testRef4, selectLan } = props;
-    const [levelD, setLevelD] = useState( false );
+    const [levelD, setLevelD] = useState( true );
     const [levelG, setLevelG] = useState( false );
     const [levelS, setLevelS] = useState( false );
     const [levelB, setLevelB] = useState( false );
 
-    const scrollToBack = () => {
-        onSelectLeft( '#3' );
-        props.history.push("/");
-        testRef3.current.scrollIntoView( {block: "start"} );
+    const toBack = () => {
+        props.history.push('/');
+        setTimeout( () => {
+            onSelectLeft('#3');
+            testRef3.current.scrollIntoView({block: 'start'})
+        }, 0);
     };
 
     const selectLevelD = () => {
@@ -60,9 +62,9 @@ function AboutMe( props ) {
             
             <main>
                 <section className='one' ref={testRef1} onMouseEnter={() => scrollSelect( '#1' )} onTouchStart={() => scrollSelect( '#1' )}>
-                    <button onClick={scrollToBack} className='B-return'><span className="material-icons-round">keyboard_backspace</span><p>BACK</p></button>
+                    <button onClick={toBack} className='B-return'><span className="material-icons-round">keyboard_backspace</span><p>BACK</p></button>
                     <p className='H-title'>{selectLan ? 'About me' : 'Sobre mí'}</p>
-                    <button className='H-sub' onClick={scrollToBack}>
+                    <button className='H-sub' onClick={toBack}>
                         <div className='s1'></div>
                             {selectLan ? 'RETURN' : 'REGRESAR'}
                         <div className='s2'></div>
@@ -147,10 +149,10 @@ function AboutMe( props ) {
                             </div>
                         </div>
                         <div className='leyenda'>
-                            <div className='leyenda-d' onClick={selectLevelD} title={selectLan ? 'Expert' : 'Experto'}><p>{selectLan ? 'EXPERT' : 'EXPERTO'}</p></div>
-                            <div className='leyenda-g' onClick={selectLevelG} title={selectLan ? 'Advanced' : 'Avanzado'}><p>{selectLan ? 'AVANCED' : 'AVANZADO'}</p></div>
-                            <div className='leyenda-s' onClick={selectLevelS} title={selectLan ? 'Intermediate' : 'Intermedio'}><p>{selectLan ? 'INTERMEDIATE' : 'INTERMEDIO'}</p></div>
-                            <div className='leyenda-b' onClick={selectLevelB} title={selectLan ? 'Essential' : 'Basico'}><p>{selectLan ? 'ESSENTIAL' : 'BÁSICO'}</p></div>
+                            <div className={levelD ? 'leyenda-d active' : 'leyenda-d'} onClick={selectLevelD} title={selectLan ? 'Expert' : 'Experto'}><p>{selectLan ? 'EXPERT' : 'EXPERTO'}</p></div>
+                            <div className={levelG ? 'leyenda-g active' : 'leyenda-g'} onClick={selectLevelG} title={selectLan ? 'Advanced' : 'Avanzado'}><p>{selectLan ? 'AVANCED' : 'AVANZADO'}</p></div>
+                            <div className={levelS ? 'leyenda-s active' : 'leyenda-s'} onClick={selectLevelS} title={selectLan ? 'Intermediate' : 'Intermedio'}><p>{selectLan ? 'INTERMEDIATE' : 'INTERMEDIO'}</p></div>
+                            <div className={levelB ? 'leyenda-b active' : 'leyenda-b'} onClick={selectLevelB} title={selectLan ? 'Essential' : 'Basico'}><p>{selectLan ? 'ESSENTIAL' : 'BÁSICO'}</p></div>
                         </div>
                         <div className='container'>
                             <h3>{selectLan ? 'ELECTRONIC ENGINEERING' : 'INGENIERÍA ELECTRÓNICA'}</h3>

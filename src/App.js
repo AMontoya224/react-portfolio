@@ -13,6 +13,7 @@ import WorksE from './pages/Works/WorksE';
 function App() {
   const [selectLeft, setSelectLeft] = useState( '#1' );
   const [selectLan, setSelectLan] = useState( false );
+  const [theme, setTheme] = useState( false );
   const testRef1 = useRef( null );
   const testRef2 = useRef( null );
   const testRef3 = useRef( null );
@@ -40,14 +41,14 @@ function App() {
       <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet"/>
       <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet"/>
       <BrowserRouter>
-        <Header onSelectLeft={onSelectLeft} testRef1={testRef1} selectLan={selectLan} onSelectLan={onSelectLan}/>
+        <Header onSelectLeft={onSelectLeft} testRef1={testRef1} selectLan={selectLan} onSelectLan={onSelectLan} setTheme={setTheme}/>
         <Switch>
-          <Route exact path="/" render={ routeProps => <Home onSelectLeft={onSelectLeft} scrollSelect={scrollSelect} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} {...routeProps} />}/>
+          <Route exact path="/" render={ routeProps => <Home onSelectLeft={onSelectLeft} scrollSelect={scrollSelect} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} theme={theme} {...routeProps} />}/>
           <Route exact path="/projects" render={ routeProps => <Works onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} {...routeProps} />}/>
           <Route exact path="/projects/developer" render={ routeProps => <WorksD onSelectLeft={onSelectLeft} scrollSelect={scrollSelect} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} {...routeProps} />}/>
           <Route exact path="/projects/electronic" render={ routeProps => <WorksE onSelectLeft={onSelectLeft} scrollSelect={scrollSelect} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} {...routeProps} />}/>
           <Route exact path="/aboutme" render={ routeProps => <AboutMe onSelectLeft={onSelectLeft} scrollSelect={scrollSelect} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} {...routeProps} />}/>
-          <Route exact path="/contact" render={ routeProps => <Contact onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} {...routeProps} />}/>
+          <Route exact path="/contact" render={ routeProps => <Contact onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} theme={theme} {...routeProps} />}/>
         </Switch>
       </BrowserRouter>
     </div>

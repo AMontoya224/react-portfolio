@@ -4,7 +4,7 @@ import './Contact.css';
 
 
 function Contact( props ) {
-    const { onSelectLeft, testRef1, testRef2, testRef3, testRef4, selectLan } = props;;
+    const { onSelectLeft, testRef1, testRef2, testRef3, testRef4, selectLan, theme } = props;;
     const [btnSub, setBtnSub] = useState( false );
 
     const onBtnSub = () => {
@@ -16,10 +16,12 @@ function Contact( props ) {
         }
     };
 
-    const scrollToBack = () => {
-        onSelectLeft( '#4' );
-        props.history.push("/");
-        testRef4.current.scrollIntoView( {block: "start"} );
+    const toBack = () => {
+        props.history.push('/');
+        setTimeout( () => {
+            onSelectLeft('#4');
+            testRef4.current.scrollIntoView({block: 'start'})
+        }, 0);
     };
 
     return (
@@ -27,7 +29,7 @@ function Contact( props ) {
             <title>{selectLan ? 'Contact | PORTFOLIO' : 'Contacto | PORTAFOLIO'}</title>
             <main>
                 <section className='one' ref={testRef1}>
-                    <button onClick={scrollToBack} className='B-return'><span className="material-icons-round">keyboard_backspace</span><p>BACK</p></button>
+                    <button onClick={toBack} className='B-return'><span className="material-icons-round">keyboard_backspace</span><p>BACK</p></button>
                     <p className='H-title'>{selectLan ? 'Get In Touch' : 'Contáctame'}</p>
                     <button className={btnSub ? 'H-sub active' : 'H-sub'} onClick={onBtnSub}>
                         <div className={btnSub ? 's1 active' : 's1'}></div>
@@ -51,7 +53,7 @@ function Contact( props ) {
                             <ion-icon name="logo-chrome" size="large"></ion-icon>
                         </a>
                         <a className="pagina" href='https://drive.google.com/file/d/1O0kGnQr3pxzlfkDREknbgMkmAbcx95Dx/view?usp=sharing' target="_blank" rel="noreferrer">
-                            <img src={require('./../../images/cv.jpg')} alt='cv' title='Curriculum Vitae'/>
+                            <img src={theme ? require('./../../images/cv2.jpg') : require('./../../images/cv.jpg')} alt='cv' title='Curriculum Vitae'/>
                         </a>
                         <a className="pagina" href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=140140" target="_blank" rel="noreferrer">
                             <img src={require('./../../images/concytec.png')} alt='concytec' title='Concytec'/>

@@ -442,7 +442,7 @@ footer > p > span{
 @media only screen and (max-width: 960px){
     .Home{
         margin: 0;
-        padding: 1.5rem;
+        padding: 0 1.5rem 1.5rem 1.5rem;
     }
 
     #H-wolf{
@@ -458,13 +458,12 @@ footer > p > span{
     }
 
     .Home > main > section{
-        padding-bottom: 15rem;
-        border: var(--test);
+        padding: 12rem 0 20rem 0;
     }
     .Home > main > .one{
         padding-top: 20rem;
     }
-    .Home > main > .four{
+    .Home > main > .two, .Home > main > .four{
         padding-bottom: 12rem;
     }
     
@@ -529,7 +528,7 @@ footer > p > span{
     }
 
     .Home > main > .four > div > div > a{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     footer{

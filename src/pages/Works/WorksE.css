@@ -141,21 +141,21 @@
 
 .WorksE > main > .four > .container > .c-info > a > h4{
     color: var(--color-white);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     letter-spacing: 0.1rem;
     font-weight: 500;
 }
 
 .WorksE > main > .four > .container > .c-info > a > i{
     color: var(--color-white);
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 200;
     opacity: 0.7;
 }
 
 .WorksE > main > .four > .container > .c-info > a > p{
     color: var(--color-white);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 200;
 }
 
@@ -183,7 +183,7 @@
 @media only screen and (max-width: 960px){
     .WorksE{
         margin: 0;
-        padding: 1.5rem;
+        padding: 0 1.5rem 1.5rem 1.5rem;
     }
 
     .WorksE > main > .two, .WorksE > main > .three{
@@ -247,7 +247,7 @@
     }
 
     .WorksE > main > .four > .container > .c-info > a > h4{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     
     .WorksE > main > .four > .container > .c-info > a > i{

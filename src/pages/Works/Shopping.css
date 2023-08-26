@@ -115,23 +115,26 @@
 #lista-cursos{
     margin: 0 auto;
     width: 80%;
-    border: var(--test);
+    height: 60vh;
+    display: block;
+    overflow: scroll;
 }
 
 .card{
-    width: 30rem;
-    height: 40rem;
-    margin: 5rem;
+    width: 25rem;
+    height: 35rem;
     text-align: center;
+    margin: 0 5rem;
     background: var(--color-black-variant);
     color: var(--color-white);
-    border-radius: 0.5rem;  
+    border-radius: 0.5rem; 
     display: inline-block;
+    vertical-align: middle; 
 }
 
 .card > img{
-    width: 30rem;
-    height: 25vh;
+    width: 25rem;
+    height: 15rem;
     border-radius: 0.5rem 0.5rem 0 0;
 }
 
@@ -144,18 +147,21 @@
 }
 
 .info-card > .precio {
-    text-decoration: line-through;
-    font-size: 1.8rem;
-    margin-top: 1rem;
-    color: rgb(130, 130, 130);
-}
-
-.info-card > .precio > span {
     text-decoration: none;
     font-weight: 700;
     font-size: 2.2rem;
     margin-left: 18rem;
+    display: inline;
     color: black;
+}
+
+.info-card > .precio > span {
+    text-decoration: line-through;
+    display: inline;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    font-weight: 300;
+    color: rgb(130, 130, 130);
 }
 
 .info-card > button{
@@ -177,6 +183,28 @@
 
 @media only screen and (max-width: 960px){
     .Shopping{
-        padding: 1.5rem;
+        padding: 0;
+    }
+
+    .Shopping > main > .header{
+        margin: 2rem 0;
+        padding: 0;
+    }  
+
+    .Shopping > main > .header > ul{
+        text-align: right;
+    }
+
+    .encabezado {
+        display: none;
+    }
+
+    .submenu{
+        position: relative;
+        width: 100%;
+    }
+
+    .card{
+        margin: 5rem auto;
     }
 }

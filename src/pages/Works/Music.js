@@ -200,59 +200,61 @@ function Music2(props) {
     };
 
     return (
-        <div className="Music">
-            <h1>{selectLan ? 'Music Player' : 'Reproductor de Música'}</h1>
-            <div className="wrapper">
-                <div className="details">
-                    <div className="now-playing">Música X de Y</div>
-                    <div className="track-art"></div>
-                    <div className="track-name">Nombre de la canción</div>
-                    <div className="track-artist">Nombre del artista</div>
-                </div>
+        <div className="C-M">
+            <div className="Music">
+                <h1>{selectLan ? 'Music Player' : 'Reproductor de Música'}</h1>
+                <div className="wrapper">
+                    <div className="details">
+                        <div className="now-playing">Música X de Y</div>
+                        <div className="track-art"></div>
+                        <div className="track-name">Nombre de la canción</div>
+                        <div className="track-artist">Nombre del artista</div>
+                    </div>
 
-                <div className="slider_container">
-                    <div className="current-time">00:00</div>
-                    <input type="range" min="0" max="100" className="seek_slider" onChange={seekTo}/>
-                    <div className="total-duration">00:00</div>
-                </div>
+                    <div className="slider_container">
+                        <div className="current-time">00:00</div>
+                        <input type="range" min="0" max="100" className="seek_slider" onChange={seekTo}/>
+                        <div className="total-duration">00:00</div>
+                    </div>
 
-                <div className="slider_container">
-                    <span className="material-icons-round">volume_down</span>
-                    <input type="range" min="0" max="1" step="0.01" className="volume_slider" onChange={setVolume}/>
-                    <span className="material-icons-round">volume_up</span>
-                </div>
+                    <div className="slider_container">
+                        <span className="material-icons-round">volume_down</span>
+                        <input type="range" min="0" max="1" step="0.01" className="volume_slider" onChange={setVolume}/>
+                        <span className="material-icons-round">volume_up</span>
+                    </div>
 
-                <div className="buttons">
-                    <div className="fa-random random-track" onClick={randomTrack}>
-                        <span className="material-icons-round">shuffle</span>
+                    <div className="buttons">
+                        <div className="fa-random random-track" onClick={randomTrack}>
+                            <span className="material-icons-round">shuffle</span>
+                        </div>
+                        <div className="prev-track" onClick={prevTrack}>
+                            <span className="material-icons-round">skip_previous</span>
+                        </div>
+                        <div className="playpause-track" onClick={playpauseTrack}>
+                            <span className="material-icons-round playpause">play_circle</span>
+                        </div>
+                        <div className="next-track" onClick={nextTrack}>
+                            <span className="material-icons-round">skip_next</span>
+                        </div>
+                        <div className="repeat-track" onClick={repeatTrack}>
+                            <span className="material-icons-round">replay</span>
+                        </div>
                     </div>
-                    <div className="prev-track" onClick={prevTrack}>
-                        <span className="material-icons-round">skip_previous</span>
-                    </div>
-                    <div className="playpause-track" onClick={playpauseTrack}>
-                        <span className="material-icons-round playpause">play_circle</span>
-                    </div>
-                    <div className="next-track" onClick={nextTrack}>
-                        <span className="material-icons-round">skip_next</span>
-                    </div>
-                    <div className="repeat-track" onClick={repeatTrack}>
-                        <span className="material-icons-round">replay</span>
-                    </div>
-                </div>
 
-                <div id="wave">
-                    <span className="stroke"></span>
-                    <span className="stroke"></span>
-                    <span className="stroke"></span>
-                    <span className="stroke"></span>
-                    <span className="stroke"></span>
-                    <span className="stroke"></span>
-                    <span className="stroke"></span>
+                    <div id="wave">
+                        <span className="stroke"></span>
+                        <span className="stroke"></span>
+                        <span className="stroke"></span>
+                        <span className="stroke"></span>
+                        <span className="stroke"></span>
+                        <span className="stroke"></span>
+                        <span className="stroke"></span>
+                    </div>
                 </div>
+                <footer>
+                    <p>{selectLan ? 'Developed by ' : 'Desarrollado por '}<span>Andres Montoya Angulo</span></p>
+                </footer>
             </div>
-            <footer>
-                <p>{selectLan ? 'Developed by ' : 'Desarrollado por '}<span>Andres Montoya Angulo</span></p>
-            </footer>
         </div>
     );
 }

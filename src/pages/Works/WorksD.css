@@ -86,6 +86,15 @@
 
 @media only screen and (max-width: 960px){
     .WorksD{
-        padding: 1.5rem;
+        margin: 0;
+        padding: 0m;
+    }
+
+    .WorksD > main > .three{
+        padding-top: 0;
+    }
+    
+    .WorksD > main > .three > h2{
+        display: none;
     }
 }

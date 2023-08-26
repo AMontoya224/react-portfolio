@@ -134,7 +134,7 @@ function Shopping(props) {
                         <div className="info-card">
                             <h4>{selectLan ? 'HTML5 and CSS3' : 'HTML5 y CSS3'}</h4>
                             <p>Nahuel Esteban</p>
-                            <p className="precio">$200  <span className="u-pull-right ">$150</span></p>
+                            <p className="precio"><span className="u-pull-right ">$210</span> $130</p>
                             <button className="agregar-carrito" data-id="1">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</button>
                         </div>
                     </div>
@@ -143,16 +143,16 @@ function Shopping(props) {
                         <div className="info-card">
                             <h4>{selectLan ? 'Bootstrap 4 and Sass' : 'Bootstrap 4 y Sass'}</h4>
                             <p>Nahuel Esteban</p>
-                            <p className="precio">$200  <span className="u-pull-right ">$150</span></p>
+                            <p className="precio"><span className="u-pull-right ">$200</span> $150</p>
                             <button className="agregar-carrito" data-id="1">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</button>
                         </div>
                     </div>
                     <div className="card">
                         <img src={require('./../../images/curso3.jpg')} alt='curso3' />
                         <div className="info-card">
-                            <h4>{selectLan ? 'JavaScript for Beginners' : 'JavaScript para Principiantes'}</h4>
+                            <h4>{selectLan ? 'JavaScript' : 'JavaScript'}</h4>
                             <p>Nahuel Esteban</p>
-                            <p className="precio">$200  <span className="u-pull-right ">$150</span></p>
+                            <p className="precio"><span className="u-pull-right ">$180</span> $100</p>
                             <button className="agregar-carrito" data-id="3">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</button>
                         </div>
                     </div>

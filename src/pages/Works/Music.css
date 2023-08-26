@@ -195,3 +195,9 @@
         height: 100%;
     }
 }
+
+@media only screen and (max-width: 960px){
+    .Music{
+        transform: scale(0.9);
+    }
+}

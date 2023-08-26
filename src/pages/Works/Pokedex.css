@@ -407,3 +407,9 @@
     border: 0.2rem solid rgb(38, 38, 38);
     transition: all 500ms ease;
 }
+
+@media only screen and (max-width: 960px){
+    .Pokedex{
+        transform: scale(0.5);
+    }
+}

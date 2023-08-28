@@ -8,16 +8,23 @@ function Diagram(props) {
   const canvasRef = createRef(null);
   const [color, setColor] = useState('#000000');
   const [radius, setRadius] = useState(5);
+  const [canvas, setCanvas] = useState([500, 800]);
 
   const style = {
     width: radius + 'px',
     background: color,
   };
 
+  setTimeout(() => {
+    if (window.screen.width < 970 ){
+      setCanvas([window.screen.height/2 , window.screen.width - 50])
+    }
+  }, 0);
+
   return (
   <div className='Diagram'>
     <main>
-      <CanvasDraw ref={canvasRef} style={{borderRadius: '5px'}} brushColor={color} brushRadius={radius} canvasHeight={500} canvasWidth={800} hideGrid={false}/>
+      <CanvasDraw ref={canvasRef} style={{borderRadius: '5px'}} brushColor={color} brushRadius={radius} canvasHeight={canvas[0]} canvasWidth={canvas[1]} hideGrid={false}/>
     </main>
     <div>
       <button onClick={() => {setColor('#000000'); setRadius(5)}}>

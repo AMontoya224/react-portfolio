@@ -410,6 +410,6 @@
 
 @media only screen and (max-width: 960px){
     .Pokedex{
-        transform: scale(0.5);
+        transform: translateY(-110px) rotate(-90deg) scale(0.6);
     }
 }

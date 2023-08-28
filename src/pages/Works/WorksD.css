@@ -90,6 +90,10 @@
         padding: 0m;
     }
 
+    .WorksD > main > .two > img{
+        display: none;
+    }
+
     .WorksD > main > .three{
         padding-top: 0;
     }

@@ -9,16 +9,16 @@ function Projects( props ) {
     return (
         <div className="Projects">
             <button onClick={scrollToBack} className='B-return'><span className="material-icons-round return">keyboard_backspace</span><p>BACK</p></button>
-            <h1>Developed Projects</h1>
+            <h1>{selectLan ? 'Developed Projects' : 'Proyectos Desarrollados'}</h1>
             <main>
                 <div>
                     <img src={require('./../../images/jtech.png')} alt='jtech'/>
                     <div>
                         <h3 className='jtech'><b>J</b> - TECHNOLOGY</h3>
-                        <p>J - TECHNOLOGY es una aplicación desarrollada para una empresa en el rubro de la ingeniería electrónica</p>
+                        <p>{selectLan ? 'J - TECHNOLOGY is an application developed for a company in the field of electronic engineering' : 'J - TECHNOLOGY es una aplicación desarrollada para una empresa en el rubro de la ingeniería electrónica'}</p>
                         <ul>
-                            <li><b>Cliente:</b> React.</li>
-                            <li><b>Librerias:</b> Axios, Emailjs-com, Json-Server, </li>
+                            <li><b>{selectLan ? 'Client:' : 'Cliente:'}</b> React.</li>
+                            <li><b>{selectLan ? 'Libraries:' : 'Librerias:'}</b> Axios, Emailjs-com, Json-Server, </li>
                         </ul>
                         <div>
                             <a title='Deploy' href="https://jtechnologyaqp.com/" target="_blank" rel="noreferrer">
@@ -34,12 +34,12 @@ function Projects( props ) {
                     <img src={require('./../../images/evertask.png')} alt='evertask'/>
                     <div>
                         <h3 className='evertask'>Ever<b>Task</b></h3>
-                        <p>EverTask es una aplicación desarrollada con los lenguajes:</p>
+                        <p>{selectLan ? 'EverTask is an application developed with the languages:' : 'EverTask es una aplicación desarrollada con los lenguajes:'}</p>
                         <ul>
-                            <li><b>Cliente:</b> React.</li>
-                            <li><b>Servidor:</b> NodeJS.</li>
-                            <li><b>Base de datos:</b> MongoDB.</li>
-                            <li><b>Librerias:</b> Axios, BCrypt, Express, JsonWebToken.</li>
+                            <li><b>{selectLan ? 'Client:' : 'Cliente:'}</b> React.</li>
+                            <li><b>{selectLan ? 'Server:' : 'Servidor:'}</b> NodeJS.</li>
+                            <li><b>{selectLan ? 'Database:' : 'Base de datos:'}</b> MongoDB.</li>
+                            <li><b>{selectLan ? 'Libraries:' : 'Librerias:'}</b> Axios, BCrypt, Express, JsonWebToken.</li>
                         </ul>
                         <div>
                             <a title='Deploy' href="https://gregarious-donut-abb4e7.netlify.app/" target="_blank" rel="noreferrer">

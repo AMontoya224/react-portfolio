@@ -17,11 +17,11 @@
     scroll-snap-align: start;
 }
 
-.WorksD > main > .one{
+.WorksD > main > .two{
     align-items: flex-start;
 }
 
-.WorksD > main > .one > img{
+.WorksD > main > .two > img{
     position: absolute;
     top: 15%;
     left: 30%;
@@ -32,7 +32,7 @@
     animation: slide-scale-dd 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.WorksD > main > .two{
+.WorksD > main > .three{
     background-image: url(../../images/background_pokemon.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -42,21 +42,8 @@
     align-items: center;
 }
 
-.WorksD > main > .two > img{
+.WorksD > main > .three > img{
     width: 40vh;
-}
-
-.WorksD > main > .three{
-    padding-top: 12rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.WorksD > main > .three > h1{
-    font-size: 5rem;
 }
 
 .WorksD > main > .four{
@@ -90,15 +77,7 @@
         padding: 0m;
     }
 
-    .WorksD > main > .two > img{
-        display: none;
-    }
-
-    .WorksD > main > .three{
-        padding-top: 0;
-    }
-    
-    .WorksD > main > .three > h2{
+    .WorksD > main > .three > img{
         display: none;
     }
 }

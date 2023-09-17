@@ -152,7 +152,7 @@
     font-size: 2.2rem;
     margin-left: 18rem;
     display: inline;
-    color: black;
+    color: var(--color-white);
 }
 
 .info-card > .precio > span {

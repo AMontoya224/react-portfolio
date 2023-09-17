@@ -1,0 +1,134 @@
+.Projects{
+    margin: 12rem 3.5rem 12rem 21.5rem;
+    height: 100vh;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.Projects > main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8rem;
+}
+
+.Projects > main > div{
+    position: relative;
+}
+
+.Projects > main > div > img{
+    width: 100%;
+    border-radius: .5rem;
+    transition: all 350ms ease;
+}
+.Projects > main > div:hover > img{
+    opacity: 0.1;
+}
+
+.Projects > main > div > div{
+    padding: 5rem;
+    text-align: left;
+    height: 30rem;
+    display: none;
+    position: absolute;
+    top: 0;
+    transition: all 350ms ease;
+}
+.Projects > main > div:hover > div{
+    display: grid;
+}
+
+.Projects > main > div > div > h3{
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.Projects > main > div > div > .jtech > b{
+    color: #03989E;
+}
+
+.Projects > main > div > div > .evertask > b{
+    color: #2c54cc;
+}
+
+.Projects > main > div > div > p{
+    font-size: 1.6rem;
+}
+
+.Projects > main > div > div > ul{
+    font-size: 1.4rem;
+    opacity: .8;
+    margin-left: 4rem;
+}
+
+.Projects > main > div > div > div{
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Projects > main > div > div > div > a{
+    background: transparent;
+    text-align: center;
+    border: none;
+    color: var(--color-white);
+    width: 30%;
+    cursor: pointer;
+    transition: all 350ms ease;
+}
+.Projects > main > div > div > div > a:hover{
+    transform: scale(1.4);
+    opacity: .7;
+}
+
+.Projects > main > div > div > div > a > span{
+    font-size: 4rem;
+}
+
+
+@media only screen and (max-width: 960px){
+    .Projects{
+        margin: 12rem 2.5rem;
+    }
+
+    .Projects > main{
+        flex-direction: column;
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .Projects > main > div > div{
+        padding: 1rem;
+        border: var(--test);
+        height: 100%;
+    }
+    
+    .Projects > main > div > div > h3{
+        font-size: 1.2rem;
+    }
+    
+    .Projects > main > div > div > p{
+        font-size: 1rem;
+    }
+    
+    .Projects > main > div > div > ul{
+        font-size: .9rem;
+        margin-left: 3rem;
+    }
+    
+    .Projects > main > div > div > div{
+        margin: 2rem 0;
+    }
+    
+    .Projects > main > div > div > div > a:hover{
+        transform: scale(1.2);
+    }
+    
+    .Projects > main > div > div > div > a > span{
+        font-size: 3rem;
+    }
+}

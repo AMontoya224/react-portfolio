@@ -38,7 +38,7 @@ function Home(props) {
 
   const onBtnWorksD = () => {
     onSelectLeft('#1');
-    props.history.push('/projects/developer');
+    props.history.push('/projects/programming');
     testRef1.current.scrollIntoView({ block: "start" });
   };
 

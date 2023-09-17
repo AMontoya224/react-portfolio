@@ -3,7 +3,7 @@ import './Works.css';
 
 
 function Works( props ) {
-    const { onSelectLeft, testRef1, testRef2, testRef3, testRef4, selectLan } = props;
+    const { onSelectLeft, testRef1, testRef2, selectLan } = props;
 
     const toBack = () => {
         props.history.push('/');
@@ -15,7 +15,7 @@ function Works( props ) {
 
     const onBtnWorksD = () => {
         onSelectLeft( '#1' );
-        props.history.push( '/projects/developer' );
+        props.history.push( '/projects/programming' );
       };
     
     const onBtnWorksE = () => {
@@ -29,12 +29,12 @@ function Works( props ) {
             
             <main>
                 <section className='one' ref={testRef1}>
-                    <button onClick={toBack} className='W-return'><span className="material-icons-round">keyboard_backspace</span><p>BACK</p></button>
+                    <button onClick={toBack} className='B-return'><span className="material-icons-round">keyboard_backspace</span><p>BACK</p></button>
                     <p className='H-title'>{selectLan ? 'Projects' : 'Proyectos'}</p>
                     <div className='W-container'>
                         <div onClick={onBtnWorksD}>
                             <img className='wd-img' src={require('./../../images/developer.png')} alt='developer'/>
-                            <p>{selectLan ? 'DEVELOPING' : 'DESARROLLO'}</p>
+                            <p>{selectLan ? 'PROGRAMMING' : 'PROGRAMACIÓN'}</p>
                         </div>
                         <div onClick={onBtnWorksE}>
                             <img className='we-img' src={require('./../../images/electronic.png')} alt='electronic'/>
@@ -45,9 +45,6 @@ function Works( props ) {
                         <p>{selectLan ? 'Developed by ' : 'Desarrollado por '}<span>Andres Montoya Angulo</span></p>
                     </footer>
                 </section>
-                <section className='two' ref={testRef2}></section>
-                <section className='three' ref={testRef3}></section>
-                <section className='four' ref={testRef4}></section>
             </main>
         </div>
     );

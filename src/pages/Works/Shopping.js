@@ -3,7 +3,7 @@ import './Shopping.css';
 
 
 function Shopping(props) {
-    const { selectLan, scrollToBack } = props;
+    const { selectLan } = props;
 
     let contenidoCarrito;
     let articulosCarrito = [];
@@ -105,8 +105,7 @@ function Shopping(props) {
             <header></header>
             <main>
                 <div className="header">
-                    <button onClick={scrollToBack} className='B-return'><span className="material-icons-round return">keyboard_backspace</span><p>BACK</p></button>
-                    <h1 className="encabezado">{selectLan ? 'Online Courses' : 'Cursos En Línea'}</h1>
+                    <h1 className="encabezado">{selectLan ? 'Online Courses' : 'Cursos en Línea'}</h1>
                     <ul>
                         <li className="submenu">
                             <span className="material-symbols-outlined">shopping_cart</span>
@@ -139,12 +138,12 @@ function Shopping(props) {
                         </div>
                     </div>
                     <div className="card">
-                        <img src={require('./../../images/curso2.jpg')} alt='curso1' />
+                        <img src={require('./../../images/curso2.jpg')} alt='curso2' />
                         <div className="info-card">
                             <h4>{selectLan ? 'Bootstrap 4 and Sass' : 'Bootstrap 4 y Sass'}</h4>
                             <p>Nahuel Esteban</p>
                             <p className="precio"><span className="u-pull-right ">$200</span> $150</p>
-                            <button className="agregar-carrito" data-id="1">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</button>
+                            <button className="agregar-carrito" data-id="2">{selectLan ? 'Add to cart' : 'Agregar Al Carrito'}</button>
                         </div>
                     </div>
                     <div className="card">

@@ -18,7 +18,7 @@ function Projects( props ) {
                         <p>{selectLan ? 'J - TECHNOLOGY is an application developed for a company in the field of electronic engineering' : 'J - TECHNOLOGY es una aplicación desarrollada para una empresa en el rubro de la ingeniería electrónica'}</p>
                         <ul>
                             <li><b>{selectLan ? 'Client:' : 'Cliente:'}</b> React.</li>
-                            <li><b>{selectLan ? 'Libraries:' : 'Librerias:'}</b> Axios, Emailjs-com, Json-Server, </li>
+                            <li><b>{selectLan ? 'Libraries:' : 'Librerias:'}</b> Axios, Emailjs-com, Json-Server.</li>
                         </ul>
                         <div>
                             <a title='Deploy' href="https://jtechnologyaqp.com/" target="_blank" rel="noreferrer">

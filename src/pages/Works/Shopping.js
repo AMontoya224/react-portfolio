@@ -129,7 +129,7 @@ function Shopping(props) {
                 </div>
                 <div id="lista-cursos" className="container" onClick={agregarCurso}>      
                     <div className="card">
-                        <img src={require('./../../images/curso1.jpg')} alt='curso1' />
+                        <img src={require('./../../images/curso1.webp')} alt='curso1' />
                         <div className="info-card">
                             <h4>{selectLan ? 'HTML5 and CSS3' : 'HTML5 y CSS3'}</h4>
                             <p>Nahuel Esteban</p>
@@ -138,7 +138,7 @@ function Shopping(props) {
                         </div>
                     </div>
                     <div className="card">
-                        <img src={require('./../../images/curso2.jpg')} alt='curso2' />
+                        <img src={require('./../../images/curso2.webp')} alt='curso2' />
                         <div className="info-card">
                             <h4>{selectLan ? 'Bootstrap 4 and Sass' : 'Bootstrap 4 y Sass'}</h4>
                             <p>Nahuel Esteban</p>
@@ -147,7 +147,7 @@ function Shopping(props) {
                         </div>
                     </div>
                     <div className="card">
-                        <img src={require('./../../images/curso3.jpg')} alt='curso3' />
+                        <img src={require('./../../images/curso3.webp')} alt='curso3' />
                         <div className="info-card">
                             <h4>{selectLan ? 'JavaScript' : 'JavaScript'}</h4>
                             <p>Nahuel Esteban</p>

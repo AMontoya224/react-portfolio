@@ -12,7 +12,7 @@ function Projects( props ) {
             <h1>{selectLan ? 'Developed Projects' : 'Proyectos Desarrollados'}</h1>
             <main>
                 <div>
-                    <img src={require('./../../images/jtech.png')} alt='jtech'/>
+                    <img src={require('./../../images/jtech.webp')} alt='jtech'/>
                     <div>
                         <h3 className='jtech'><b>J</b> - TECHNOLOGY</h3>
                         <p>{selectLan ? 'J - TECHNOLOGY is an application developed for a company in the field of electronic engineering' : 'J - TECHNOLOGY es una aplicación desarrollada para una empresa en el rubro de la ingeniería electrónica'}</p>
@@ -31,7 +31,7 @@ function Projects( props ) {
                     </div>
                 </div>
                 <div>
-                    <img src={require('./../../images/evertask.png')} alt='evertask'/>
+                    <img src={require('./../../images/evertask.webp')} alt='evertask'/>
                     <div>
                         <h3 className='evertask'>Ever<b>Task</b></h3>
                         <p>{selectLan ? 'EverTask is an application developed with the languages:' : 'EverTask es una aplicación desarrollada con los lenguajes:'}</p>

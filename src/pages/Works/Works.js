@@ -33,11 +33,11 @@ function Works( props ) {
                     <p className='H-title'>{selectLan ? 'Projects' : 'Proyectos'}</p>
                     <div className='W-container'>
                         <div onClick={onBtnWorksD}>
-                            <img className='wd-img' src={require('./../../images/developer.png')} alt='developer'/>
+                            <img className='wd-img' src={require('./../../images/developer.webp')} alt='developer'/>
                             <p>{selectLan ? 'PROGRAMMING' : 'PROGRAMACIÓN'}</p>
                         </div>
                         <div onClick={onBtnWorksE}>
-                            <img className='we-img' src={require('./../../images/electronic.png')} alt='electronic'/>
+                            <img className='we-img' src={require('./../../images/electronic.webp')} alt='electronic'/>
                             <p>{selectLan ? 'ELECTRONICS' : 'ELECTRÓNICA'}</p>
                         </div>
                     </div>

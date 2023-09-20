@@ -53,10 +53,10 @@ function Contact( props ) {
                             <ion-icon name="logo-chrome" size="large"></ion-icon>
                         </a>
                         <a className="pagina" href='https://drive.google.com/file/d/1O0kGnQr3pxzlfkDREknbgMkmAbcx95Dx/view?usp=sharing' target="_blank" rel="noreferrer">
-                            <img src={theme ? require('./../../images/cv2.jpg') : require('./../../images/cv.jpg')} alt='cv' title='Curriculum Vitae'/>
+                            <img src={theme ? require('./../../images/iconduck/cv2.jpg') : require('./../../images/iconduck/cv.jpg')} alt='cv' title='Curriculum Vitae'/>
                         </a>
                         <a className="pagina" href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=140140" target="_blank" rel="noreferrer">
-                            <img src={require('./../../images/concytec.png')} alt='concytec' title='Concytec'/>
+                            <img src={require('./../../images/iconduck/concytec.png')} alt='concytec' title='Concytec'/>
                         </a>
                         <a className="pagina" href="https://web.facebook.com/juan.andres.montoya.angulo" target="_blank" rel="noreferrer">
                             <ion-icon name="logo-facebook" size="large"></ion-icon>

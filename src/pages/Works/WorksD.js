@@ -31,7 +31,7 @@ function Works_D( props ) {
                 </section>
 
                 <section className='three' ref={testRef3} onMouseEnter={() => scrollSelect( '#3' )} onTouchStart={() => scrollSelect( '#3' )}>
-                    <img src={require('./../../images/title_pokedex.png')} alt='pokedex'/>
+                    <img src={require('./../../images/title_pokedex.webp')} alt='pokedex'/>
                     <Pokedex selectLan={selectLan}/>
                 </section>
 

@@ -75,7 +75,7 @@ function Home(props) {
           </div>
         </div>
       </div>
-      <img id='H-img' className={selectLeft === '#1' ? 'H-img' : 'H-img active'} src={theme ? require('./../../images/island.jpg') : require('./../../images/wolf.png')} alt='wolf'/>
+      <img id='H-img' className={selectLeft === '#1' ? 'H-img' : 'H-img active'} src={theme ? require('./../../images/island.webp') : require('./../../images/wolf.webp')} alt='wolf'/>
 
       <main>
         <section className='one' ref={testRef1} onMouseEnter={() => scrollSelect('#1')} onTouchStart={() => scrollSelect('#1')}>
@@ -99,8 +99,8 @@ function Home(props) {
             <div>
               <p className={selectLeft === '#2' ? 'H-main' : 'H-main active'}>{selectLan ? 'Passion for creating amazing products' : 'Pasión por crear productos increíbles'}</p>
               <div>
-                <img className={selectLeft === '#2' ? '' : 'active'} onClick={onBtnWorksD} src={require('./../../images/developer.png')} alt='developer' />
-                <img className={selectLeft === '#2' ? '' : 'active'} onClick={onBtnWorksE} src={require('./../../images/electronic.png')} alt='electronic' />
+                <img className={selectLeft === '#2' ? '' : 'active'} onClick={onBtnWorksD} src={require('./../../images/developer.webp')} alt='developer' />
+                <img className={selectLeft === '#2' ? '' : 'active'} onClick={onBtnWorksE} src={require('./../../images/electronic.webp')} alt='electronic' />
               </div>
             </div>
             <p className={selectLeft === '#2' ? 'number' : 'number active'}>02</p>
@@ -118,8 +118,7 @@ function Home(props) {
           <div>
             <div>
               <p className={selectLeft === '#3' ? 'H-main' : 'H-main active'}>{selectLan ? 'I love design, technology and creativity' : 'Me encanta el diseño, la tecnología y la creatividad'}</p>
-    
-              <img className={selectLeft === '#3' ? '' : 'active'} src={require('./../../images/perfil2.jpg')} alt='foto'/>
+              <img className={selectLeft === '#3' ? '' : 'active'} src={require('./../../images/perfil2.webp')} alt='foto'/>
             </div>
             <p className={selectLeft === '#3' ? 'number' : 'number active'}>03</p>
           </div>
@@ -152,10 +151,10 @@ function Home(props) {
                   <ion-icon name="logo-chrome" size="large"></ion-icon>
                 </a>
                 <a className="pagina" href='https://drive.google.com/file/d/1O0kGnQr3pxzlfkDREknbgMkmAbcx95Dx/view?usp=sharing' target="_blank" rel="noreferrer">
-                  <img src={theme ? require('./../../images/cv2.jpg') : require('./../../images/cv.jpg')} alt='cv' title='Curriculum Vitae' />
+                  <img src={theme ? require('./../../images/iconduck/cv2.jpg') : require('./../../images/iconduck/cv.jpg')} alt='cv' title='Curriculum Vitae' />
                 </a>
                 <a className="pagina" href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=140140" target="_blank" rel="noreferrer">
-                  <img src={require('./../../images/concytec.png')} alt='concytec' title='Concytec' />
+                  <img src={require('./../../images/iconduck/concytec.png')} alt='concytec' title='Concytec' />
                 </a>
                 <a className="pagina" href="https://web.facebook.com/juan.andres.montoya.angulo" target="_blank" rel="noreferrer">
                   <ion-icon name="logo-facebook" size="large"></ion-icon>

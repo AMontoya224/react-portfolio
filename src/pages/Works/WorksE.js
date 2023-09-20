@@ -19,7 +19,7 @@ function Works_E( props ) {
             
             <main>
                 <section className='one' ref={testRef1} onMouseEnter={() => scrollSelect( '#1' )} onTouchStart={() => scrollSelect( '#1' )}>
-                    <img src={require('./../../images/electronic.png')} alt='electronic'/>
+                    <img src={require('./../../images/electronic.webp')} alt='electronic'/>
                     <button onClick={scrollToBack} className='B-return'><span className="material-icons-round">keyboard_backspace</span><p>BACK</p></button>
                     <h2>{selectLan ? 'Explosive ordnance disposal robot' : 'Robot de eliminación de explosivos'}</h2>
                     <div className='top'>
@@ -36,8 +36,8 @@ function Works_E( props ) {
                     </div>
                     <div className='bottom'>
                         <div className='container-t'>
-                            <img className='img-b-t' src={require('./../../images/robot-1.jpg')} alt='robot'/>
-                            <img className='img-b-b' src={require('./../../images/robot-2.jpg')} alt='robot'/>
+                            <img className='img-b-t' src={require('./../../images/robot-1.webp')} alt='robot'/>
+                            <img className='img-b-b' src={require('./../../images/robot-2.webp')} alt='robot'/>
                         </div>
                         <div className='container-b'>
                             <div>
@@ -86,8 +86,8 @@ function Works_E( props ) {
                     </div>
                     <div className='bottom'>
                         <div className='container-t'>
-                            <img className='img-b-t' src={require('./../../images/siso-1.jpg')} alt='siso'/>
-                            <img className='img-b-b' src={require('./../../images/siso-2.jpg')} alt='siso'/>
+                            <img className='img-b-t' src={require('./../../images/siso-1.webp')} alt='siso'/>
+                            <img className='img-b-b' src={require('./../../images/siso-2.webp')} alt='siso'/>
                         </div>
                         <div className='container-b'>
                             <div>
@@ -135,8 +135,8 @@ function Works_E( props ) {
                     </div>
                     <div className='bottom'>
                         <div className='container-t'>
-                            <img className='img-b-t' src={require('./../../images/vest-1.jpg')} alt='vest'/>
-                            <img className='img-b-b' src={require('./../../images/vest-2.jpg')} alt='vest'/>
+                            <img className='img-b-t' src={require('./../../images/vest-1.webp')} alt='vest'/>
+                            <img className='img-b-b' src={require('./../../images/vest-2.webp')} alt='vest'/>
                         </div>
                         <div className='container-b'>
                             <div>

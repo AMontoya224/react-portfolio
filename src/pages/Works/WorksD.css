@@ -33,7 +33,7 @@
 }
 
 .WorksD > main > .three{
-    background-image: url(../../images/background_pokemon.jpg);
+    background-image: url(../../images/background_pokemon.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

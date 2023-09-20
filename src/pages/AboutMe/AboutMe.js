@@ -71,14 +71,14 @@ function AboutMe( props ) {
                     </button>
                     <p className='H-main'>{selectLan ? 'I love design, technology,' : 'Me encanta el diseño, la tecnología'}</p>
                     <p className='H-main'>{selectLan ? 'and creativity' : 'y la creatividad'}</p>
-                    <img className='A-img' src={require('./../../images/perfil-r.jpg')} alt='perfil'/>
+                    <img className='A-img' src={require('./../../images/perfil-r.webp')} alt='perfil'/>
                 </section>
 
                 <section className='two' ref={testRef2} onMouseEnter={() => scrollSelect( '#2' )} onTouchStart={() => scrollSelect( '#2' )}>
                     <h2>{selectLan ? 'Who I am' : 'Quién soy'}</h2>
                     <div className='w-container'>
                         <div>
-                            <img className='w-img' src={require('./../../images/ejercito.jpg')} alt='ejercito'/>
+                            <img className='w-img' src={require('./../../images/ejercito.webp')} alt='ejercito'/>
                             <div className='w-info'>
                                 <h3>Andres Montoya Angulo</h3>
                                 <i>{selectLan ? '"Learning should not stop"' : '"El aprendizaje no debe detenerse"'}</i>
@@ -197,7 +197,7 @@ function AboutMe( props ) {
                     <div>
                         <div className='E-container'>
                             <a href="https://drive.google.com/file/d/1IU2z8yiL5XjO0Qd-C2vgPLC34z3cAFw4/view?usp=sharing" target="_blank" rel="noreferrer">
-                                <img className='E-logo' src={require('./../../images/coding.png')} alt='coding'/>
+                                <img className='E-logo' src={require('./../../images/coding.webp')} alt='coding'/>
                                 <div className='E-info'>
                                     <h3>{selectLan ? 'Coding Dojo academy' : 'Academia Coding Dojo'}</h3>
                                     <h4>{selectLan ? 'Full stack developer' : 'Desarrollador full stack'}</h4>
@@ -213,7 +213,7 @@ function AboutMe( props ) {
                         </div>
                         <div className='E-container'>
                             <a href="https://drive.google.com/file/d/1KWhjxaZMYPExmHJureVZ1XCuRgTMglf1/view?usp=sharing" target="_blank" rel="noreferrer">
-                                <img className='E-logo-C' src={require('./../../images/cayetano.png')} alt='cayetano'/>
+                                <img className='E-logo-C' src={require('./../../images/cayetano.webp')} alt='cayetano'/>
                                 <div className='E-info'>
                                     <h3>Universidad Peruana Cayetano Heredia</h3>
                                     <h4>{selectLan ? 'Writing of Scientific Articles' : 'Redacción de Artículos Científicos'}</h4>
@@ -229,7 +229,7 @@ function AboutMe( props ) {
                         </div>
                         <div className='E-container'>
                             <a href="https://drive.google.com/file/d/1k4mr1NSpC291MTu7i23XSuOWoPsKJidG/view?usp=sharing" target="_blank" rel="noreferrer">
-                                <img className='E-logo' src={require('./../../images/unsa.png')} alt='unsa'/>
+                                <img className='E-logo' src={require('./../../images/unsa.webp')} alt='unsa'/>
                                 <div className='E-info'>
                                     <h3>Universidad Nacional de San Agustin</h3>
                                     <h4>{selectLan ? 'Electronic Engineering' : 'Ingeniería Electrónica'}</h4>

@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import './Pokedex.css';
-import pokedex from '../../images/pokedex.jpg';
 
 
 function Pokedex( props ) {
@@ -84,7 +83,7 @@ function Pokedex( props ) {
     return (
         <div className='Pokedex'>
             <div className="container">
-                <img src={pokedex} alt='pokedex'/>
+                <img src={require('./../../images/pokedex.webp')} alt='pokedex'/>
                 <div className='ind-voce'>
                     <div></div>
                 </div>

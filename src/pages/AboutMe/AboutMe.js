@@ -71,7 +71,7 @@ function AboutMe( props ) {
                     </button>
                     <p className='H-main'>{selectLan ? 'I love design, technology,' : 'Me encanta el diseño, la tecnología'}</p>
                     <p className='H-main'>{selectLan ? 'and creativity' : 'y la creatividad'}</p>
-                    <img className='A-img' src={require('./../../images/perfil-r.webp')} alt='perfil'/>
+                    <img className='A-img' src={require('./../../images/perfil2.webp')} alt='perfil'/>
                 </section>
 
                 <section className='two' ref={testRef2} onMouseEnter={() => scrollSelect( '#2' )} onTouchStart={() => scrollSelect( '#2' )}>

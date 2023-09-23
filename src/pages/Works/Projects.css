@@ -103,7 +103,6 @@
 
     .Projects > main > div > div{
         padding: 1rem;
-        border: var(--test);
         height: 100%;
     }
     

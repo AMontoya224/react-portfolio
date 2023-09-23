@@ -114,13 +114,12 @@
 @media only screen and (max-width: 960px){
     .Works{
         margin: 0;
-        padding: 1.5rem;
+        padding: 0;
         width: 100%;
     }
 
     .Works > main > .one{
-        padding-top: 12rem;
-        padding-bottom: 8rem;
+        padding: 12rem 1.5rem 8rem 1.5rem;
     }
 
     .W-container{

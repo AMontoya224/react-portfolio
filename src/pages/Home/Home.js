@@ -106,9 +106,9 @@ function Home(props) {
             <p className={selectLeft === '#2' ? 'number' : 'number active'}>02</p>
           </div>
           <button className={selectLeft === '#2' ? 'H-sub' : 'H-sub off'} onClick={onBtnWorks}>
-            <div className='s1' onClick={onBtnWorks}></div>
+            <div className='s1'></div>
             {selectLan ? 'SHOW ME MORE' : 'MUESTRAME MAS'}
-            <div className='s2' onClick={onBtnWorks}></div>
+            <div className='s2'></div>
           </button>
           <footer></footer>
         </section>
@@ -123,9 +123,9 @@ function Home(props) {
             <p className={selectLeft === '#3' ? 'number' : 'number active'}>03</p>
           </div>
           <button className={selectLeft === '#3' ? 'H-sub' : 'H-sub off'} onClick={onBtnAboutMe}>
-            <div className='s1' onClick={onBtnAboutMe}></div>
+            <div className='s1'></div>
             {selectLan ? 'SHOW ME MORE' : 'MUESTRAME MAS'}
-            <div className='s2' onClick={onBtnAboutMe}></div>
+            <div className='s2'></div>
           </button>
           <footer></footer>
         </section>
@@ -167,9 +167,9 @@ function Home(props) {
             <p className={selectLeft === '#4' ? 'number' : 'number active'}>04</p>
           </div>
           <button className={selectLeft === '#4' ? 'H-sub' : 'H-sub off'} onClick={onBtnContact}>
-            <div className='s1' onClick={onBtnContact}></div>
+            <div className='s1'></div>
             {selectLan ? 'SHOW ME MORE' : 'MUESTRAME MAS'}
-            <div className='s2' onClick={onBtnContact}></div>
+            <div className='s2'></div>
           </button>
           <footer>
             <p>{selectLan ? 'Developed by ' : 'Desarrollado por '}<span>Andres Montoya Angulo</span></p>

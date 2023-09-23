@@ -34,7 +34,7 @@ function Projects( props ) {
                     <img src={require('./../../images/evertask.webp')} alt='evertask'/>
                     <div>
                         <h3 className='evertask'>Ever<b>Task</b></h3>
-                        <p>{selectLan ? 'EverTask is an application developed with the languages:' : 'EverTask es una aplicación desarrollada con los lenguajes:'}</p>
+                        <p>{selectLan ? 'EverTask is an application developed with:' : 'EverTask es una aplicación desarrollada con:'}</p>
                         <ul>
                             <li><b>{selectLan ? 'Client:' : 'Cliente:'}</b> React.</li>
                             <li><b>{selectLan ? 'Server:' : 'Servidor:'}</b> NodeJS.</li>

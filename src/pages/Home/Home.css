@@ -1,7 +1,7 @@
 .Home{
     margin: 0 3.5rem 0 21.5rem;
     text-align: left;
-    overflow: 'scroll'
+    overflow: 'scroll';
 }
 
 #H-wolf{
@@ -115,6 +115,7 @@
     cursor: pointer;
     transition: all .5s ease;
     animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    z-index: 1;
 }
 .H-sub.off{
     animation: slide-right-n .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -261,7 +262,7 @@
     position: absolute;
     bottom: -32.5vh;
     right: -25.7rem;
-    filter: brightness(0.6);   
+    filter: brightness(0.8);
     animation: slide-translate-m 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     z-index: -1;
 }

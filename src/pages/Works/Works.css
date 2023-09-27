@@ -150,7 +150,6 @@
     
     .W-container > div > p{
         font-size:  80%;
-        border: var(--test);
     }
     
     .W-container > div:hover > p{

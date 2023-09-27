@@ -98,9 +98,15 @@ function Home(props) {
           <div>
             <div>
               <p className={selectLeft === '#2' ? 'H-main' : 'H-main active'}>{selectLan ? 'Passion for creating amazing products' : 'Pasión por crear productos increíbles'}</p>
-              <div>
-                <img className={selectLeft === '#2' ? '' : 'active'} onClick={onBtnWorksD} src={require('./../../images/developer.webp')} alt='developer' />
-                <img className={selectLeft === '#2' ? '' : 'active'} onClick={onBtnWorksE} src={require('./../../images/electronic.webp')} alt='electronic' />
+              <div className='W-container'>
+                <div onClick={onBtnWorksD}>
+                  <img className={selectLeft === '#2' ? '' : 'active'} src={require('./../../images/developer.webp')} alt='developer'/>
+                  <p>{selectLan ? 'PROGRAMMING' : 'PROGRAMACIÓN'}</p>
+                </div>
+                <div onClick={onBtnWorksE}>
+                    <img className={selectLeft === '#2' ? '' : 'active'} src={require('./../../images/electronic.webp')} alt='electronic'/>
+                    <p>{selectLan ? 'ELECTRONICS' : 'ELECTRÓNICA'}</p>
+                </div>
               </div>
             </div>
             <p className={selectLeft === '#2' ? 'number' : 'number active'}>02</p>

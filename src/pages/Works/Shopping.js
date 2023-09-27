@@ -97,6 +97,7 @@ function Shopping(props) {
     };
 
     const sincronizarStorage = () => {
+        console.log(localStorage)
         localStorage.setItem("articulosCarrito", JSON.stringify(articulosCarrito))
     };
 

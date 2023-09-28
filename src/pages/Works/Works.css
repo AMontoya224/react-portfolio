@@ -134,13 +134,12 @@
     
     .W-container > div{
         width: 40%;
-        margin: 0;
+        height: auto;
     }
 
     .W-container > div > img{
         height: auto;
         width: 100%;
-        margin: 0;
     }
     
     .W-container > div > .wd-img{

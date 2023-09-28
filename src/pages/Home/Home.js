@@ -104,8 +104,8 @@ function Home(props) {
                   <p>{selectLan ? 'PROGRAMMING' : 'PROGRAMACIÓN'}</p>
                 </div>
                 <div onClick={onBtnWorksE}>
-                    <img className={selectLeft === '#2' ? '' : 'active'} src={require('./../../images/electronic.webp')} alt='electronic'/>
-                    <p>{selectLan ? 'ELECTRONICS' : 'ELECTRÓNICA'}</p>
+                  <img className={selectLeft === '#2' ? '' : 'active'} src={require('./../../images/electronic.webp')} alt='electronic'/>
+                  <p>{selectLan ? 'ELECTRONICS' : 'ELECTRÓNICA'}</p>
                 </div>
               </div>
             </div>

@@ -52,7 +52,7 @@ function Contact( props ) {
                         <a className="pagina" href="https://scholar.google.com/citations?user=LI023coAAAAJ&hl=es" target="_blank" rel="noreferrer">
                             <ion-icon name="logo-chrome" size="large"></ion-icon>
                         </a>
-                        <a className="pagina" href='https://drive.google.com/file/d/1O0kGnQr3pxzlfkDREknbgMkmAbcx95Dx/view?usp=sharing' target="_blank" rel="noreferrer">
+                        <a className="pagina" href='https://drive.google.com/file/d/1cDq6dwEz-__-pBYQ0giWHg_A161lLNeA/view?usp=sharing' target="_blank" rel="noreferrer">
                             <img src={theme ? require('./../../images/iconduck/cv2.jpg') : require('./../../images/iconduck/cv.jpg')} alt='cv' title='Curriculum Vitae'/>
                         </a>
                         <a className="pagina" href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=140140" target="_blank" rel="noreferrer">

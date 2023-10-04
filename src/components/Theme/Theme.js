@@ -3,7 +3,7 @@ import './Theme.css';
 
 
 function Theme(props){
-    const { setTheme } = props;
+    const { setTheme, selectLan } = props;
     const [iconTheme, setIconTheme] = useState( () => {
         const initialValue = JSON.parse( localStorage.getItem( 'iconTheme' ) );
         return initialValue || false;
@@ -24,7 +24,7 @@ function Theme(props){
     };
 
     return (
-        <div className='Theme' onClick={changeTheme}>
+        <div className='Theme' onClick={changeTheme} title={selectLan ? 'Theme' : 'Tema'}>
             <span className='material-icons-round'>
                 {iconTheme ? 'dark_mode' : 'light_mode'}
             </span>

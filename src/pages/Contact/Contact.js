@@ -30,7 +30,7 @@ function Contact( props ) {
             <main>
                 <section className='one' ref={testRef1}>
                     <button onClick={toBack} className='B-return'><span className="material-icons-round">keyboard_backspace</span><p>BACK</p></button>
-                    <p className='H-title'>{selectLan ? 'Get In Touch' : 'Contáctame'}</p>
+                    <h2 className='H-title'>{selectLan ? 'Get In Touch' : 'Contáctame'}</h2>
                     <button className={btnSub ? 'H-sub active' : 'H-sub'} onClick={onBtnSub}>
                         <div className={btnSub ? 's1 active' : 's1'}></div>
                         {btnSub ? 'THANK!' : 'CLICK'}

@@ -202,7 +202,7 @@ function Music2(props) {
     return (
         <div className="C-M">
             <div className="Music">
-                <h1>{selectLan ? 'Music Player' : 'Reproductor de Música'}</h1>
+                <h3>{selectLan ? 'Music Player' : 'Reproductor de Música'}</h3>
                 <div className="wrapper">
                     <div className="details">
                         <div className="now-playing">Música X de Y</div>

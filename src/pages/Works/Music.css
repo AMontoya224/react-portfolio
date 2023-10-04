@@ -198,7 +198,7 @@
 
 @media only screen and (max-width: 960px){
     .Music{
-        transform: scale(0.8);
-        padding-bottom: 10rem;
+        transform: scale(1);
+        padding-bottom: 15rem;
     }
 }

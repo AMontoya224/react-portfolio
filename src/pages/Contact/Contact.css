@@ -26,7 +26,6 @@
 }
 
 .Contact > main > .one > .H-title{
-    margin: -2rem 0 -2rem -0.5rem;
     z-index: 1;
     -webkit-animation: slide-bottom 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-bottom 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -61,8 +60,8 @@
     font-weight: 400;
     letter-spacing: 0.5rem;
     transition: all 500ms ease;
-    -webkit-animation: slide-bottom 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-bottom 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-bottom 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-bottom 750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .Contact > main > .one > a:hover{
     opacity: 0.7;
@@ -70,8 +69,8 @@
 
 .Contact > main > .one > div{
     margin-top: 4rem;
-    -webkit-animation: opacity 1750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: opacity 1750ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: opacity 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: opacity 1250ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     margin-bottom: 7rem;
 }
 
@@ -98,10 +97,10 @@
 }
 
 @-webkit-keyframes opacity {
-    0% {
+    0%{
         opacity: 0;
     }
-    40% {
+    20%{
         opacity: 0;
     }
     100% {
@@ -109,10 +108,10 @@
     }
 }
 @keyframes opacity {
-    0% {
+    0%{
         opacity: 0;
     }
-    40% {
+    20%{
         opacity: 0;
     }
     100% {

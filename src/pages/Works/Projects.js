@@ -9,12 +9,12 @@ function Projects( props ) {
     return (
         <div className="Projects">
             <button onClick={scrollToBack} className='B-return'><span className="material-icons-round return">keyboard_backspace</span><p>BACK</p></button>
-            <h1>{selectLan ? 'Developed Projects' : 'Proyectos Desarrollados'}</h1>
+            <h3>{selectLan ? 'Developed Projects' : 'Proyectos Desarrollados'}</h3>
             <main>
                 <div>
                     <img src={require('./../../images/jtech.webp')} alt='jtech'/>
                     <div>
-                        <h3 className='jtech'><b>J</b> - TECHNOLOGY</h3>
+                        <h4 className='jtech'><b>J</b> - TECHNOLOGY</h4>
                         <p>{selectLan ? 'J - TECHNOLOGY is an application developed for a company in the field of electronic engineering' : 'J - TECHNOLOGY es una aplicación desarrollada para una empresa en el rubro de la ingeniería electrónica'}</p>
                         <ul>
                             <li><b>{selectLan ? 'Client:' : 'Cliente:'}</b> React.</li>
@@ -33,7 +33,7 @@ function Projects( props ) {
                 <div>
                     <img src={require('./../../images/evertask.webp')} alt='evertask'/>
                     <div>
-                        <h3 className='evertask'>Ever<b>Task</b></h3>
+                        <h4 className='evertask'>Ever<b>Task</b></h4>
                         <p>{selectLan ? 'EverTask is an application developed with:' : 'EverTask es una aplicación desarrollada con:'}</p>
                         <ul>
                             <li><b>{selectLan ? 'Client:' : 'Cliente:'}</b> React.</li>

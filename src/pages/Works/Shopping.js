@@ -105,7 +105,7 @@ function Shopping(props) {
             <header></header>
             <main>
                 <div className="header">
-                    <h1 className="encabezado">{selectLan ? 'Online Courses' : 'Cursos en Línea'}</h1>
+                    <h3 className="encabezado">{selectLan ? 'Online Courses' : 'Cursos en Línea'}</h3>
                     <ul>
                         <li className="submenu">
                             <span className="material-symbols-outlined">shopping_cart</span>

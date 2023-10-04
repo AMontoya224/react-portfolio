@@ -30,7 +30,7 @@ function Works( props ) {
             <main>
                 <section className='one' ref={testRef1}>
                     <button onClick={toBack} className='B-return'><span className="material-icons-round">keyboard_backspace</span><p>BACK</p></button>
-                    <p className='H-title'>{selectLan ? 'Projects' : 'Proyectos'}</p>
+                    <h2 className='H-title'>{selectLan ? 'Projects' : 'Proyectos'}</h2>
                     <div className='W-container'>
                         <div onClick={onBtnWorksD}>
                             <img className='wd-img' src={require('./../../images/developer.webp')} alt='developer'/>

@@ -36,7 +36,7 @@
     align-items: center;
 }
 
-.WorksE > main > section > .top > div > b{
+.WorksE > main > section > .top > div > h4{
     flex: 2;
     font-size: 2rem;
     letter-spacing: 0.5rem;
@@ -91,7 +91,7 @@
     flex: 1;
 }
 
-.WorksE > main > section > .bottom > .container-b > div > b{
+.WorksE > main > section > .bottom > .container-b > div > h4{
     flex: 1;
     font-size: 2rem;
     letter-spacing: 0.5rem;
@@ -201,7 +201,7 @@
         margin: 2.5rem 0;
     }
     
-    .WorksE > main > section > .top > div > b{
+    .WorksE > main > section > .top > div > h4{
         font-size: 1rem;
     }
 
@@ -227,7 +227,7 @@
         margin-bottom: 3rem;
     }
     
-    .WorksE > main > section > .bottom > .container-b > div > b{
+    .WorksE > main > section > .bottom > .container-b > div > h4{
         font-size: 1rem;
     }
 

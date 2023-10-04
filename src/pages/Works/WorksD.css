@@ -50,26 +50,16 @@
     padding: 0;
 }
 
-@-webkit-keyframes slide-scale-dd{
-    0% {
-        -webkit-transform: translateX(-25.5rem) translateY(8rem) scale(0.4);
-        transform: translateX(-25.5rem) translateY(8rem) scale(0.4);
-    }
-    100% {
-        -webkit-transform: translateX(0) translateY(0) scale(1);
-        transform: translateX(0) translateY(0) scale(1);
-    }
-}
+
 @keyframes slide-scale-dd{
     0% {
-        -webkit-transform: translateX(-25.5rem) translateY(8rem) scale(0.4);
         transform: translateX(-25.5rem) translateY(8rem) scale(0.4);
     }
     100% {
-        -webkit-transform: translateX(0) translateY(0) scale(1);
         transform: translateX(0) translateY(0) scale(1);
     }
 }
+
 
 @media only screen and (max-width: 960px){
     .WorksD{

@@ -67,11 +67,11 @@ function Header( props ) {
             </p>
             <b></b>
             <div className='H-row'>
-                <a href="mailto:jmontoyaan@unsa.edu.pe?subject=Quiero contactar contigo Andres!">
+                <a href="mailto:jmontoyaan@unsa.edu.pe?subject=Quiero contactar contigo Andres!" title={selectLan ? 'Email' : 'Correo'}>
                     <span className='material-icons-round'>mail</span>
                 </a>
-                <Theme setTheme={setTheme}/>
-                <button className='L-btn' onClick={onBtnLan}><span className='material-icons-round'>translate</span></button>
+                <Theme setTheme={setTheme} selectLan={selectLan}/>
+                <button className='L-btn' onClick={onBtnLan} title={selectLan ? 'Translate' : 'Traducción'}><span className='material-icons-round'>translate</span></button>
                 <button className='H-btn' onClick={onBtnEsc}><div className={btnEsc ? 's1 active' : 's1'}></div><div className={btnEsc ? 's2 active' : 's2'}></div></button>
             </div>
             <div className={btnEsc ? 'menu menu-fw' : 'menu menu-bk'}>
@@ -83,7 +83,7 @@ function Header( props ) {
                     <a className={btnEsc ? 'menu-a' : 'menu-na'} href="mailto:jmontoyaan@unsa.edu.pe?subject=Quiero contactar contigo Andres!">
                         <span className='material-icons-round'>mail</span>
                     </a>
-                    <Theme setTheme={setTheme}/>
+                    <Theme setTheme={setTheme} selectLan={selectLan}/>
                     <button className={btnEsc ? 'menu-a' : 'menu-na'} onClick={onBtnLan}><span className='material-icons-round'>translate</span></button>
                 </div>
             </div>

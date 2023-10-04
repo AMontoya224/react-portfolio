@@ -41,11 +41,6 @@
     display: grid;
 }
 
-.Projects > main > div > div > h3{
-    font-size: 2.5rem;
-    font-weight: 300;
-}
-
 .Projects > main > div > div > .jtech > b{
     color: #03989E;
 }
@@ -106,7 +101,7 @@
         height: 100%;
     }
     
-    .Projects > main > div > div > h3{
+    .Projects > main > div > div > h4{
         font-size: 1.2rem;
     }
     

@@ -79,8 +79,7 @@ function Home(props) {
 
       <main>
         <section className='one' ref={testRef1} onMouseEnter={() => scrollSelect('#1')} onTouchStart={() => scrollSelect('#1')}>
-          <p className={selectLeft === '#1' ? 'H-title' : 'H-title active'}>ANDRES</p>
-          <p className={selectLeft === '#1' ? 'H-title' : 'H-title active'}>MONTOYA</p>
+          <h1 className={selectLeft === '#1' ? 'H-title' : 'H-title active'}>ANDRES MONTOYA</h1>
           <button className={btnSub && selectLeft === '#1' ? 'H-sub active' : selectLeft === '#1' ? 'H-sub' : 'H-sub off'} onClick={onBtnSub}>
             <div className={btnSub ? 's1 active' : 's1'}></div>
             {btnSub ? 'PORTFOLIO' : 'CLICK'}
@@ -94,7 +93,7 @@ function Home(props) {
         </section>
 
         <section className='two' ref={testRef2} onMouseEnter={() => scrollSelect('#2')} onTouchStart={() => scrollSelect('#2')}>
-          <p className={selectLeft === '#2' ? 'H-title' : 'H-title active'}>{selectLan ? 'Projects' : 'Proyectos'}</p>
+          <h2 className={selectLeft === '#2' ? 'H-title' : 'H-title active'}>{selectLan ? 'Projects' : 'Proyectos'}</h2>
           <div>
             <div>
               <p className={selectLeft === '#2' ? 'H-main' : 'H-main active'}>{selectLan ? 'Passion for creating amazing products' : 'Pasión por crear productos increíbles'}</p>
@@ -108,36 +107,36 @@ function Home(props) {
                   <p>{selectLan ? 'ELECTRONICS' : 'ELECTRÓNICA'}</p>
                 </div>
               </div>
+              <button className={selectLeft === '#2' ? 'H-sub' : 'H-sub off'} onClick={onBtnWorks}>
+                <div className='s1'></div>
+                {selectLan ? 'SHOW ME MORE' : 'MUESTRAME MAS'}
+                <div className='s2'></div>
+              </button>
             </div>
             <p className={selectLeft === '#2' ? 'number' : 'number active'}>02</p>
           </div>
-          <button className={selectLeft === '#2' ? 'H-sub' : 'H-sub off'} onClick={onBtnWorks}>
-            <div className='s1'></div>
-            {selectLan ? 'SHOW ME MORE' : 'MUESTRAME MAS'}
-            <div className='s2'></div>
-          </button>
           <footer></footer>
         </section>
 
         <section className='three' ref={testRef3} onMouseEnter={() => scrollSelect('#3')} onTouchStart={() => scrollSelect('#3')}>
-          <p className={selectLeft === '#3' ? 'H-title' : 'H-title active'}>{selectLan ? 'About me' : 'Sobre mí'}</p>
+          <h2 className={selectLeft === '#3' ? 'H-title' : 'H-title active'}>{selectLan ? 'About me' : 'Sobre mí'}</h2>
           <div>
             <div>
               <p className={selectLeft === '#3' ? 'H-main' : 'H-main active'}>{selectLan ? 'I love design, technology and creativity' : 'Me encanta el diseño, la tecnología y la creatividad'}</p>
               <img className={selectLeft === '#3' ? '' : 'active'} src={require('./../../images/perfil2.webp')} alt='foto'/>
+              <button className={selectLeft === '#3' ? 'H-sub' : 'H-sub off'} onClick={onBtnAboutMe}>
+                <div className='s1'></div>
+                {selectLan ? 'SHOW ME MORE' : 'MUESTRAME MAS'}
+                <div className='s2'></div>
+              </button>
             </div>
             <p className={selectLeft === '#3' ? 'number' : 'number active'}>03</p>
           </div>
-          <button className={selectLeft === '#3' ? 'H-sub' : 'H-sub off'} onClick={onBtnAboutMe}>
-            <div className='s1'></div>
-            {selectLan ? 'SHOW ME MORE' : 'MUESTRAME MAS'}
-            <div className='s2'></div>
-          </button>
           <footer></footer>
         </section>
 
         <section className='four' ref={testRef4} onMouseEnter={() => scrollSelect('#4')} onTouchStart={() => scrollSelect('#4')}>
-          <h1 className={selectLeft === '#4' ? 'H-title' : 'H-title active'}>{selectLan ? 'Get In Touch' : 'Contáctame'}</h1>
+          <h2 className={selectLeft === '#4' ? 'H-title' : 'H-title active'}>{selectLan ? 'Get In Touch' : 'Contáctame'}</h2>
           <div>
             <div>
               <a href="mailto:montyang224@gmail.com?subject=Quiero contactar contigo Andres!" className={selectLeft === '#4' ? '' : 'active'}>
@@ -169,14 +168,14 @@ function Home(props) {
                   <ion-icon name="logo-youtube" size="large"></ion-icon>
                 </a>
               </div>
+              <button className={selectLeft === '#4' ? 'H-sub' : 'H-sub off'} onClick={onBtnContact}>
+                <div className='s1'></div>
+                {selectLan ? 'SHOW ME MORE' : 'MUESTRAME MAS'}
+                <div className='s2'></div>
+              </button>
             </div>
             <p className={selectLeft === '#4' ? 'number' : 'number active'}>04</p>
           </div>
-          <button className={selectLeft === '#4' ? 'H-sub' : 'H-sub off'} onClick={onBtnContact}>
-            <div className='s1'></div>
-            {selectLan ? 'SHOW ME MORE' : 'MUESTRAME MAS'}
-            <div className='s2'></div>
-          </button>
           <footer>
             <p>{selectLan ? 'Developed by ' : 'Desarrollado por '}<span>Andres Montoya Angulo</span></p>
           </footer>

@@ -63,24 +63,23 @@ function AboutMe( props ) {
             <main>
                 <section className='one' ref={testRef1} onMouseEnter={() => scrollSelect( '#1' )} onTouchStart={() => scrollSelect( '#1' )}>
                     <button onClick={toBack} className='B-return'><span className="material-icons-round">keyboard_backspace</span><p>BACK</p></button>
-                    <p className='H-title'>{selectLan ? 'About me' : 'Sobre mí'}</p>
+                    <h2 className='H-title'>{selectLan ? 'About me' : 'Sobre mí'}</h2>
                     <button className='H-sub' onClick={toBack}>
                         <div className='s1'></div>
                             {selectLan ? 'RETURN' : 'REGRESAR'}
                         <div className='s2'></div>
                     </button>
-                    <p className='H-main'>{selectLan ? 'I love design, technology,' : 'Me encanta el diseño, la tecnología'}</p>
-                    <p className='H-main'>{selectLan ? 'and creativity' : 'y la creatividad'}</p>
+                    <p className='H-main'>{selectLan ? 'I love design, technology and creativity. I strive to keep learning every day.' : 'Me encanta el diseño, la tecnología y  la creatividad. Me esfuerzo por seguir aprendiendo cada día.'}</p>
                     <img className='A-img' src={require('./../../images/perfil2.webp')} alt='perfil'/>
                 </section>
 
                 <section className='two' ref={testRef2} onMouseEnter={() => scrollSelect( '#2' )} onTouchStart={() => scrollSelect( '#2' )}>
-                    <h2>{selectLan ? 'Who I am' : 'Quién soy'}</h2>
+                    <h3>{selectLan ? 'Who I am' : 'Quién soy'}</h3>
                     <div className='w-container'>
                         <div>
                             <img className='w-img' src={require('./../../images/ejercito.webp')} alt='ejercito'/>
                             <div className='w-info'>
-                                <h3>Andres Montoya Angulo</h3>
+                                <h4>Andres Montoya Angulo</h4>
                                 <i>{selectLan ? '"Learning should not stop"' : '"El aprendizaje no debe detenerse"'}</i>
                             </div>
                         </div>
@@ -94,10 +93,10 @@ function AboutMe( props ) {
                 </section>
 
                 <section className='three' ref={testRef3} onMouseEnter={() => scrollSelect( '#3' )} onTouchStart={() => scrollSelect( '#3' )}>
-                    <h2>{selectLan ? 'Skill set' : 'Conjunto de habilidades'}</h2>
+                    <h3>{selectLan ? 'Skill set' : 'Conjunto de habilidades'}</h3>
                     <div className='row'>
                         <div className='container'>
-                            <h3>{selectLan ? 'SOFTWARE DEVELOPMENT' : 'DESARROLLO DE SOFTWARE'}</h3>
+                            <h4>{selectLan ? 'SOFTWARE DEVELOPMENT' : 'DESARROLLO DE SOFTWARE'}</h4>
                             <div>
                                 <div>
                                     <p>{selectLan ? 'Languages' : 'Lenguajes'}</p>
@@ -155,7 +154,7 @@ function AboutMe( props ) {
                             <div className={levelB ? 'leyenda-b active' : 'leyenda-b'} onClick={selectLevelB} title={selectLan ? 'Essential' : 'Basico'}><p>{selectLan ? 'ESSENTIAL' : 'BÁSICO'}</p></div>
                         </div>
                         <div className='container'>
-                            <h3>{selectLan ? 'ELECTRONIC ENGINEERING' : 'INGENIERÍA ELECTRÓNICA'}</h3>
+                            <h4>{selectLan ? 'ELECTRONIC ENGINEERING' : 'INGENIERÍA ELECTRÓNICA'}</h4>
                             <div>
                                 <div>
                                     <p>{selectLan ? 'Languages' : 'Lenguajes'}</p>
@@ -193,14 +192,14 @@ function AboutMe( props ) {
                 </section>
 
                 <section className='four' ref={testRef4} onMouseEnter={() => scrollSelect( '#4' )} onTouchStart={() => scrollSelect( '#4' )}>
-                    <h2>{selectLan ? 'Education' : 'Educación'}</h2>
+                    <h3>{selectLan ? 'Education' : 'Educación'}</h3>
                     <div>
                         <div className='E-container'>
                             <a href="https://drive.google.com/file/d/1IU2z8yiL5XjO0Qd-C2vgPLC34z3cAFw4/view?usp=sharing" target="_blank" rel="noreferrer">
                                 <img className='E-logo' src={require('./../../images/coding.webp')} alt='coding'/>
                                 <div className='E-info'>
-                                    <h3>{selectLan ? 'Coding Dojo academy' : 'Academia Coding Dojo'}</h3>
-                                    <h4>{selectLan ? 'Full stack developer' : 'Desarrollador full stack'}</h4>
+                                    <h4>{selectLan ? 'Coding Dojo academy' : 'Academia Coding Dojo'}</h4>
+                                    <h5>{selectLan ? 'Full Stack Developer' : 'Desarrollador Full Stack'}</h5>
                                     <i>{selectLan ? 'January 2022 - April 2022' : 'Enero 2022 - Abril 2022'}</i>
                                     <ul>
                                         <li>{selectLan ? 'Web fundamentals' : 'Fundamentos de la web'}</li>
@@ -215,8 +214,8 @@ function AboutMe( props ) {
                             <a href="https://drive.google.com/file/d/1KWhjxaZMYPExmHJureVZ1XCuRgTMglf1/view?usp=sharing" target="_blank" rel="noreferrer">
                                 <img className='E-logo-C' src={require('./../../images/cayetano.webp')} alt='cayetano'/>
                                 <div className='E-info'>
-                                    <h3>Universidad Peruana Cayetano Heredia</h3>
-                                    <h4>{selectLan ? 'Writing of Scientific Articles' : 'Redacción de Artículos Científicos'}</h4>
+                                    <h4>Universidad Peruana Cayetano Heredia</h4>
+                                    <h5>{selectLan ? 'Writing of Scientific Articles' : 'Redacción de Artículos Científicos'}</h5>
                                     <i>{selectLan ? 'November 2020 - December 2020' : 'Noviembre 2020 - Diciembre 2020'}</i>
                                     <ul>
                                         <li>{selectLan ? 'Materials and Methods' : 'Materiales y métodos'}</li>
@@ -231,8 +230,8 @@ function AboutMe( props ) {
                             <a href="https://drive.google.com/file/d/1k4mr1NSpC291MTu7i23XSuOWoPsKJidG/view?usp=sharing" target="_blank" rel="noreferrer">
                                 <img className='E-logo' src={require('./../../images/unsa.webp')} alt='unsa'/>
                                 <div className='E-info'>
-                                    <h3>Universidad Nacional de San Agustin</h3>
-                                    <h4>{selectLan ? 'Electronic Engineering' : 'Ingeniería Electrónica'}</h4>
+                                    <h4>Universidad Nacional de San Agustin</h4>
+                                    <h5>{selectLan ? 'Electronic Engineering' : 'Ingeniería Electrónica'}</h5>
                                     <i>{selectLan ? 'March 2015 - August 2020' : 'Marzo 2015 - Agosto 2020'}</i>
                                     <ul>
                                         <li>{selectLan ? 'Upper fifth' : 'Quinto superior'}</li>

@@ -21,12 +21,12 @@ function Works_E( props ) {
                 <section className='one' ref={testRef1} onMouseEnter={() => scrollSelect( '#1' )} onTouchStart={() => scrollSelect( '#1' )}>
                     <img src={require('./../../images/electronic.webp')} alt='electronic'/>
                     <button onClick={scrollToBack} className='B-return'><span className="material-icons-round">keyboard_backspace</span><p>BACK</p></button>
-                    <h2>{selectLan ? 'Explosive ordnance disposal robot' : 'Robot de eliminación de explosivos'}</h2>
+                    <h3>{selectLan ? 'Explosive ordnance disposal robot' : 'Robot de eliminación de explosivos'}</h3>
                     <div className='top'>
                         <div>
-                            <b>{selectLan ? 'ROLE' : 'CARGO'}</b>
-                            <b className='top-d'>{selectLan ? 'DATE' : 'FECHA'}</b>
-                            <b className='top-o'>{selectLan ? 'OVERVIEW' : 'VISIÓN GENERAL'}</b>
+                            <h4>{selectLan ? 'ROLE' : 'CARGO'}</h4>
+                            <h4 className='top-d'>{selectLan ? 'DATE' : 'FECHA'}</h4>
+                            <h4 className='top-o'>{selectLan ? 'OVERVIEW' : 'VISIÓN GENERAL'}</h4>
                         </div>
                         <div>
                             <p>{selectLan ? 'Developer | Electronic engineer' : 'Desarrollador | Ingeniero electrónico'}</p>
@@ -41,7 +41,7 @@ function Works_E( props ) {
                         </div>
                         <div className='container-b'>
                             <div>
-                                <b>{selectLan ? 'TECHNOLOGIES' : 'TECNOLOGÍAS'}</b>
+                                <h4>{selectLan ? 'TECHNOLOGIES' : 'TECNOLOGÍAS'}</h4>
                                 <div>
                                     <a href="https://www.python.org/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/python.svg').default} title="Python" alt='python'/></a>
                                     <a href="https://www.qt.io/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/qtproject.svg').default} title="QtDesigner" alt='qtdesigner'/></a>
@@ -53,7 +53,7 @@ function Works_E( props ) {
                                 </div>
                             </div>
                             <div>
-                                <b>{selectLan ? 'LINKS' : 'ENLACES'}</b>
+                                <h4>{selectLan ? 'LINKS' : 'ENLACES'}</h4>
                                 <div>
                                     <a href="http://proyectos-vri.unsa.edu.pe/proyectos_vri/handle/91.103.221022/6126" target="_blank" rel="noreferrer">
                                         <ion-icon name="globe" size="large"></ion-icon>
@@ -71,12 +71,12 @@ function Works_E( props ) {
                 </section>
 
                 <section className='two' ref={testRef2} onMouseEnter={() => scrollSelect( '#2' )} onTouchStart={() => scrollSelect( '#2' )}>
-                    <h2>{selectLan ? 'Driver drowsiness detection' : 'Detección de somnolencia'}</h2>
+                    <h3>{selectLan ? 'Driver drowsiness detection' : 'Detección de somnolencia'}</h3>
                     <div className='top'>
                         <div>
-                            <b>{selectLan ? 'ROLE' : 'CARGO'}</b>
-                            <b className='top-d'>{selectLan ? 'DATE' : 'FECHA'}</b>
-                            <b className='top-o'>{selectLan ? 'OVERVIEW' : 'VISIÓN GENERAL'}</b>
+                            <h4>{selectLan ? 'ROLE' : 'CARGO'}</h4>
+                            <h4 className='top-d'>{selectLan ? 'DATE' : 'FECHA'}</h4>
+                            <h4 className='top-o'>{selectLan ? 'OVERVIEW' : 'VISIÓN GENERAL'}</h4>
                         </div>
                         <div>
                             <p>{selectLan ? 'Electronic engineer | Researcher' : 'Ingeniero electrónico | Investigador'}</p>
@@ -91,7 +91,7 @@ function Works_E( props ) {
                         </div>
                         <div className='container-b'>
                             <div>
-                                <b>{selectLan ? 'TECHNOLOGIES' : 'TECNOLOGÍAS'}</b>
+                                <h4>{selectLan ? 'TECHNOLOGIES' : 'TECNOLOGÍAS'}</h4>
                                 <div>
                                     <a href="https://www.python.org/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/python.svg').default} title="Python" alt='python'/></a>
                                     <a href="https://la.mathworks.com/products/matlab.html" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/matlab.svg').default} title="MatLab" alt='matlab'/></a>
@@ -102,7 +102,7 @@ function Works_E( props ) {
                                 </div>
                             </div>
                             <div>
-                                <b>{selectLan ? 'LINKS' : 'ENLACES'}</b>
+                                <h4>{selectLan ? 'LINKS' : 'ENLACES'}</h4>
                                 <div>
                                     <a href="https://www.ulasalle.edu.pe/transparencia/proyecto_5.pdf" target="_blank" rel="noreferrer">
                                         <ion-icon name="globe" size="large"></ion-icon>
@@ -120,12 +120,12 @@ function Works_E( props ) {
                 </section>
 
                 <section className='three' ref={testRef3} onMouseEnter={() => scrollSelect( '#3' )} onTouchStart={() => scrollSelect( '#3' )}>
-                    <h2>{selectLan ? 'Desing of electrostimulation vest' : 'Chaleco de electroestimulación'}</h2>
+                    <h3>{selectLan ? 'Desing of electrostimulation vest' : 'Chaleco de electroestimulación'}</h3>
                     <div className='top'>
                         <div>
-                            <b>{selectLan ? 'ROLE' : 'CARGO'}</b>
-                            <b className='top-d'>{selectLan ? 'DATE' : 'FECHA'}</b>
-                            <b className='top-o'>{selectLan ? 'OVERVIEW' : 'VISIÓN GENERAL'}</b>
+                            <h4>{selectLan ? 'ROLE' : 'CARGO'}</h4>
+                            <h4 className='top-d'>{selectLan ? 'DATE' : 'FECHA'}</h4>
+                            <h4 className='top-o'>{selectLan ? 'OVERVIEW' : 'VISIÓN GENERAL'}</h4>
                         </div>
                         <div>
                             <p>{selectLan ? 'Electronic engineer' : 'Ingeniero electronico'}</p>
@@ -140,7 +140,7 @@ function Works_E( props ) {
                         </div>
                         <div className='container-b'>
                             <div>
-                                <b>{selectLan ? 'TECHNOLOGIES' : 'TECNOLOGÍAS'}</b>
+                                <h4>{selectLan ? 'TECHNOLOGIES' : 'TECNOLOGÍAS'}</h4>
                                 <div>
                                     <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/c-plusplus.svg').default} title="C++" alt='c++'/></a>
                                     <a href="https://www.w3schools.com/cs/index.php" target="_blank" rel="noreferrer"><img src={require('./../../images/iconduck/c-sharp.svg').default} title="C#" alt='c#'/></a>
@@ -152,7 +152,7 @@ function Works_E( props ) {
                                 </div>
                             </div>
                             <div>
-                                <b>{selectLan ? 'LINKS' : 'ENLACES'}</b>
+                                <h4>{selectLan ? 'LINKS' : 'ENLACES'}</h4>
                                 <div>
                                     <a href="http://proyectos-vri.unsa.edu.pe/proyectos_vri/index.php/report/index/250" target="_blank" rel="noreferrer">
                                         <ion-icon name="globe" size="large"></ion-icon>
@@ -170,7 +170,7 @@ function Works_E( props ) {
                 </section>
 
                 <section className='four' ref={testRef4} onMouseEnter={() => scrollSelect( '#4' )} onTouchStart={() => scrollSelect( '#4' )}>
-                    <h2>{selectLan ? 'Published scientific articles' : 'Artículos científicos publicados'}</h2>
+                    <h3>{selectLan ? 'Published scientific articles' : 'Artículos científicos publicados'}</h3>
                     <div className='container'>
                         <div className='c-info'>
                             <a href="http://pe.org.pl/articles/2023/5/46.pdf" target="_blank" rel="noreferrer">

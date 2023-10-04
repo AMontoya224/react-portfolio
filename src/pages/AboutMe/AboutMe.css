@@ -370,6 +370,10 @@
         width: 100%;
     }
 
+    .AboutMe > main > .one > .H-main{
+        width: 100%;
+    }
+
     .w-container{
         margin: 2rem 0;
         flex-direction: column;
@@ -390,7 +394,7 @@
         width: 25rem;
     }
     
-    .w-info > h3{
+    .w-info > h4{
         font-size: 3rem;
         letter-spacing: 1rem;
         line-height: 3rem;
@@ -424,7 +428,7 @@
         padding-top: 8rem;
     }
 
-    .AboutMe > main > .three > h3{
+    .AboutMe > main > .two > h3, .AboutMe > main > .three > h3{
         font-size: 1.8rem;
         margin-bottom: 1rem;
     }
@@ -439,7 +443,7 @@
         width: 100%;
     }
     
-    .AboutMe > main > .three > .row > .container > h3{
+    .AboutMe > main > .three > .row > .container > h4{
         font-size: 1.3rem;;
     }
 
@@ -494,11 +498,11 @@
         width: auto;
     } 
     
-    .E-info > h3{
+    .E-info > h4{
         font-size: 1rem;
     }
     
-    .E-info > h4{
+    .E-info > h5{
         font-size: 1.3rem;
     }
     

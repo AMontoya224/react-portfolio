@@ -60,20 +60,12 @@
     font-size: 5rem;
 }
 
-.repeat-track,
-.random-track,
-.playpause-track,
-.prev-track,
-.next-track{
+.repeat-track, .random-track, .playpause-track, .prev-track, .next-track{
     padding: 1rem;
-    transition: all 350ms ease;
     cursor: pointer;
+    transition: all 350ms ease;
 }
-.repeat-track:hover,
-.random-track:hover,
-.playpause-track:hover,
-.prev-track:hover,
-.next-track:hover{
+.repeat-track:hover, .random-track:hover, .playpause-track:hover, .prev-track:hover, .next-track:hover{
     opacity: 0.7;
 }
 
@@ -96,8 +88,7 @@
     -webkit-transition: all 150ms ease;
     transition: all 150ms ease;
 }
-.seek_slider::-webkit-slider-thumb,
-.volume_slider::-webkit-slider-thumb{
+.seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -109,8 +100,7 @@
     cursor: pointer;
     transition: all 350ms ease;
 }
-.seek_slider::-webkit-slider-thumb:hover,
-.volume_slider::-webkit-slider-thumb:hover{
+.seek_slider::-webkit-slider-thumb:hover, .volume_slider::-webkit-slider-thumb:hover{
     opacity: 0.7;
 }
 .seek_slider{
@@ -120,8 +110,7 @@
     width: 30%;
 }
 
-.current-time,
-.total-duration{
+.current-time, .total-duration{
     width: 6rem;
     padding: 1rem 0;
 }
@@ -200,5 +189,9 @@
     .Music{
         transform: scale(1);
         padding-bottom: 15rem;
+    }
+
+    .Music > h3{
+        font-size: 2rem;
     }
 }

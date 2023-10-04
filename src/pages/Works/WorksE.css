@@ -197,6 +197,10 @@
         opacity: 0.15;
     }
 
+    .WorksE > main > section > h3{
+        font-size: 2rem;
+    }
+
     .WorksE > main > section > .top{
         margin: 2.5rem 0;
     }
@@ -241,7 +245,7 @@
         padding-top: 8rem;
     }
 
-    .WorksE > main > .four > h2{
+    .WorksE > main > .four > h3{
         font-size: 1.8rem;
         margin-bottom: 1rem;
     }

@@ -21,7 +21,7 @@ function Projects( props ) {
                             <li><b>{selectLan ? 'Libraries:' : 'Librerias:'}</b> Axios, Emailjs-com, Json-Server.</li>
                         </ul>
                         <div>
-                            <a title='Deploy' href="https://jtechnologyaqp.com/" target="_blank" rel="noreferrer">
+                            <a title='Deploy' href="https://jovial-faun-ed7858.netlify.app/" target="_blank" rel="noreferrer">
                                 <span class="material-symbols-outlined">deployed_code</span>
                             </a>
                             <a title='Code' href="https://github.com/AMontoya224/j-technology" target="_blank" rel="noreferrer">

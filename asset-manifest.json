@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.357428fa.css",
-    "main.js": "/static/js/main.5f6d7a59.js",
+    "main.js": "/static/js/main.e5020262.js",
     "static/media/loading.gif": "/static/media/loading.94cd27f15ba689bca6b0.gif",
     "static/media/ejercito.webp": "/static/media/ejercito.5002fb74b8d3247a5c37.webp",
     "static/media/pokedex.webp": "/static/media/pokedex.ebfe3aac84af18b76847.webp",
@@ -73,10 +73,10 @@
     "static/media/django.svg": "/static/media/django.2ecabf434df0f21f6018a0d4aa548331.svg",
     "static/media/vhdl.svg": "/static/media/vhdl.39b8a9645353cb3b7d2a4fccc3890976.svg",
     "main.357428fa.css.map": "/static/css/main.357428fa.css.map",
-    "main.5f6d7a59.js.map": "/static/js/main.5f6d7a59.js.map"
+    "main.e5020262.js.map": "/static/js/main.e5020262.js.map"
   },
   "entrypoints": [
     "static/css/main.357428fa.css",
-    "static/js/main.5f6d7a59.js"
+    "static/js/main.e5020262.js"
   ]
 }

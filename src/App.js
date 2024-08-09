@@ -49,7 +49,7 @@ function App() {
           <Route exact path="/projects/electronic" render={ routeProps => <WorksE onSelectLeft={onSelectLeft} scrollSelect={scrollSelect} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} {...routeProps} />}/>
           <Route exact path="/aboutme" render={ routeProps => <AboutMe onSelectLeft={onSelectLeft} scrollSelect={scrollSelect} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} {...routeProps} />}/>
           <Route exact path="/contact" render={ routeProps => <Contact onSelectLeft={onSelectLeft} selectLeft={selectLeft} testRef1={testRef1} testRef2={testRef2} testRef3={testRef3} testRef4={testRef4} selectLan={selectLan} theme={theme} {...routeProps} />}/>
-        </Switch>
+          </Switch>
       </BrowserRouter>
     </div>
   );

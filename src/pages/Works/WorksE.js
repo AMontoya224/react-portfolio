@@ -173,6 +173,27 @@ function Works_E( props ) {
                     <h3>{selectLan ? 'Published scientific articles' : 'Artículos científicos publicados'}</h3>
                     <div className='container'>
                         <div className='c-info'>
+                            <a href="https://www.internationaljournalssrg.org/IJEEE/paper-details?Id=702" target="_blank" rel="noreferrer">
+                                <h4>Design and Construction of a Real Time Monitoring System with Raspberry Pi and WhatsApp Applied in a Water Tank for Agriculture</h4>
+                                <i>SSRG International Journal of Electrical and Electronics Engineering | 2024</i>
+                                <p><b>DOI:</b> 10.14445/23488379/IJEEE-V11I4P123</p>
+                            </a>
+                        </div>
+                        <div className='c-info'>
+                            <a href="https://rmib.mx/index.php/rmib/article/view/1388" target="_blank" rel="noreferrer">
+                                <h4>Preventive Detection of Driver Drowsiness from EEG Signals using Fuzzy Expert Systems</h4>
+                                <i>Revista Mexicana de Ingenieria Biomedica | 2024</i>
+                                <p><b>DOI:</b> 10.17488/RMIB.45.1.1</p>
+                            </a>
+                        </div>
+                        <div className='c-info'>
+                            <a href="https://thesai.org/Publications/ViewPaper?Volume=14&Issue=9&Code=IJACSA&SerialNo=111" target="_blank" rel="noreferrer">
+                                <h4>Development of a Touchless Control System for a Clinical Robot with Multimodal User Interface</h4>
+                                <i>International Journal of Advanced Computer Science and Applications | 2023</i>
+                                <p><b>DOI:</b> 10.14569/IJACSA.2023.01409111</p>
+                            </a>
+                        </div>
+                        <div className='c-info'>
                             <a href="http://pe.org.pl/articles/2023/5/46.pdf" target="_blank" rel="noreferrer">
                                 <h4>Design of a Terrain Mapping System for Low-cost Exploration Robots based on Stereo Vision</h4>
                                 <i>Przegląd Elektrotechniczny | 2023</i>

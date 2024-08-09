@@ -121,6 +121,8 @@
 
 .WorksE > main > .four > .container{
     margin: 3rem 0;
+    height: 500px;
+    overflow: scroll;
 }
 
 .WorksE > main > .four > .container > .c-info{
@@ -248,6 +250,10 @@
     .WorksE > main > .four > h3{
         font-size: 1.8rem;
         margin-bottom: 1rem;
+    }
+
+    .WorksE > main > .four > .container{
+        height: 450px;
     }
 
     .WorksE > main > .four > .container > .c-info > a > h4{
